@@ -6,3 +6,11 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
+$routes->get('select-property-type','Home::SelectProp_type_view');
+$routes->get('select-keeper-type','Home::Selectkeep_type_view');
+$routes->get('house-cleaning','Home::HouseCleaningView');
+$routes->get('privacy-policy','Home::PrivacyPolicy');
+$routes->get('blogs','Home::BlogListing');
+$routes->get('our-story','Home::OurStoryView');
+$routes->get('shop','Home::ShopView');
+$routes->get('join-us','Home::JoinView');

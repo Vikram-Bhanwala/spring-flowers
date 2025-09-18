@@ -1,0 +1,249 @@
+CRITICAL - 2025-09-18 05:03:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "privay-policy.php"
+[Method: GET, Route: privacy-policy]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('privay-policy.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('privay-policy', [], true)
+ 3 APPPATH\Controllers\Home.php(27): view('privay-policy')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->PrivacyPolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 05:03:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "privay-policy.php"
+[Method: GET, Route: privacy-policy]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('privay-policy.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('privay-policy', [], true)
+ 3 APPPATH\Controllers\Home.php(27): view('privay-policy')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->PrivacyPolicy()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:40:31 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:40:32 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:40:36 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:41:26 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:41:26 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:41:32 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:42:59 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:43:00 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:43:00 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:43:00 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:43:01 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:43:01 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:44:36 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:44:36 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-18 10:44:50 --> ErrorException: include(foter.php): Failed to open stream: No such file or directory
+[Method: GET, Route: our-story]
+in APPPATH\Views\our-story.php on line 17.
+ 1 APPPATH\Views\our-story.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(foter.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php', 17)
+ 2 APPPATH\Views\our-story.php(17): include()
+ 3 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\our-story.php')
+ 4 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('our-story', [], true)
+ 6 APPPATH\Controllers\Home.php(36): view('our-story')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->OurStoryView()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

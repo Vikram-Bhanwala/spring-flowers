@@ -46,6 +46,10 @@ class Home extends BaseController
         return view('join-us');
     }
 
+    // register form view
+    public function RegisterView(){
+        return view('registration');
+    }
 
 
 

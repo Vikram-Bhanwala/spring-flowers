@@ -2,6 +2,110 @@
   <?php
   include('header.php');
   ?>
+  <style>
+    .bner_home_new_bnt{
+      padding:10px 50px;
+      background:transparent;
+      color:white;
+      border:1px solid white;
+      margin-top:20px
+    }
+    .animate_on_scroll_hero_main_icon{
+      margin-bottom:70px;
+    }
+    .hero_third_left_content_box{
+      padding:0px 40px;
+      padding-bottom:40px
+    }
+    .hero_third_left_content_box p{
+      color:white
+    }
+    .hero_third_middle_content_box h2{
+    font-size: 45px;
+    color: white;
+    text-align: right;
+    line-height: 62px;
+}
+.hero_main_house_cleaning_img_box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  overflow:hidden
+}
+
+.hero_main_house_cleaning_img_box img {
+  width: 75%;
+  display: block;
+  height: auto !important;
+  transform: scale(1.2);
+  transition:all 0.6s ease;
+}
+
+.hero_main_house_cleaning_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background: rgba(0,0,0,0.02); /* black transparent overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.6s ease; 
+}
+
+.hero_main_house_cleaning_text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+ .hero_main_house_cleaning_text h2{
+    font-size: 29px;
+    font-weight: 600;
+margin-bottom:20px
+}
+.hero_main_house_cleaning_text a{
+  background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+color:white;
+border:2px solid white;
+    padding: 2px 25px;
+        font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+
+}
+.hero_main_house_cleaning_heading_box h3{
+    font-family:IvyOraDisplay-Regular;
+    color:white;
+    font-size:50px;
+        font-weight: 700;
+} 
+.hero_main_house_cleaning_heading_box {
+    position: absolute;
+    bottom: -6%;
+    left: -7%;
+}
+.hero_fourth_row{
+  margin-bottom:100px;
+  margin-top:100px
+}
+.hero_main_house_cleaning_heading_box2 {
+    position: absolute;
+    bottom: -6%;
+    left: 44%;
+}
+.hero_main_house_cleaning_img_box:hover img {
+  transform: scale(1); /* zoom effect */
+}
+
+.hero_main_house_cleaning_img_box:hover .hero_main_house_cleaning_overlay {
+  background: linear-gradient(to bottom, rgb(0 0 0 / 20%) 58%, rgb(0 0 0 / 79%) 93%, rgb(0 0 0) 100%); 
+}
+  </style>
   <!-- Hero Section -->
   <section class="hero top">
     <!--<img src="<?php echo base_url() ?>public/assets/img/banner.png" alt="Cleaning Service">-->
@@ -44,6 +148,53 @@
             <img src="<?php echo base_url() ?>public/assets/img/new/healthicons_domestic-worker-alt-outline.png" alt="">
           </div>
           <h3>80+ Professional Cleaners</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row hero_third_row">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="hero_third_left_content_box">
+          <p>Experience spotless living with tailored cleaning and housekeeping services that bring ease, comfort, and style to your home.</p>
+          <button class="bner_home_new_bnt">Book a Service</button>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="hero_third_middle_content_box">
+          <h2>Because Your Home Deserves More Than Just Clean</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row hero_fourth_row">
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="hero_main_house_cleaning_box">
+          <div class="hero_main_house_cleaning_img_box">
+            <img src="<?php echo base_url()?>public/assets/img/new/jon1.jpg" alt="">
+            <div class="hero_main_house_cleaning_overlay">
+              <div class="hero_main_house_cleaning_text">
+                <h2>We clean , you relax</h2>
+                <a href="#">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero_main_house_cleaning_heading_box">
+            <h3>House Cleaning</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="hero_main_house_cleaning_box">
+          <div class="hero_main_house_cleaning_img_box">
+            <img src="<?php echo base_url()?>/public/assets/img/new/jon2.jpg" alt="">
+            <div class="hero_main_house_cleaning_overlay">
+              <div class="hero_main_house_cleaning_text">
+                <h2>We clean , you relax</h2>
+                <a href="#">Explore</a>
+              </div>
+            </div>
+          </div>
+          <div class="hero_main_house_cleaning_heading_box hero_main_house_cleaning_heading_box2">
+            <h3>House Keeping</h3>
+          </div>
         </div>
       </div>
     </div>

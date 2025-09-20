@@ -6,15 +6,15 @@
   <div class="hero">
     <!-- Navigation -->
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">Our Story</a>
-      <a href="#">Blogs</a>
-      <a href="#">House Keeping</a>
-      <a href="#">House Cleaning</a>
-      <a href="#">Join Us</a>
-      <a href="#">Contact</a>
-      <a href="#">Privacy Policy</a>
+      <a href="<?php echo base_url()?>">Home</a>
+      <a href="<?php echo base_url()?>shop">Shop</a>
+      <a href="<?php echo base_url()?>our-story">Our Story</a>
+      <a href="<?php echo base_url()?>blogs">Blogs</a>
+      <a href="<?php echo base_url()?>select-keeper-type">House Keeping</a>
+      <a href="<?php echo base_url()?>/select-property-type">House Cleaning</a>
+      <a href="<?php echo base_url()?>join-us">Join Us</a>
+      <a href="<?php echo base_url()?>">Contact</a>
+      <a href="<?php echo base_url()?>privacy-policy">Privacy Policy</a>
     </nav>
 
     <!-- Centered Text -->

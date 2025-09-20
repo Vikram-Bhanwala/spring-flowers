@@ -14,3 +14,4 @@ $routes->get('blogs','Home::BlogListing');
 $routes->get('our-story','Home::OurStoryView');
 $routes->get('shop','Home::ShopView');
 $routes->get('join-us','Home::JoinView');
+$routes->get('register','Home::RegisterView');

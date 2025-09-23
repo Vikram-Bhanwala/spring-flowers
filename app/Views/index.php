@@ -51,7 +51,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.6s ease; 
+  transition: all 0.6s ease; 
 }
 
 .hero_main_house_cleaning_text {
@@ -104,6 +104,125 @@ border:2px solid white;
 
 .hero_main_house_cleaning_img_box:hover .hero_main_house_cleaning_overlay {
   background: linear-gradient(to bottom, rgb(0 0 0 / 20%) 58%, rgb(0 0 0 / 79%) 93%, rgb(0 0 0) 100%); 
+      width: 75%;
+}
+.hero_across_the_uk_box h2 {
+    font-size: 59px;
+    color: white;
+    font-weight: 700;
+    text-align: right;
+    line-height: 80px;
+}
+
+
+.hero_fifth_row{
+  display:flex;
+  justify-content:center;
+}
+/* Initial hidden state */
+.hero_new_animate_on_scroll {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+/* Visible state */
+.hero_new_animate_on_scroll.hero_new_animate_up {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Initial hidden state */
+.hero_new_home_about_img_animate {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+/* Active state */
+.hero_new_home_about_img_animate.hero_new_animate_up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.products-grid {
+  display: flex !important;
+  overflow-x: auto;          /* enables horizontal scroll */
+  scroll-snap-type: x mandatory; /* smooth snap effect */
+  gap: 20px !important;                 /* spacing between cards */
+  -webkit-overflow-scrolling: touch; /* smooth on mobile */
+  padding-bottom: 10px;
+  flex-wrap:nowrap !important
+}
+
+.product-card {
+  flex: 0 0 25%;             /* 4 visible per row (100/4 = 25%) */
+  scroll-snap-align: start;  /* snap each card nicely */
+}
+.products-grid::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+.product_home_grip_new_side {
+  opacity: 0;
+  transform: translateX(100px); /* Start shifted to right */
+  transition: all 1s ease-out;
+}
+
+/* When in view */
+.product_home_grip_new_side.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+.Home-Organization-frame-middle {
+  display: flex;
+  overflow-x: auto;             /* enable horizontal scroll */
+  scroll-snap-type: x mandatory;/* smooth snap */
+  gap: 20px;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE & Edge */
+}
+.Home-Organization-frame-middle::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari, Opera */
+}
+
+.Home-Organization-frame-middle-frame-sc {
+  flex: 0 0 50%;               /* show 2 cards per screen (100/2 = 50%) */
+  min-width: 300px;            /* keep good size on smaller screens */
+  scroll-snap-align: start;
+}
+
+/* Initial hidden state */
+.Home-Organization-frame-middle {
+  opacity: 0;
+  transform: translateX(100px); /* Start shifted to the right */
+  transition: all 1s ease-out;
+}
+
+/* Animate in when visible */
+.Home-Organization-frame-middle.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+.product-card img{
+  height:350px !important;
+  object-fit:cover
+}
+.Home-Organization-frame{
+  overflow:hidden
+}
+.hero_new_housekeeping_animate {
+  opacity: 0;
+  transform: translateX(100px); /* start off to the right */
+  transition: all 0.8s ease-out;
+}
+
+/* Visible state when in viewport */
+.hero_new_housekeeping_animate.hero_new_animate_in {
+  opacity: 1;
+  transform: translateX(0);
 }
   </style>
   <!-- Hero Section -->
@@ -151,7 +270,7 @@ border:2px solid white;
         </div>
       </div>
     </div>
-    <div class="row hero_third_row">
+    <div class="row hero_third_row hero_new_animate_on_scroll">
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="hero_third_left_content_box">
           <p>Experience spotless living with tailored cleaning and housekeeping services that bring ease, comfort, and style to your home.</p>
@@ -164,7 +283,7 @@ border:2px solid white;
         </div>
       </div>
     </div>
-    <div class="row hero_fourth_row">
+    <div class="row hero_fourth_row hero_new_animate_on_scroll">
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="hero_main_house_cleaning_box">
           <div class="hero_main_house_cleaning_img_box">
@@ -198,33 +317,44 @@ border:2px solid white;
         </div>
       </div>
     </div>
+    <div class="row hero_fifth_row hero_new_animate_on_scroll">
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="hero_across_the_uk_box">
+          <h2>
+            Trusted by Homes Across the UK
+          </h2>
+        </div>
+      </div>
+    </div>
    </div>
   </section>
 
 
   <section class="INDIANA-GREEN-main-frame">
-	 <div class="container">
-    <div class="image-stack">
-      <img src="<?php echo base_url() ?>public/assets/img/Rectangle-29.png" alt="Indiana Green">
-      <img src="<?php echo base_url() ?>public/assets/img/Rectangle-31.png" alt="Indiana Green" class="top">
+    <div class="container">
+      <div class="image-stack">
+        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-29.png" alt="Indiana Green">
+        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-31.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
+      </div>
+      <div class="content">
+        <h1>INDIANA GREEN</h1>
+        <h2>I didn't always possess expert<br/> housekeeping knowledge.</h2>
+        <p>Indiana Greene began her journey with a simple belief - that a clean home is more than a routine; it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
+        <button>Explore More</button>
+      </div>
     </div>
-    <div class="content">
-      <h1>INDIANA GREEN</h1>
-      <h2>I didn't always possess expert<br/> housekeeping knowledge.</h2>
-      <p>Indiana Greene began her journey with a simple belief - that a clean home is more than a routine; it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
-      <button>Explore More</button>
-    </div>
-  </div>
   </section>
+
+
 <section class="Housekeeping-Companions-frame">
 	 <div class="container">
 	<div class="housekeeping-companions">
     <h2 class="home-heading">Services That Shine</h2>
-    <div class="products-grid">
+    <div class="products-grid product_home_grip_new_side">
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/Rectangle-9.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="<?php echo base_url() ?>public/assets/img/new/stsn2.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>Apartments/ <br/>Flats</h3>
                 </div>
@@ -232,7 +362,7 @@ border:2px solid white;
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/Rectangle-10.png" alt="Washing Up Pad">
+            <img src="<?php echo base_url() ?>public/assets/img/new/stsn1.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>House/ <br/>Villas</h3>
                 
@@ -241,7 +371,7 @@ border:2px solid white;
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/Rectangle-9.png" alt="Window Cleaning 2-Pack">
+            <img src="<?php echo base_url() ?>public/assets/img/new/stsn3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
                 <h3>Student <br/>Accommodation</h3>
                  </div>
@@ -249,9 +379,17 @@ border:2px solid white;
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/Rectangle-10.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>public/assets/img/new/stsn4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Office <br/>Space</h3>
+               
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/stsn5.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Airbnb/ <br/>Holiday Let</h3>
                
             </div>
         </div>
@@ -267,8 +405,8 @@ border:2px solid white;
 		
     <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-13.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-14.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>public/assets/img/new/llc1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>public/assets/img/new/llc2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
         <h4>Laundry & <br>Linen Care</h4>
@@ -277,11 +415,31 @@ border:2px solid white;
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-13.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-14.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>public/assets/img/new/who1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>public/assets/img/new/who2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
-        <h4>Laundry & <br>Linen Care</h4>
+        <h4>Wardrobe & <br>Home <br> Organization</h4>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+	  <div class="Home-Organization-frame-middle-frame-sc">
+      <div class="images">
+        <img src="<?php echo base_url() ?>public/assets/img/new/du1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>public/assets/img/new/du2.png" class="small" alt="Linen care small">
+      </div>
+      <div class="text">
+        <h4>Daily <br> Upkeep</h4>
+        <a href="#" class="btn">Book Now</a>
+      </div>
+    </div>
+	  <div class="Home-Organization-frame-middle-frame-sc">
+      <div class="images">
+        <img src="<?php echo base_url() ?>public/assets/img/new/sop1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>public/assets/img/new/sop2.png" class="small" alt="Linen care small">
+      </div>
+      <div class="text">
+        <h4>Special <br> Occasion  <br> Prep</h4>
         <a href="#" class="btn">Book Now</a>
       </div>
     </div>
@@ -306,45 +464,57 @@ border:2px solid white;
 	 <div class="container">
 	<div class="housekeeping-companions">
     <h2 class="home-heading">Housekeeping Companions</h2>
-    <div class="products-grid">
+    <div class="products-grid hero_new_housekeeping_animate">
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/product-1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>5 Housekeeping Tips for Joyful Living Book</h3>
                 <p>£4.99</p>
-                <a href="/products/5-housekeeping-tips-book" class="btn">Buy Now</a>
+                <a href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank" class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/product-2.png" alt="Washing Up Pad">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc2.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>Washing Up Pad</h3>
                 <p>£3.00</p>
-                <a href="/products/washing-up-pad" class="btn">Buy Now</a>
+                <a href="https://uk.e-cloth.com/products/wup-washing-up-pad" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/product-2.png" alt="Window Cleaning 2-Pack">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
-                <h3>Window Cleaning 2-Pack</h3>
+                <h3>Window Cleaning 
+2-Pack</h3>
                 <p>£9.50</p>
-                <a href="/products/window-cleaning-pack" class="btn">Buy Now</a>
+                <a href="https://uk.e-cloth.com/products/wip-window-cleaning-pack" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/product-1.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
-                <h3>Replacement Head for Deep Clean Mop</h3>
+                <h3>Replacement Head for Deep Clean 
+Mop</h3>
                 <p>£6.99</p>
-                <a href="/products/mop-replacement-head" class="btn">Buy Now</a>
+                <a href="https://uk.e-cloth.com/products/dch-deep-clean-mop-head" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        <!-- Product 5-->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>General
+Purpose Cloth</h3>
+                <p>£4.00</p>
+                <a href="https://uk.e-cloth.com/products/gpi-general-purpose-cloth"  target="_blank"   class="btn">Buy Now</a>
             </div>
         </div>
 
@@ -384,3 +554,105 @@ border:2px solid white;
   <?php
   include('footer.php');
   ?>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const animatedRows = document.querySelectorAll(".hero_new_animate_on_scroll");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("hero_new_animate_up");
+            observer.unobserve(entry.target); // run only once
+          }
+        });
+      },
+      { threshold: 0.2 } // trigger when 20% is visible
+    );
+
+    animatedRows.forEach(row => observer.observe(row));
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const imgAnimate = document.querySelectorAll(".hero_new_home_about_img_animate");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("hero_new_animate_up");
+            observer.unobserve(entry.target); // animate only once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    imgAnimate.forEach(img => observer.observe(img));
+  });
+</script>
+<script>
+// Observe when section enters viewport
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".product_home_grip_new_side");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("animate");
+          observer.unobserve(section); // run only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  if (section) {
+    observer.observe(section);
+  }
+});
+</script>
+
+<script>
+// Animate on scroll using IntersectionObserver
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".Home-Organization-frame-middle");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("animate");
+          observer.unobserve(section); // Animate only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  if (section) {
+    observer.observe(section);
+  }
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".hero_new_housekeeping_animate");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("hero_new_animate_in");
+          observer.unobserve(section); // animate only once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(section);
+});
+</script>

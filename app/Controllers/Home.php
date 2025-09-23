@@ -51,6 +51,10 @@ class Home extends BaseController
         return view('registration');
     }
 
+    // for thankyou page 
+    public function Thankyou(){
+        return view('thankyou');
+    }
 
 
 

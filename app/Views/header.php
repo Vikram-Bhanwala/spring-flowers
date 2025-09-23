@@ -155,16 +155,19 @@
 .social_box img{
   height:40px
 }
+.Housekeeping-Companions-frame{
+  overflow:hidden !important
+}
 </style>
 
 	<!-- Header -->
   <header>
     <div class="logo">
-      <img src="<?php echo base_url() ?>public/assets/img/logo.png" alt="Clean Springflowers Logo">
+      <a href="<?php echo base_url()?>"><img src="<?php echo base_url() ?>public/assets/img/logo.png" alt="Clean Springflowers Logo"></a>
     </div>
 
     <nav id="nav-menu">
-      <a href="<?php echo base_url()?>house-cleaning">House Cleaning</a>
+      <a href="<?php echo base_url()?>select-property-type">House Cleaning</a>
       <a href="<?php echo base_url()?>select-keeper-type">House Keeping</a>
       <a href="<?php echo base_url()?>our-story">Our Story</a>
       <a href="<?php echo base_url()?>shop">Shop</a>

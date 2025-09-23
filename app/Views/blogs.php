@@ -137,6 +137,21 @@ include('header.php');
 .blog_regular_row{
     margin-top:40px 
 }
+.blogs_main_head_box,
+.blog_main_big_blog_box,
+.blogs_regular_box {
+  opacity: 0;
+  transform: translateY(50px); /* Start shifted downward */
+  transition: all 0.8s ease-out;
+}
+
+/* Animate in when visible */
+.blogs_main_head_box.animate,
+.blog_main_big_blog_box.animate,
+.blogs_regular_box.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
 
 <!-- blogs bannwer sec -->
@@ -244,4 +259,30 @@ include('footer.php');
   });
 });
 
+</script>
+
+
+<script>
+// Animate blog elements on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".blogs_main_head_box, .blog_main_big_blog_box, .blogs_regular_box"
+  );
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add("animate");
+          }, index * 150); // stagger effect
+          observer.unobserve(entry.target); // animate only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  elements.forEach(el => observer.observe(el));
+});
 </script>

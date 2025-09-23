@@ -1,7 +1,23 @@
 <?php
 include('header.php');
 ?>
+<style>
+    .slect_property_type_box img{
+        height:250px;
+        object-fit:cover
+    }
+    .slect_property_type_column {
+  opacity: 0;
+  transform: translateY(50px); /* Start shifted downward */
+  transition: all 0.8s ease-out;
+}
 
+/* Animate in when visible */
+.slect_property_type_column.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
 
 
   
@@ -33,7 +49,7 @@ include('header.php');
         <div class="row">
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp1.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -47,7 +63,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp2.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -61,7 +77,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp3.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -75,7 +91,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp4.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -89,7 +105,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp5.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -103,7 +119,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="https://oxyhom.com/_next/image?url=https%3A%2F%2Foxyhomprod.s3.ap-south-1.amazonaws.com%2Fpublic%2Fprojects%2Ffeatured-images%2F1748682465548-bptp-amstoria-country-floor-project-project-large-image1-2852.jpg&w=3840&q=75" alt="">
+                    <img src="<?php echo base_url()?>public/assets/img/new/sp6.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -123,3 +139,26 @@ include('header.php');
 <?php
 include('footer.php');
 ?>
+
+<script>
+// Animate columns on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const columns = document.querySelectorAll(".slect_property_type_column");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add("animate");
+          }, index * 150); // Stagger effect
+          observer.unobserve(entry.target); // Animate only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  columns.forEach(column => observer.observe(column));
+});
+</script>

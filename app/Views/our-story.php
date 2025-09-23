@@ -176,7 +176,42 @@ padding:100px 0px;
     color: black !important;
     font-weight: 500 !important;
 }
+.why_we_started_img_box img {
+  opacity: 0;
+  transform: translateY(200px); /* Start shifted downward */
+  transition: all 0.8s ease-out;
+}
 
+/* Animate in when visible */
+.why_we_started_img_box img.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial hidden state */
+.hero_new_animate_on_scroll {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+/* Visible state */
+.hero_new_animate_on_scroll.hero_new_animate_up {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Initial hidden state */
+.hero_new_home_about_img_animate {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+/* Active state */
+.hero_new_home_about_img_animate.hero_new_animate_up {
+  opacity: 1;
+  transform: translateY(0);
+}
 </style>
 <!-- our story banenr sec -->
 <section class="our_story_banner_sec">
@@ -257,7 +292,7 @@ padding:100px 0px;
 	 <div class="container">
     <div class="image-stack">
       <img src="<?php echo base_url() ?>public/assets/img/new/dom.png" alt="Indiana Green">
-      <img src="<?php echo base_url() ?>public/assets/img/new/dom2.png" alt="Indiana Green" class="top">
+      <img src="<?php echo base_url() ?>public/assets/img/new/dom2.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
     </div>
     <div class="content">
       <h2>I’m Indiana, your go-to guru for all things housekeeping, from Professional Housekeeping Services, lifestyle, and luxury living.</h2>
@@ -335,4 +370,48 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+</script>
+
+<script>
+// Animate the image on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const img = document.querySelector(".why_we_started_img_box img");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate");
+          observer.unobserve(entry.target); // Animate only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  if (img) {
+    observer.observe(img);
+  }
+});
+</script>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const imgAnimate = document.querySelectorAll(".hero_new_home_about_img_animate");
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("hero_new_animate_up");
+            observer.unobserve(entry.target); // animate only once
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    imgAnimate.forEach(img => observer.observe(img));
+  });
 </script>

@@ -1,31 +1,68 @@
 
 
-
+<style>
+  .footer_new_box{
+    width:40% !important;
+    display:flex;
+    justify-content:space-between
+ }
+ .footer_column{
+  width:30%
+ }
+ .footer_column ul{
+  list-style-type:none
+ }
+ .footer_column a{
+  color:white;
+  text-decoration:none;
+  font-size:15px
+ }
+ .footer_column li{
+  margin:10px 0px;
+ }
+ .contact_side_btn_footer {
+    color: white;
+    background: #ff000000;
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+}
+</style>
   <footer>
 	 <!-- Hero Section -->
   <div class="hero">
-    <!-- Navigation -->
-    <nav>
-      <a href="<?php echo base_url()?>">Home</a>
-      <a href="<?php echo base_url()?>shop">Shop</a>
-      <a href="<?php echo base_url()?>our-story">Our Story</a>
-      <a href="<?php echo base_url()?>blogs">Blogs</a>
-      <a href="<?php echo base_url()?>select-keeper-type">House Keeping</a>
-      <a href="<?php echo base_url()?>/select-property-type">House Cleaning</a>
-      <a href="<?php echo base_url()?>join-us">Join Us</a>
-      <a href="<?php echo base_url()?>">Contact</a>
-      <a href="<?php echo base_url()?>privacy-policy">Privacy Policy</a>
-    </nav>
-
+    <div class="footer_new_box">
+      <div class="footer_column">
+        <ul>
+          <li><a href="<?php echo base_url()?>">Home</a></li>
+          <li><a href="<?php echo base_url()?>shop">Shop</a></li>
+          <li><a href="<?php echo base_url()?>our-story">Our Story</a></li>
+          <li><a href="<?php echo base_url()?>blogs">Blogs</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li><a href="<?php echo base_url()?>select-keeper-type">House Keeping</a></li>
+          <li> <a href="<?php echo base_url()?>/select-property-type">House Cleaning</a></li>
+          <li><a href="<?php echo base_url()?>join-us">Join Us</a></li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <ul>
+          <li><button id="contact_form_side_open_btn" class="contact_side_btn contact_side_btn_footer">Contact</button></li>
+          <li><a href="<?php echo base_url()?>privacy-policy">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Centered Text -->
     <div class="center-text">CLEAN</div>
   </div>
   <!-- Social Media Icons -->
   <div class="social-icons">
-    <a href="#"><i class="fab fa-whatsapp"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
+    <a href="https://wa.me/447923639015" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/indithehomeguru/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100058949541919" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@IndianaGreeneHomeGuru" target="_blank"><i class="fab fa-youtube"></i></a>
   </div>
 
   <!-- Footer -->
@@ -72,3 +109,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
+

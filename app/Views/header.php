@@ -158,6 +158,11 @@
 .Housekeeping-Companions-frame{
   overflow:hidden !important
 }
+.subscribe-box-main .subscribe-box input {
+    border-bottom: 1px solid black;
+}
+
+
 </style>
 
 	<!-- Header -->
@@ -175,7 +180,7 @@
       <a href="<?php echo base_url()?>join-us">Join Us</a>
     </nav>
 
-    <button class="connect-btn"  id="contact_form_side_open_btn">Connect With Us</button>
+    <button class="connect-btn contact_side_btn"  id="contact_form_side_open_btn">Connect With Us</button>
 
     <!-- Hamburger -->
     <div class="hamburger" id="hamburger">&#9776;</div>
@@ -246,22 +251,22 @@
                       <div class="social_box">
                         <ul>
                           <li>
-                              <a href="#">
+                              <a href="https://wa.me/447923639015" target="_blank">
                                 <img src="<?php echo base_url()?>public/assets/img/new/wp.svg" alt="">
                               </a>
                           </li>
                           <li>
-                              <a href="#">
+                              <a href="https://www.instagram.com/indithehomeguru/" target="_blank">
                                 <img src="<?php echo base_url()?>public/assets/img/new/ig.svg" alt="">
                               </a>
                           </li>
                           <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/profile.php?id=100058949541919" target="_blank">
                                 <img src="<?php echo base_url()?>public/assets/img/new/fb.svg" alt="">
                               </a>
                           </li>
                           <li>
-                              <a href="#">
+                              <a href="https://www.youtube.com/@IndianaGreeneHomeGuru" target="_blank">
                                 <img src="<?php echo base_url()?>public/assets/img/new/youtube.svg" alt="">
                               </a>
                           </li>
@@ -277,17 +282,18 @@
     </div>
   </div>
 </section>
-
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  const openBtn = document.getElementById("contact_form_side_open_btn");
+  const openBtns = document.querySelectorAll(".contact_side_btn"); // all buttons with class
   const overlay = document.getElementById("contact_form_side_overlay");
   const panel = document.getElementById("contact_form_side_panel");
   const closeBtn = document.getElementById("contact_form_side_close");
 
-  openBtn.addEventListener("click", () => {
-    overlay.classList.add("active");
-    panel.classList.add("active");
+  openBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      overlay.classList.add("active");
+      panel.classList.add("active");
+    });
   });
 
   closeBtn.addEventListener("click", () => {

@@ -1,118 +1,110 @@
 <?php
-include('header.php');
-?>
+   include('header.php');
+   ?>
 <style>
-    .join_us_sec{
-        padding:60px 0px;
-    }
-    .join_us_head_box h2{
-        
-    font-family:IvyOraDisplay-Regular;
-    margin-bottom:10px;
-    text-align:center
-    }
-    .join_us_head_box p{
-        text-align:center;
-        margin-bottom:30px
-    }
-    .join_us_box img{
-        width: 100% !important  ;
-    }
-    .join_us_box {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-.join_us_box img {
-  width: 100%;
-  display: block;
-}
-
-.join_us_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3); /* black overlay */
-  display: flex;
-  align-items: flex-end; /* push content to bottom */
-  padding: 20px;
-}
-
-.join_us_content {
-  color: #fff;
-  text-align: left;
-}
-
-.join_us_content h3 {
-  margin: 0 0 5px 0;
-  font-size: 50px;
-  font-weight: 100;
-    font-family:IvyOraDisplay-Regular;
-}
-.jon_row{
-    display:flex;
-    justify-content:center
-}
+   .join_us_sec{
+   padding:60px 0px;
+   }
+   .join_us_head_box h2{
+   font-family:IvyOraDisplay-Regular;
+   margin-bottom:10px;
+   text-align:center
+   }
+   .join_us_head_box p{
+   text-align:center;
+   margin-bottom:30px
+   }
+   .join_us_box img{
+   width: 100% !important  ;
+   }
+   .join_us_box {
+   position: relative;
+   overflow: hidden;
+   display: inline-block;
+   width: 100%;
+   }
+   .join_us_box img {
+   width: 100%;
+   display: block;
+   }
+   .join_us_overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0,0,0,0.3); /* black overlay */
+   display: flex;
+   align-items: flex-end; /* push content to bottom */
+   padding: 20px;
+   }
+   .join_us_content {
+   color: #fff;
+   text-align: left;
+   }
+   .join_us_content h3 {
+   margin: 0 0 5px 0;
+   font-size: 50px;
+   font-weight: 100;
+   font-family:IvyOraDisplay-Regular;
+   }
+   .jon_row{
+   display:flex;
+   justify-content:center
+   }
 </style>
-
-  <section class="top_black_line_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="line-with-dots" aria-hidden="true">
-                    <span class="dot left"></span>
-                    <span class="dot center"></span>
-                    <span class="dot right"></span>
-                </div>
+<section class="top_black_line_sec">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="line-with-dots" aria-hidden="true">
+               <span class="dot left"></span>
+               <span class="dot center"></span>
+               <span class="dot right"></span>
             </div>
-        </div>
-    </div>
-  </section>
-
+         </div>
+      </div>
+   </div>
+</section>
 <!-- join us section -->
 <section class="join_us_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="join_us_head_box">
-                    <h2>Join Us</h2>
-                    <p>Pick the job that matches your needs</p>
-                </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="join_us_head_box">
+               <h2>Join Us</h2>
+               <p>Pick the job that matches your needs</p>
             </div>
+         </div>
+      </div>
+      <div class="row jon_row">
+         <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="join_us_box">
+                <a href="<?php echo base_url()?>register">
+               <img src="public/assets/img/new/jon1.jpg" alt="">
+               <div class="join_us_overlay">
+                  <div class="join_us_content">
+                     <h3>House Cleaning</h3>
+                  </div>
+               </div>
+               </a>
             </div>
-            <div class="row jon_row">
-            <div class="col-lg-5 col-md-6 col-sm-12">
-               <div class="join_us_box">
-                        <img src="public/assets/img/new/jon1.jpg" alt="">
-                    <div class="join_us_overlay">
-                        <div class="join_us_content">
-                        <h3>House Cleaning</h3>
-                        </div>
-                    </div>
-                </div>
-
+         </div>
+         <div class="col-lg-5 col-md-6 col-sm-12">
+            <div class="join_us_box">
+                <a href="<?php echo base_url()?>register">
+               <img src="public/assets/img/new/jon2.jpg" alt="">
+               <div class="join_us_overlay">
+                  <div class="join_us_content">
+                     <h3>House Keeping</h3>
+                  </div>
+               </div>
+            </a>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-12">
-               <div class="join_us_box">
-                        <img src="public/assets/img/new/jon2.jpg" alt="">
-                    <div class="join_us_overlay">
-                        <div class="join_us_content">
-                        <h3>House Keeping</h3>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+         </div>
+      </div>
+   </div>
 </section>
-
-
-
 <?php
-include('footer.php');
-?>
+   include('footer.php');
+   ?>

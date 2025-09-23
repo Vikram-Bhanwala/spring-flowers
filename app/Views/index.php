@@ -224,10 +224,20 @@ border:2px solid white;
   opacity: 1;
   transform: translateX(0);
 }
+.btn_explre{
+    padding: 5px 20px;
+    background: white;
+    border: 2px solid black;
+    color: black !important;
+    text-decoration: none !important;
+}
+.subscribe-box-main .subscribe-box input {
+    border-bottom: 1px solid black;
+}
   </style>
   <!-- Hero Section -->
   <section class="hero top">
-    <!--<img src="<?php echo base_url() ?>public/assets/img/banner.png" alt="Cleaning Service">-->
+    <!--<img src="<?php echo base_url()?>public/assets/img/banner.png" alt="Cleaning Service">-->
     <h1>
       <span>C</span>
       <span>L</span>
@@ -291,7 +301,7 @@ border:2px solid white;
             <div class="hero_main_house_cleaning_overlay">
               <div class="hero_main_house_cleaning_text">
                 <h2>We clean , you relax</h2>
-                <a href="#">Explore</a>
+                <a href="<?php echo base_url()?>select-property-type">Explore</a>
               </div>
             </div>
           </div>
@@ -307,7 +317,7 @@ border:2px solid white;
             <div class="hero_main_house_cleaning_overlay">
               <div class="hero_main_house_cleaning_text">
                 <h2>We clean , you relax</h2>
-                <a href="#">Explore</a>
+                <a href="<?php echo base_url()?>select-keeper-type">Explore</a>
               </div>
             </div>
           </div>
@@ -340,7 +350,7 @@ border:2px solid white;
         <h1>INDIANA GREEN</h1>
         <h2>I didn't always possess expert<br/> housekeeping knowledge.</h2>
         <p>Indiana Greene began her journey with a simple belief - that a clean home is more than a routine; it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
-        <button>Explore More</button>
+        <a class="btn_explre" href="<?php echo base_url()?>our-story">Explore More</a>
       </div>
     </div>
   </section>
@@ -410,7 +420,7 @@ border:2px solid white;
       </div>
       <div class="text">
         <h4>Laundry & <br>Linen Care</h4>
-        <a href="#" class="btn">Book Now</a>
+        <a href="<?php echo base_url()?>select-keeper-type" class="btn">Book Now</a>
       </div>
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
@@ -420,7 +430,7 @@ border:2px solid white;
       </div>
       <div class="text">
         <h4>Wardrobe & <br>Home <br> Organization</h4>
-        <a href="#" class="btn">Book Now</a>
+        <a href="<?php echo base_url()?>select-keeper-type" class="btn">Book Now</a>
       </div>
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
@@ -430,7 +440,7 @@ border:2px solid white;
       </div>
       <div class="text">
         <h4>Daily <br> Upkeep</h4>
-        <a href="#" class="btn">Book Now</a>
+        <a href="<?php echo base_url()?>select-keeper-type" class="btn">Book Now</a>
       </div>
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
@@ -440,7 +450,7 @@ border:2px solid white;
       </div>
       <div class="text">
         <h4>Special <br> Occasion  <br> Prep</h4>
-        <a href="#" class="btn">Book Now</a>
+        <a href="<?php echo base_url()?>select-keeper-type" class="btn">Book Now</a>
       </div>
     </div>
   
@@ -456,7 +466,7 @@ border:2px solid white;
         From a simple vision of helping homes shine to becoming a trusted 
         name in premium housekeeping across the UK.
       </p>
-      <button>Explore Services</button>
+      <a class="btn_explre" href="<?php echo base_url()?>our-story">Explore Services</a>
     </div>
   </section>
 
@@ -534,7 +544,7 @@ Purpose Cloth</h3>
       <h1>I’m Indiana, your go-to guru for all things housekeeping, from Professional Housekeeping Services, lifestyle, and luxury living.</h1>
       
       <p>Join me on this journey to discover the five guiding principles of housekeeping that will not only bring order and beauty into your home but also nurture your soul.</p>
-      <button>Explore</button>
+      <a class="btn_explre" target="_blank" href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8">Explore</a>
     </div>
   </div>
   </section>

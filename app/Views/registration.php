@@ -175,19 +175,18 @@ include('header.php');
 }
 </style>
 
-  <section class="top_black_line_sec">
+  
+ <section class="top_time_line_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="line-with-dots" aria-hidden="true">
-                    <span class="dot left"></span>
-                    <span class="dot center"></span>
-                    <span class="dot right"></span>
+                <div class="time_line_box">
+                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-2dot.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-  </section>
+</section>
 
 <!-- registration form sec -->
 <section class="register_form_main_sec">

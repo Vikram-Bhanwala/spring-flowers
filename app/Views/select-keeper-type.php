@@ -17,19 +17,18 @@ include('header.php');
 }
 </style>
 
-  <section class="top_black_line_sec">
+ <section class="top_time_line_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="line-with-dots" aria-hidden="true">
-                    <span class="dot left"></span>
-                    <span class="dot center"></span>
-                    <span class="dot right"></span>
+                <div class="time_line_box">
+                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-1dot.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-  </section>
+</section>
+
 
 <section class="slect_property_type_sec">
     <div class="container">
@@ -43,6 +42,7 @@ include('header.php');
         </div>
         <div class="row">
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk1.jpg" alt="">
                     
@@ -55,8 +55,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 24/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk2.jpg" alt="">
                     
@@ -69,8 +71,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 25/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk3.jpg" alt="">
                     
@@ -83,8 +87,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 26/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk4.jpg" alt="">
                     
@@ -97,8 +103,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 25/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk5.jpg" alt="">
                     
@@ -111,8 +119,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 26/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk6.jpg" alt="">
                     
@@ -125,8 +135,10 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 28/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
+                <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
                     <img src="<?php echo base_url()?>public/assets/img/new/sk7.jpg" alt="">
                     
@@ -139,6 +151,7 @@ include('header.php');
                         <p><span class="pound_siggn">£</span> 30/Hour</p>
                     </div>
                 </div>
+                </a>
             </div>
         </div>
     </div>

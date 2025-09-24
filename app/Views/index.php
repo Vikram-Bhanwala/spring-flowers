@@ -6,9 +6,10 @@
     .bner_home_new_bnt{
       padding:10px 50px;
       background:transparent;
-      color:white;
+      color:white !important;
       border:1px solid white;
-      margin-top:20px
+      margin-top:20px;
+      text-decoration:none !important
     }
     .animate_on_scroll_hero_main_icon{
       margin-bottom:70px;
@@ -66,7 +67,8 @@
 margin-bottom:20px
 }
 .hero_main_house_cleaning_text a{
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.49);
+/* border-radius: 16px; */
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
 -webkit-backdrop-filter: blur(5px);
@@ -234,6 +236,16 @@ border:2px solid white;
 .subscribe-box-main .subscribe-box input {
     border-bottom: 1px solid black;
 }
+
+.Home-Organization-frame-middle-frame-sc {
+    flex: 0 0 50% !important;
+    min-width: 300px !important;
+    scroll-snap-align: start !important;
+ height: 600px !important;           /* natural height based on content */
+    align-self: flex-start !important; /* prevent flexbox from stretching */
+    overflow: visible !important;  
+}
+
   </style>
   <!-- Hero Section -->
   <section class="hero top">
@@ -284,7 +296,7 @@ border:2px solid white;
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="hero_third_left_content_box">
           <p>Experience spotless living with tailored cleaning and housekeeping services that bring ease, comfort, and style to your home.</p>
-          <button class="bner_home_new_bnt">Book a Service</button>
+          <a href="<?php echo base_url()?>book-service" class="bner_home_new_bnt">Book a Service</a>
         </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-12">

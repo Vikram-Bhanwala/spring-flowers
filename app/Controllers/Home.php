@@ -56,6 +56,20 @@ class Home extends BaseController
         return view('thankyou');
     }
 
+    // for book a service page 
+    public function BookServiceView(){
+        return view('book-a-service');
+    }
+
+    // for keeper form 
+    public function KeeperFormView(){
+        return view('keeper-form');
+    }
+    // for keeper thankyou page 
+    public function KeeperThankView(){
+        return view('keeper-thankyou');
+    }
+
 
 
 

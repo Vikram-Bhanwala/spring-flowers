@@ -10,7 +10,7 @@ include('header.php');
     }
     .thankyou_main_img_box img{
         width: 100% !important;
-        height:450px;
+        height:300px;
         object-fit:cover;
         object-position:top center
     }
@@ -100,18 +100,44 @@ include('header.php');
   cursor: pointer;
   transition: background 0.3s;
 }
- .thankyou_main_cont_box h6{
-    font-weight: 600;
-    margin-bottom: 30px;
+
+
+
+.products-grid {
+  display: flex !important;
+  overflow-x: auto;          /* enables horizontal scroll */
+  scroll-snap-type: x mandatory; /* smooth snap effect */
+  gap: 20px !important;                 /* spacing between cards */
+  -webkit-overflow-scrolling: touch; /* smooth on mobile */
+  padding-bottom: 10px;
+  flex-wrap:nowrap !important
 }
-.thankyou_main_cont_box p{
-    margin-bottom:60px
+
+.product-card {
+  flex: 0 0 25%;             /* 4 visible per row (100/4 = 25%) */
+  scroll-snap-align: start;  /* snap each card nicely */
 }
-.thankyou_main_cont_box a{
-    color:black !important;
-    text-decoration:none !important
+.products-grid::-webkit-scrollbar {
+  display: none !important; /* Chrome, Safari, Opera */
+}
+.product_home_grip_new_side {
+  opacity: 0;
+  transform: translateX(100px); /* Start shifted to right */
+  transition: all 1s ease-out;
+}
+
+/* When in view */
+.product_home_grip_new_side.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.housekeeping-companions .product-card img{
+  height:350px !important;
+  object-fit:cover
 }
 </style>
+
 
 <section class="top_time_line_sec">
     <div class="container">
@@ -124,7 +150,6 @@ include('header.php');
         </div>
     </div>
 </section>
-
 <!-- thankyou -->
 <section class="thankyou_main_sec">
     <div class="container">
@@ -136,9 +161,7 @@ include('header.php');
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_cont_box">
-                    <h2>We truly appreciate your interest in helping us make spaces sparkle.</h2>
-                    <h6>Your application has been received, and we’re excited to learn more about you.</h6>
-                    <p>We'll be in touch soon if your qualifications match our current opportunities.</p>
+                    <h2>Thank you for trusting us to make your space sparkle</h2>
                     <a href="<?php echo base_url()?>" class="cont_btn">Continue</a>
                 </div>
             </div>
@@ -147,7 +170,7 @@ include('header.php');
 </section>
 
 <!-- house keeping campoins -->
-<section class="house_keeeping_compains_sec">
+<!-- <section class="house_keeeping_compains_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -215,10 +238,120 @@ include('header.php');
             </div>
         </div>
     </div>
-</section>
+</section> -->
+
+
+
+
+  <section class="Housekeeping-Companions-frame">
+	 <div class="container">
+	<div class="housekeeping-companions">
+    <h2 class="home-heading">Housekeeping Companions</h2>
+    <div class="products-grid hero_new_housekeeping_animate">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <div class="product-info">
+                <h3>5 Housekeeping Tips for Joyful Living Book</h3>
+                <p>£4.99</p>
+                <a href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank" class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc2.png" alt="Washing Up Pad">
+            <div class="product-info">
+                <h3>Washing Up Pad</h3>
+                <p>£3.00</p>
+                <a href="https://uk.e-cloth.com/products/wup-washing-up-pad" target="_blank"  class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
+            <div class="product-info">
+                <h3>Window Cleaning 
+2-Pack</h3>
+                <p>£9.50</p>
+                <a href="https://uk.e-cloth.com/products/wip-window-cleaning-pack" target="_blank"  class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Replacement Head for Deep Clean 
+Mop</h3>
+                <p>£6.99</p>
+                <a href="https://uk.e-cloth.com/products/dch-deep-clean-mop-head" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        <!-- Product 5-->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>public/assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>General
+Purpose Cloth</h3>
+                <p>£4.00</p>
+                <a href="https://uk.e-cloth.com/products/gpi-general-purpose-cloth"  target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+  </section>
 
 
 
 <?php
 include('footer.php');
 ?>
+
+
+<script>
+// Observe when section enters viewport
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".product_home_grip_new_side");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("animate");
+          observer.unobserve(section); // run only once
+        }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% visible
+  );
+
+  if (section) {
+    observer.observe(section);
+  }
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const section = document.querySelector(".hero_new_housekeeping_animate");
+
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("hero_new_animate_in");
+          observer.unobserve(section); // animate only once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(section);
+});
+</script>

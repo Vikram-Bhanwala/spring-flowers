@@ -29,7 +29,7 @@
   opacity: 0; */
   visibility: hidden;
   transition: all 0.3s ease;
-  z-index: 998;
+  z-index: 99998;
   background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);

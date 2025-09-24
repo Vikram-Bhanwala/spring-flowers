@@ -54,27 +54,14 @@
    }
 </style>
 
-
-
- <section class="top_time_line_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-1dot.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- join us section -->
 <section class="join_us_sec">
    <div class="container">
       <div class="row">
          <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="join_us_head_box">
-               <h2>Join Us</h2>
-               <p>Pick the job that matches your needs</p>
+               <h2>Book A Service</h2>
+               <p>Pick the property that matches your needs</p>
             </div>
          </div>
       </div>

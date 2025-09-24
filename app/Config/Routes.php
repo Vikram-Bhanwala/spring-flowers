@@ -16,3 +16,6 @@ $routes->get('shop','Home::ShopView');
 $routes->get('find-a-job','Home::JoinView');
 $routes->get('register','Home::RegisterView');
 $routes->get('thankyou','Home::Thankyou');
+$routes->get('book-service','Home::BookServiceView');
+$routes->get('keeper-form','Home::KeeperFormView');
+$routes->get('keeper-thankyou','Home::KeeperThankView');

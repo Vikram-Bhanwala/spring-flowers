@@ -44,7 +44,7 @@
         <ul>
           <li><a href="<?php echo base_url()?>select-keeper-type">House Keeping</a></li>
           <li> <a href="<?php echo base_url()?>/select-property-type">House Cleaning</a></li>
-          <li><a href="<?php echo base_url()?>join-us">Join Us</a></li>
+          <li><a href="<?php echo base_url()?>find-a-job">Join Us</a></li>
         </ul>
       </div>
       <div class="footer_column">

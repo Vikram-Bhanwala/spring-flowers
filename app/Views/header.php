@@ -177,7 +177,7 @@
       <a href="<?php echo base_url()?>our-story">Our Story</a>
       <a href="<?php echo base_url()?>shop">Shop</a>
       <a href="<?php echo base_url()?>blogs">Blogs</a>
-      <a href="<?php echo base_url()?>join-us">Join Us</a>
+      <a href="<?php echo base_url()?>find-a-job">Find a Job</a>
     </nav>
 
     <button class="connect-btn contact_side_btn"  id="contact_form_side_open_btn">Connect With Us</button>

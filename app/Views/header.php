@@ -202,48 +202,50 @@
           <!-- Your Form -->
           <div class="contact_form_side_form_box">
               <div class="contact_side_akshay_main_box">
-                <form action="#">
+                <form action="<?php echo base_url()?>contact-function" method="post">
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Name</label>
-                        <input type="text" placeholder="Enter Your Name">
+                        <input type="text" placeholder="Enter Your Name" name="name" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="Enter Phone Number">
+                        <input type="text" placeholder="Enter Phone Number" name="phone" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Email Address</label>
-                        <input type="text" placeholder="Enter Email Address">
+                        <input type="text" placeholder="Enter Email Address" name="email" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Service</label>
-                        <select name="" id="">
+                        <select name="service" id=""  required>
                           <option value="">Select a Service</option>
-                          <option value="">option 1</option>
-                          <option value="">option 2</option>
-                          <option value="">option 3</option>
-                          <option value="">option 4</option>
-                          <option value="">option 5</option>
+                          <option value="House Keeping">House Keeping </option>
+                          <option value="House Cleaning">House Keeping </option>
                         </select>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Message</label>
-                        <textarea name="" id="" plaecholder="Enter Message.."></textarea>
+                        <textarea name="message" id="" plaecholder="Enter Message.." ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <button class="contact_lets_conect_btn">Let’s Connect</button>
+                      </div>
+                    </div>
+                </form>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <div class="contact_side_akshay_main_input_box">
                         <button class="contact_cancel_btn"  id="contact_form_side_close">Cancel</button>
                       </div>
                     </div>
@@ -274,7 +276,6 @@
                       </div>
                     </div>
                   </div>
-                </form>
               </div>           
           </div>
         </div>

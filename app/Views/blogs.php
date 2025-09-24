@@ -242,7 +242,7 @@ include('header.php');
 
   <div class="subscribe-box">
     <input type="email" placeholder="Enter Email">
-    <button>➜</button>
+    <button><img src="<?php echo base_url()?>public/assets/img/new/right-news.png" alt=""></button>
   </div>
   </section>
 

@@ -70,6 +70,18 @@ class Home extends BaseController
         return view('keeper-thankyou');
     }
 
+    // for blog 1 
+    public function BlogOneView(){
+        return view('blog-1');
+    }
+    // for second blog 
+    public function BlogTwoNew(){
+        return view('blog-2');
+    }
+    // for third blog 
+    public function BlogThreeNew(){
+        return view('blog-3');
+    }
 
 
 

@@ -183,7 +183,7 @@ include('header.php');
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="blog_main_big_blog_box">
                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
-                    <h3><a href="#">The Springflower Difference: Building Trust in Home Cleaning Services</a></h3>
+                    <h3><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h3>
                     <div class="date_box_big">
                            <p> 16 Aug 2025</p>
                     </div>
@@ -193,8 +193,8 @@ include('header.php');
         <div class="row blog_regular_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
-                    <h6><a href="#">Top 5 Benefits of Regular Deep Cleaning for Your Home</a></h6>
+                     <img src="<?php echo base_url()?>assets/img/new/bb2.png" alt="">
+                    <h6><a href="<?php echo base_url()?>">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
                     <div class="date_box_regular">
                            <p> 15 Aug 2025</p>
                     </div>
@@ -202,14 +202,14 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
-                    <h6><a href="#">How to Maintain a Spotless Kitchen Without the Stress</a></h6>
+                     <img src="<?php echo base_url() ?>assets/img/new/bb3.png" alt="">
+                    <h6><a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation">The "Zooming Out" Technique: Elevate Your Home Presentation from Exceptional to Phenomenal</a></h6>
                     <div class="date_box_regular">
                            <p> 14 Aug 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <!-- <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
                      <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Spring Cleaning 2025: A Complete Checklist for Every Room</a></h6>
@@ -226,7 +226,7 @@ include('header.php');
                            <p> 12 Aug 2025</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

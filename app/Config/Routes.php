@@ -22,6 +22,9 @@ $routes->get('keeper-thankyou','Home::KeeperThankView');
 $routes->get('springflower-difference-building-trust-home-cleaning','Home::BlogOneView');
 $routes->get('10-essential-guidelines-for-becoming-a-superior-housekeeper','Home::BlogTwoNew');
 $routes->get('zooming-out-technique-elevate-home-presentation','Home::BlogThreeNew');
+$routes->get('property-form','Home::PropertyFormView');
+$routes->get('property-date','Home::PropertyDateFormView');
+$routes->get('property-thank-you','Home::PropertythankView');
 
 
 

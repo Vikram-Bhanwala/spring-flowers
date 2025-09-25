@@ -403,11 +403,12 @@ include('header.php');
                 <h2>Some Recommendations</h2>
             </div>
         </div>
-        <div class="row ">
+        
+        <div class="row blog_regular_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/nb1.png" alt="">
-                    <h6><a href="#">Top 5 Benefits of Regular Deep Cleaning for Your Home</a></h6>
+                     <img src="<?php echo base_url()?>assets/img/new/bb1.png" alt="">
+                    <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
                     <div class="date_box_regular">
                            <p> 15 Aug 2025</p>
                     </div>
@@ -415,16 +416,16 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/nb2.png" alt="">
-                    <h6><a href="#">How to Maintain a Spotless Kitchen Without the Stress</a></h6>
+                     <img src="<?php echo base_url() ?>assets/img/new/bb3.png" alt="">
+                    <h6><a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation">The "Zooming Out" Technique: Elevate Your Home Presentation from Exceptional to Phenomenal</a></h6>
                     <div class="date_box_regular">
                            <p> 14 Aug 2025</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <!-- <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/nb3.png" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Spring Cleaning 2025: A Complete Checklist for Every Room</a></h6>
                     <div class="date_box_regular">
                            <p> 13 Aug 2025</p>
@@ -433,13 +434,13 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/nb4.png" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Why Housekeeping Services Are Becoming a Lifestyle Essential in the UK</a></h6>
                     <div class="date_box_regular">
                            <p> 12 Aug 2025</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </section>

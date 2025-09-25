@@ -872,10 +872,21 @@ border-radius: 5px;
     .time_line_box img{
         width: 100%;
     }
+.subscribe-box form{
+  width:100%;
 
-
-
-
+}
+.subscribe-box input{
+  width:100% !important
+}
+.subscribe-box{
+  position: relative;
+}
+.subscribe-box button {
+    position: absolute;
+    right: 5%;
+    top: 35%;
+}
 
 
 

@@ -82,6 +82,18 @@ class Home extends BaseController
     public function BlogThreeNew(){
         return view('blog-3');
     }
+    // for property 1st form
+    public function PropertyFormView(){
+        return view('property-form1');
+    }
+    // for property date form
+    public function PropertyDateFormView(){
+        return view('property-booking-date');
+    }
+    // for property thanks you 
+    public function PropertythankView(){
+        return view('property-thank');
+    }
 
 
 

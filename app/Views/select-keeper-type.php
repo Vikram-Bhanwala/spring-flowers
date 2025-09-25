@@ -22,7 +22,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-1dot.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/progress-3-1dot.png" alt="">
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk1.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk1.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -60,7 +60,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk2.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk2.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -76,7 +76,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk3.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk3.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -92,7 +92,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk4.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk4.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -108,7 +108,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk5.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk5.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -124,7 +124,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk6.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk6.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -140,7 +140,7 @@ include('header.php');
             <div class="slect_property_type_column col-lg-3 col-md-3 col-sm-12">
                 <a href="<?php echo base_url()?>keeper-form">
                 <div class="slect_property_type_box slect_property_type_box2">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sk7.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sk7.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>

@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-     <script src="<?php echo base_url() ?>public/assets/js/main.js"></script>
+     <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
 </body>
 </html>

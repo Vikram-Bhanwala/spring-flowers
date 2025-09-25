@@ -5,7 +5,7 @@ include('header.php');
     
    .our_story_banner_sec {
     position: relative;
-    background-image: url('public/assets/img/new/our-story-banner.jpg');
+    background-image: url('assets/img/new/our-story-banner.jpg');
     padding: 40px 0px;
     background-size:100% 100%;
     font-weight:100
@@ -256,7 +256,7 @@ padding:100px 0px;
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="indain_greene_main_img_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/indian_greene_img.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/indian_greene_img.png" alt="">
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
@@ -280,7 +280,7 @@ padding:100px 0px;
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <div class="why_we_started_img_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/why-we-started.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/why-we-started.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -291,8 +291,8 @@ padding:100px 0px;
  <section class="INDIANA-GREEN-main-frame our_story_home_sec">
 	 <div class="container">
     <div class="image-stack">
-      <img src="<?php echo base_url() ?>public/assets/img/new/dom.png" alt="Indiana Green">
-      <img src="<?php echo base_url() ?>public/assets/img/new/dom2.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
+      <img src="<?php echo base_url() ?>assets/img/new/dom.png" alt="Indiana Green">
+      <img src="<?php echo base_url() ?>assets/img/new/dom2.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
     </div>
     <div class="content">
       <h2>I’m Indiana, your go-to guru for all things housekeeping, from Professional Housekeeping Services, lifestyle, and luxury living.</h2>

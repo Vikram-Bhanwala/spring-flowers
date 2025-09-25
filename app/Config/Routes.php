@@ -26,3 +26,5 @@ $routes->get('zooming-out-technique-elevate-home-presentation','Home::BlogThreeN
 
 
 $routes->post('/contact-function','Functions::ContactFunction');
+$routes->post('/keeper-form-submit','Functions::KeeperFormSubmit');
+$routes->post('/subscribe','Functions::Subscribe');

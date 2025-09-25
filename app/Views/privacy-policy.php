@@ -4,7 +4,7 @@ include('header.php');
 <style>
    .privacy_policy_banner_sec {
     position: relative;
-    background-image: url('public/assets/img/new/privacy-banner.png');
+    background-image: url('assets/img/new/privacy-banner.png');
     padding: 40px 0px;
     background-size:100% 100%
 }
@@ -338,7 +338,7 @@ include('header.php');
 
   <div class="subscribe-box">
     <input type="email" placeholder="Enter Email">
-    <button><img src="<?php echo base_url()?>public/assets/img/new/right-news.png" alt=""></button>
+    <button><img src="<?php echo base_url() ?>assets/img/new/right-news.png" alt=""></button>
   </div>
   </section>
 

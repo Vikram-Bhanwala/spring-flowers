@@ -249,7 +249,7 @@ border:2px solid white;
   </style>
   <!-- Hero Section -->
   <section class="hero top">
-    <!--<img src="<?php echo base_url()?>public/assets/img/banner.png" alt="Cleaning Service">-->
+    <!--<img src="<?php echo base_url() ?>assets/img/banner.png" alt="Cleaning Service">-->
     <h1>
       <span>C</span>
       <span>L</span>
@@ -262,7 +262,7 @@ border:2px solid white;
       <div class="col-lg-3 col-md-3 col-sm-12">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
-            <img src="<?php echo base_url() ?>public/assets/img/new/lsicon_leaf-outline.png" alt="">
+            <img src="<?php echo base_url() ?>assets/img/new/lsicon_leaf-outline.png" alt="">
           </div>
           <h3>Ecofriendly</h3>
         </div>
@@ -270,7 +270,7 @@ border:2px solid white;
       <div class="col-lg-3 col-md-3 col-sm-12">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
-            <img src="<?php echo base_url() ?>public/assets/img/new/la_hands.png" alt="">
+            <img src="<?php echo base_url() ?>assets/img/new/la_hands.png" alt="">
           </div>
           <h3>25 Years of Experience</h3>
         </div>
@@ -278,7 +278,7 @@ border:2px solid white;
       <div class="col-lg-3 col-md-3 col-sm-12">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
-            <img src="<?php echo base_url() ?>public/assets/img/new/gg_smile.png" alt="">
+            <img src="<?php echo base_url() ?>assets/img/new/gg_smile.png" alt="">
           </div>
           <h3>2000+ Happy Customers</h3>
         </div>
@@ -286,7 +286,7 @@ border:2px solid white;
       <div class="col-lg-3 col-md-3 col-sm-12">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
-            <img src="<?php echo base_url() ?>public/assets/img/new/healthicons_domestic-worker-alt-outline.png" alt="">
+            <img src="<?php echo base_url() ?>assets/img/new/healthicons_domestic-worker-alt-outline.png" alt="">
           </div>
           <h3>80+ Professional Cleaners</h3>
         </div>
@@ -309,7 +309,7 @@ border:2px solid white;
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="hero_main_house_cleaning_box">
           <div class="hero_main_house_cleaning_img_box">
-            <img src="<?php echo base_url()?>public/assets/img/new/jon1.jpg" alt="">
+            <img src="<?php echo base_url() ?>assets/img/new/jon1.jpg" alt="">
             <div class="hero_main_house_cleaning_overlay">
               <div class="hero_main_house_cleaning_text">
                 <h2>We clean , you relax</h2>
@@ -355,8 +355,8 @@ border:2px solid white;
   <section class="INDIANA-GREEN-main-frame">
     <div class="container">
       <div class="image-stack">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-29.png" alt="Indiana Green">
-        <img src="<?php echo base_url() ?>public/assets/img/Rectangle-31.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
+        <img src="<?php echo base_url() ?>assets/img/Rectangle-29.png" alt="Indiana Green">
+        <img src="<?php echo base_url() ?>assets/img/Rectangle-31.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
       </div>
       <div class="content">
         <h1>INDIANA GREEN</h1>
@@ -376,7 +376,7 @@ border:2px solid white;
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/stsn2.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="<?php echo base_url() ?>assets/img/new/stsn2.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>Apartments/ <br/>Flats</h3>
                 </div>
@@ -384,7 +384,7 @@ border:2px solid white;
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/stsn1.png" alt="Washing Up Pad">
+            <img src="<?php echo base_url() ?>assets/img/new/stsn1.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>House/ <br/>Villas</h3>
                 
@@ -393,7 +393,7 @@ border:2px solid white;
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/stsn3.png" alt="Window Cleaning 2-Pack">
+            <img src="<?php echo base_url() ?>assets/img/new/stsn3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
                 <h3>Student <br/>Accommodation</h3>
                  </div>
@@ -401,7 +401,7 @@ border:2px solid white;
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/stsn4.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/stsn4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Office <br/>Space</h3>
                
@@ -409,7 +409,7 @@ border:2px solid white;
         </div>
         
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/stsn5.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/stsn5.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Airbnb/ <br/>Holiday Let</h3>
                
@@ -427,8 +427,8 @@ border:2px solid white;
 		
     <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/new/llc1.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/new/llc2.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>assets/img/new/llc1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>assets/img/new/llc2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
         <h4>Laundry & <br>Linen Care</h4>
@@ -437,8 +437,8 @@ border:2px solid white;
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/new/who1.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/new/who2.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>assets/img/new/who1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>assets/img/new/who2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
         <h4>Wardrobe & <br>Home <br> Organization</h4>
@@ -447,8 +447,8 @@ border:2px solid white;
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/new/du1.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/new/du2.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>assets/img/new/du1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>assets/img/new/du2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
         <h4>Daily <br> Upkeep</h4>
@@ -457,8 +457,8 @@ border:2px solid white;
     </div>
 	  <div class="Home-Organization-frame-middle-frame-sc">
       <div class="images">
-        <img src="<?php echo base_url() ?>public/assets/img/new/sop1.png" alt="Laundry main">
-        <img src="<?php echo base_url() ?>public/assets/img/new/sop2.png" class="small" alt="Linen care small">
+        <img src="<?php echo base_url() ?>assets/img/new/sop1.png" alt="Laundry main">
+        <img src="<?php echo base_url() ?>assets/img/new/sop2.png" class="small" alt="Linen care small">
       </div>
       <div class="text">
         <h4>Special <br> Occasion  <br> Prep</h4>
@@ -490,7 +490,7 @@ border:2px solid white;
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="<?php echo base_url() ?>assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>5 Housekeeping Tips for Joyful Living Book</h3>
                 <p>£4.99</p>
@@ -500,7 +500,7 @@ border:2px solid white;
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc2.png" alt="Washing Up Pad">
+            <img src="<?php echo base_url() ?>assets/img/new/hc2.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>Washing Up Pad</h3>
                 <p>£3.00</p>
@@ -510,7 +510,7 @@ border:2px solid white;
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
+            <img src="<?php echo base_url() ?>assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
                 <h3>Window Cleaning 
 2-Pack</h3>
@@ -521,7 +521,7 @@ border:2px solid white;
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Replacement Head for Deep Clean 
 Mop</h3>
@@ -531,7 +531,7 @@ Mop</h3>
         </div>
         <!-- Product 5-->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>General
 Purpose Cloth</h3>
@@ -549,8 +549,8 @@ Purpose Cloth</h3>
   <section class="INDIANA-GREEN-main-frame bottom">
 	 <div class="container">
     <div class="image-stack">
-      <img src="<?php echo base_url() ?>public/assets/img/Rectangle-20.png" alt="Indiana Green">
-      <img src="<?php echo base_url() ?>public/assets/img/image-3.png" alt="Indiana Green" class="top">
+      <img src="<?php echo base_url() ?>assets/img/Rectangle-20.png" alt="Indiana Green">
+      <img src="<?php echo base_url() ?>assets/img/image-3.png" alt="Indiana Green" class="top">
     </div>
     <div class="content">
       <h1>I’m Indiana, your go-to guru for all things housekeeping, from Professional Housekeeping Services, lifestyle, and luxury living.</h1>
@@ -568,8 +568,11 @@ Purpose Cloth</h3>
   </h4>
 
   <div class="subscribe-box">
-    <input type="email" placeholder="Enter Email">
-    <button><img src="<?php echo base_url()?>public/assets/img/new/right-news.png" alt=""></button>
+    <form action="<?php echo base_url()?>subscribe" method="post" id="subscribe_form">
+      <input type="email" name="email" id="subscribe_email" placeholder="Enter Email" required>
+      <button type="submit"><img src="<?php echo base_url() ?>assets/img/new/right-news.png" alt=""></button>
+    </form>
+    <div id="subscribe_message" style="display:none;text-align:center;margin-top:10px;color:green;font-weight:600;">Thanks for subscribing!</div>
   </div>
   </section>
 
@@ -596,6 +599,31 @@ Purpose Cloth</h3>
   });
 </script>
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+  const form = document.getElementById('subscribe_form');
+  const emailInput = document.getElementById('subscribe_email');
+  const messageBox = document.getElementById('subscribe_message');
+  if(form){
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+      if(messageBox){ messageBox.style.display = 'none'; }
+      try{
+        const formData = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', headers: { 'X-Requested-With': 'XMLHttpRequest' }, body: formData });
+        const data = await res.json();
+        if(data && data.success){
+          if(messageBox){ messageBox.textContent = data.message || 'Thanks for subscribing!'; messageBox.style.display = 'block'; }
+          if(emailInput){ emailInput.value = ''; }
+        }else{
+          alert((data && data.message) || 'Please enter a valid email.');
+        }
+      }catch(err){
+        alert('Unable to subscribe. Try again.');
+      }
+    });
+  }
+});
+</script>
   document.addEventListener("DOMContentLoaded", function () {
     const imgAnimate = document.querySelectorAll(".hero_new_home_about_img_animate");
 

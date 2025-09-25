@@ -49,7 +49,7 @@ include('header.php');
         <div class="row">
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp1.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp1.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -63,7 +63,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp2.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp2.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -77,7 +77,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp3.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp3.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -91,7 +91,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp4.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp4.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -105,7 +105,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp5.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp5.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>
@@ -119,7 +119,7 @@ include('header.php');
             </div>
             <div class="slect_property_type_column col-lg-4 col-md-4 col-sm-12">
                 <div class="slect_property_type_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/sp6.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/sp6.jpg" alt="">
                     
                     <!-- Overlay -->
                     <div class="slect_property_type_overlay"></div>

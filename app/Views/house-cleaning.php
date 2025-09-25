@@ -12,7 +12,7 @@ include('header.php');
 
 
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/house-cleaning/apartments.jpg" alt="apartments">
+            <img src="<?php echo base_url() ?>assets/img/house-cleaning/apartments.jpg" alt="apartments">
             <div class="product-info-house-cleaning">
                 <h3>Apartments/Flats</h3>
                 </div>
@@ -20,21 +20,21 @@ include('header.php');
 
 
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/house-cleaning/apartments.jpg" alt="apartments">
+            <img src="<?php echo base_url() ?>assets/img/house-cleaning/apartments.jpg" alt="apartments">
             <div class="product-info-house-cleaning">
                 <h3 >Apartments/Flats</h3>
                 </div>
         </div>
 
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/house-cleaning/apartments.jpg" alt="apartments">
+            <img src="<?php echo base_url() ?>assets/img/house-cleaning/apartments.jpg" alt="apartments">
             <div class="product-info-house-cleaning">
                 <h3>Apartments/ <br/>Flats</h3>
                 </div>
         </div>
 
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/house-cleaning/apartments.jpg" alt="apartments">
+            <img src="<?php echo base_url() ?>assets/img/house-cleaning/apartments.jpg" alt="apartments">
             <div class="product-info-house-cleaning">
                 <h3>Apartments/ <br/>Flats</h3>
                 </div>

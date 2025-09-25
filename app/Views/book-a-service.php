@@ -69,7 +69,7 @@
          <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="join_us_box">
                 <a href="<?php echo base_url()?>register">
-               <img src="public/assets/img/new/jon1.jpg" alt="">
+               <img src="assets/img/new/jon1.jpg" alt="">
                <div class="join_us_overlay">
                   <div class="join_us_content">
                      <h3>House Cleaning</h3>
@@ -81,7 +81,7 @@
          <div class="col-lg-5 col-md-6 col-sm-12">
             <div class="join_us_box">
                 <a href="<?php echo base_url()?>register">
-               <img src="public/assets/img/new/jon2.jpg" alt="">
+               <img src="assets/img/new/jon2.jpg" alt="">
                <div class="join_us_overlay">
                   <div class="join_us_content">
                      <h3>House Keeping</h3>

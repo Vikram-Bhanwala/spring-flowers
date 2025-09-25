@@ -6,7 +6,7 @@ include('header.php');
     
    .blog_banner_sec {
     position: relative;
-    background-image: url('public/assets/img/new/blogs-banner.jpg');
+    background-image: url('assets/img/new/blogs-banner.jpg');
     padding: 40px 0px;
     background-size:100% 100%;
     font-family:IvyOraDisplay-Regular;
@@ -182,7 +182,7 @@ include('header.php');
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="blog_main_big_blog_box">
-                    <img src="<?php echo base_url() ?>public/assets/img/new/blog1.jpg" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h3><a href="#">The Springflower Difference: Building Trust in Home Cleaning Services</a></h3>
                     <div class="date_box_big">
                            <p> 16 Aug 2025</p>
@@ -193,7 +193,7 @@ include('header.php');
         <div class="row blog_regular_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>public/assets/img/new/blog1.jpg" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Top 5 Benefits of Regular Deep Cleaning for Your Home</a></h6>
                     <div class="date_box_regular">
                            <p> 15 Aug 2025</p>
@@ -202,7 +202,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>public/assets/img/new/blog1.jpg" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">How to Maintain a Spotless Kitchen Without the Stress</a></h6>
                     <div class="date_box_regular">
                            <p> 14 Aug 2025</p>
@@ -211,7 +211,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>public/assets/img/new/blog1.jpg" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Spring Cleaning 2025: A Complete Checklist for Every Room</a></h6>
                     <div class="date_box_regular">
                            <p> 13 Aug 2025</p>
@@ -220,7 +220,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>public/assets/img/new/blog1.jpg" alt="">
+                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
                     <h6><a href="#">Why Housekeeping Services Are Becoming a Lifestyle Essential in the UK</a></h6>
                     <div class="date_box_regular">
                            <p> 12 Aug 2025</p>
@@ -242,7 +242,7 @@ include('header.php');
 
   <div class="subscribe-box">
     <input type="email" placeholder="Enter Email">
-    <button><img src="<?php echo base_url()?>public/assets/img/new/right-news.png" alt=""></button>
+    <button><img src="<?php echo base_url() ?>assets/img/new/right-news.png" alt=""></button>
   </div>
   </section>
 

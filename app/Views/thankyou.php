@@ -118,7 +118,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-3dot.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/progress-3-3dot.png" alt="">
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_img_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/thank.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/thank.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -159,7 +159,7 @@ include('header.php');
         <div class="row house_keeeepiing_sldie_prod_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -173,7 +173,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -187,7 +187,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -201,7 +201,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">

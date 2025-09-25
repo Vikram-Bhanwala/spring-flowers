@@ -181,7 +181,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-2dot.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/progress-3-2dot.png" alt="">
                 </div>
             </div>
         </div>

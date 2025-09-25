@@ -144,7 +144,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-3dot.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/progress-3-3dot.png" alt="">
                 </div>
             </div>
         </div>
@@ -156,7 +156,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_img_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/thank.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/thank.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -182,7 +182,7 @@ include('header.php');
         <div class="row house_keeeepiing_sldie_prod_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -196,7 +196,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -210,7 +210,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -224,7 +224,7 @@ include('header.php');
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="our_products_box">
-                <img src="public/assets/img/new/our-product1.png" alt="">
+                <img src="assets/img/new/our-product1.png" alt="">
 
                 <div class="our_products_overlay">
                     <div class="our_products_content">
@@ -251,7 +251,7 @@ include('header.php');
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="<?php echo base_url() ?>assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>5 Housekeeping Tips for Joyful Living Book</h3>
                 <p>£4.99</p>
@@ -261,7 +261,7 @@ include('header.php');
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc2.png" alt="Washing Up Pad">
+            <img src="<?php echo base_url() ?>assets/img/new/hc2.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>Washing Up Pad</h3>
                 <p>£3.00</p>
@@ -271,7 +271,7 @@ include('header.php');
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
+            <img src="<?php echo base_url() ?>assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
                 <h3>Window Cleaning 
 2-Pack</h3>
@@ -282,7 +282,7 @@ include('header.php');
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Replacement Head for Deep Clean 
 Mop</h3>
@@ -292,7 +292,7 @@ Mop</h3>
         </div>
         <!-- Product 5-->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>public/assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="<?php echo base_url() ?>assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>General
 Purpose Cloth</h3>

@@ -6,12 +6,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="<?php echo base_url() ?>public/assets/images/icons/favicon.ico"/>
+	<link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/images/icons/favicon.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>public/assets/css/own.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/own.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -168,7 +168,7 @@
 	<!-- Header -->
   <header>
     <div class="logo">
-      <a href="<?php echo base_url()?>"><img src="<?php echo base_url() ?>public/assets/img/logo.png" alt="Clean Springflowers Logo"></a>
+      <a href="<?php echo base_url()?>"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="Clean Springflowers Logo"></a>
     </div>
 
     <nav id="nav-menu">
@@ -202,7 +202,7 @@
           <!-- Your Form -->
           <div class="contact_form_side_form_box">
               <div class="contact_side_akshay_main_box">
-                <form action="<?php echo base_url()?>contact-function" method="post">
+                <form action="<?php echo base_url()?>contact-function" method="post" id="contact_side_form">
                   <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
@@ -240,10 +240,16 @@
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
-                        <button class="contact_lets_conect_btn">Let’s Connect</button>
+                        <button class="contact_lets_conect_btn" id="contact_side_submit_btn" type="submit">Let’s Connect</button>
                       </div>
-                    </div>
+                      </div>
                 </form>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="contact_side_akshay_main_input_box">
+                    <div id="contact_side_success" style="display:none;color:green;font-weight:600;">Thank you for connecting with us.</div>
+                    <div id="contact_side_error" style="display:none;color:#b00020;font-weight:600;">An error occurred. Please try again.</div>
+                  </div>
+                </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <button class="contact_cancel_btn"  id="contact_form_side_close">Cancel</button>
@@ -254,22 +260,22 @@
                         <ul>
                           <li>
                               <a href="https://wa.me/447923639015" target="_blank">
-                                <img src="<?php echo base_url()?>public/assets/img/new/wp.svg" alt="">
+                                <img src="<?php echo base_url() ?>assets/img/new/wp.svg" alt="">
                               </a>
                           </li>
                           <li>
                               <a href="https://www.instagram.com/indithehomeguru/" target="_blank">
-                                <img src="<?php echo base_url()?>public/assets/img/new/ig.svg" alt="">
+                                <img src="<?php echo base_url() ?>assets/img/new/ig.svg" alt="">
                               </a>
                           </li>
                           <li>
                               <a href="https://www.facebook.com/profile.php?id=100058949541919" target="_blank">
-                                <img src="<?php echo base_url()?>public/assets/img/new/fb.svg" alt="">
+                                <img src="<?php echo base_url() ?>assets/img/new/fb.svg" alt="">
                               </a>
                           </li>
                           <li>
                               <a href="https://www.youtube.com/@IndianaGreeneHomeGuru" target="_blank">
-                                <img src="<?php echo base_url()?>public/assets/img/new/youtube.svg" alt="">
+                                <img src="<?php echo base_url() ?>assets/img/new/youtube.svg" alt="">
                               </a>
                           </li>
                         </ul>
@@ -289,6 +295,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("contact_form_side_overlay");
   const panel = document.getElementById("contact_form_side_panel");
   const closeBtn = document.getElementById("contact_form_side_close");
+  const form = document.getElementById("contact_side_form");
+  const successBox = document.getElementById("contact_side_success");
+  const errorBox = document.getElementById("contact_side_error");
+  const submitBtn = document.getElementById("contact_side_submit_btn");
 
   openBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -306,5 +316,46 @@ document.addEventListener("DOMContentLoaded", () => {
     overlay.classList.remove("active");
     panel.classList.remove("active");
   });
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (successBox) successBox.style.display = "none";
+      if (errorBox) errorBox.style.display = "none";
+      if (submitBtn) submitBtn.disabled = true;
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: { "X-Requested-With": "XMLHttpRequest" },
+          body: formData
+        });
+        if (!response.ok) throw new Error("Request failed");
+        const data = await response.json();
+        if (data && data.success) {
+          if (successBox) {
+            successBox.textContent = data.message || "Thank you for connecting with us.";
+            successBox.style.display = "block";
+          }
+          alert(data.message || "Thank you for connecting with us.");
+          // do not hide the form; just show success message
+        } else {
+          if (errorBox) {
+            errorBox.textContent = (data && data.message) || "An error occurred. Please try again.";
+            errorBox.style.display = "block";
+          }
+          alert((data && data.message) || "An error occurred. Please try again.");
+        }
+      } catch (err) {
+        if (errorBox) {
+          errorBox.textContent = "An error occurred. Please try again.";
+          errorBox.style.display = "block";
+        }
+        alert("An error occurred. Please try again.");
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
+    });
+  }
 });
 </script>

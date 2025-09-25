@@ -188,7 +188,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="time_line_box">
-                    <img src="<?php echo base_url()?>public/assets/img/new/progress-3-2dot.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/progress-3-2dot.png" alt="">
                 </div>
             </div>
         </div>
@@ -203,13 +203,13 @@ include('header.php');
             <div class="register_form_main_box">
                <h2>Select Your Keeper Type</h2>
                <p>Pick the Keeper that matches your needs</p>
-               <form action="#">
+               <form action="<?php echo base_url()?>keeper-form-submit" method="post">
                   <div class="register_form_main_form_box">
                      <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                            <div class="register_form_main_imput_box">
                               <label>Timing</label>
-                              <select name="country" >
+                              <select name="timing" >
                                  <option value="">Select  Timing</option>
                                  <option value="">option 2</option>
                                  <option value="">option 3</option>
@@ -227,7 +227,7 @@ include('header.php');
                         <div class="col-lg-6 col-md-6 col-sm-12">
                            <div class="register_form_main_imput_box">
                               <label>Number of Kitchen</label>
-                              <select name="country" >
+                              <select name="num_kitchens" >
                                  <option value="">Select Number of Kitchen</option>
                                  <option value="">option 2</option>
                                  <option value="">option 3</option>
@@ -239,7 +239,7 @@ include('header.php');
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Number of Rooms</label>
-                           <select name="country" >
+                           <select name="num_rooms" >
                               <option value="">Select Number of Rooms</option>
                               <option value="">option 2</option>
                               <option value="">option 3</option>
@@ -251,13 +251,13 @@ include('header.php');
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Name</label>
-                           <input type="text" placeholder="Enter Your Name">
+                           <input type="text" name="name" placeholder="Enter Your Name">
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Number of Bathrooms </label>
-                           <select name="country" >
+                           <select name="num_bathrooms" >
                               <option value="">Select Number of Bathrooms</option>
                               <option value="">option 2</option>
                               <option value="">option 3</option>
@@ -269,7 +269,7 @@ include('header.php');
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Town / Area </label>
-                           <select name="country" >
+                           <select name="town_area" >
                               <option value="">Select Your Town / Area</option>
                               <option value="">option 2</option>
                               <option value="">option 3</option>
@@ -281,32 +281,32 @@ include('header.php');
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Phone Number</label>
-                           <input type="text" placeholder="Enter Phone Number">
+                           <input type="text" name="phone" placeholder="Enter Phone Number">
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Postal Code</label>
-                           <input type="text" placeholder="Enter Your Postal Code">
+                           <input type="text" name="postal_code" placeholder="Enter Your Postal Code">
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>City</label>
-                           <input type="text" placeholder="Enter Your City">
+                           <input type="text" name="city" placeholder="Enter Your City">
                         </div>
                      </div>
                      <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Address</label>
-                           <textarea name="" placeholder=""></textarea>
+                           <textarea name="address" placeholder=""></textarea>
                         </div>
                      </div>
                      <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <div class="register_form_main_buttom_box">
                               <a href="<?php echo base_url()?>select-keeper-type" class="submit_btn">Back</a>
-                              <button class="back_btn">Discover Trusted Help</button>
+                              <button type="submit" class="back_btn">Discover Trusted Help</button>
                            </div>
                         </div>
                      </div>

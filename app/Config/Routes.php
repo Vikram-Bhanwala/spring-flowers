@@ -28,3 +28,12 @@ $routes->get('zooming-out-technique-elevate-home-presentation','Home::BlogThreeN
 $routes->post('/contact-function','Functions::ContactFunction');
 $routes->post('/keeper-form-submit','Functions::KeeperFormSubmit');
 $routes->post('/subscribe','Functions::Subscribe');
+
+// Admin routes
+$routes->group('admin', function($routes) {
+    $routes->get('/', 'Admin::index');
+    $routes->get('login', 'Admin::login');
+    $routes->post('authenticate', 'Admin::authenticate');
+    $routes->get('dashboard', 'Admin::dashboard');
+    $routes->get('logout', 'Admin::logout');
+});

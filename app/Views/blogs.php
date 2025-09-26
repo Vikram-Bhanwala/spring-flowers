@@ -194,7 +194,7 @@ include('header.php');
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
                      <img src="<?php echo base_url()?>assets/img/new/bb2.png" alt="">
-                    <h6><a href="<?php echo base_url()?>">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
+                    <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
                     <div class="date_box_regular">
                            <p> 15 Aug 2025</p>
                     </div>

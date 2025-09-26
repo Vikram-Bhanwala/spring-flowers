@@ -39,4 +39,5 @@ $routes->group('admin', function($routes) {
     $routes->post('authenticate', 'Admin::authenticate');
     $routes->get('dashboard', 'Admin::dashboard');
     $routes->get('logout', 'Admin::logout');
+    $routes->get('lead-manager','Admin::LeadManagerView');
 });

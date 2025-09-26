@@ -104,4 +104,12 @@ class Admin extends BaseController
     {
         return session()->get('is_admin_logged_in') === true;
     }
+    // for lead manager
+    public function LeadManagerView(){
+        if (!$this->isLoggedIn()) {
+            return redirect()->to('/admin/login');
+        }
+
+        return view('admin/lead-manager');
+    }
 }

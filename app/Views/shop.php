@@ -35,11 +35,12 @@ include('header.php');
 
 .blog_banner_title {
   font-size: 300px;
-  font-weight: 100;
+  /* font-weight: 100; */
   letter-spacing: 10px;
   margin: 0;
   overflow: hidden;
   color:white;
+  font-family: IvyOraDisplay-Light;
   
 }
 

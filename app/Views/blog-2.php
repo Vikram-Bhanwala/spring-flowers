@@ -251,7 +251,7 @@ include('header.php');
             <div class="col-lg-2 col-md-2 col-sm-6 ">
                 <div class="blog_main_banner_second_box blog_main_banner_second_box1">
                     <p>Published Date</p>
-                    <h6>15 Aug 2025</h6>
+                    <h6>25 Sep 2025</h6>
                 </div>
             </div>
             <div class="col-lg-2 col-md-2 col-sm-6 ">
@@ -407,19 +407,19 @@ include('header.php');
         <div class="row blog_regular_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url()?>assets/img/new/bb1.png" alt="">
+                     <a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning"><img src="<?php echo base_url()?>assets/img/new/bb1.png" alt=""></a>
                     <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
                     <div class="date_box_regular">
-                           <p> 15 Aug 2025</p>
+                           <p> 26 Sep 2025</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/bb3.png" alt="">
+                     <a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation"><img src="<?php echo base_url() ?>assets/img/new/bb3.png" alt=""></a>
                     <h6><a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation">The "Zooming Out" Technique: Elevate Your Home Presentation from Exceptional to Phenomenal</a></h6>
                     <div class="date_box_regular">
-                           <p> 14 Aug 2025</p>
+                           <p> 24 Sep 2025</p>
                     </div>
                 </div>
             </div>

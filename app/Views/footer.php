@@ -1,11 +1,6 @@
 
 
 <style>
-  .footer_new_box{
-    width:40% !important;
-    display:flex;
-    justify-content:space-between
- }
  .footer_column{
   width:30%
  }
@@ -69,7 +64,7 @@
   <div class="copy-wite">
     <div class="footer-container">
       <p>Copyright © 2025 <span class="brand">CleanSpringFlowers</span> - All Rights Reserved.</p>
-      <p class="designer">Designed by <a href="#">HyperRevamp</a></p>
+      <p class="designer">Designed by <a href="https://www.hyperrevamp.com/" target="_blank">HyperRevamp</a></p>
     </div>
 </div>
 

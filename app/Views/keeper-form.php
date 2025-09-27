@@ -33,7 +33,7 @@ include('header.php');
     width: 100%;
     border: 0px !important;
     background: #ffffff00;
-    font-size: 18px;
+    font-size: 15px;
     color: black !important;
     outline: none;
     border-bottom: 1px solid black !important;
@@ -46,7 +46,7 @@ include('header.php');
     width: 100%;
     border: 0px !important;
     background: #ffffff00;
-    font-size: 18px;
+    font-size: 15px;
     color: black !important;
     outline: none;
     border-bottom: 1px solid black !important;
@@ -59,7 +59,7 @@ include('header.php');
     width: 100%;
     border: 0px !important;
     background: #ffffff00;
-    font-size: 18px;
+    font-size: 15px;
     color: black !important;
     outline: none;
     border-bottom: 1px solid black !important;
@@ -213,6 +213,7 @@ include('header.php');
                                  <option value="">Select  Timing</option>
                                  <option value="Full Time">Full Time</option>
                                  <option value="Part Time">Part Time</option>
+                                 <option value="Flexible">Flexible</option>
                               </select>
                            </div>
                         </div>

@@ -12,6 +12,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/own.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/responsive.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -228,7 +229,7 @@
                         <select name="service" id=""  required>
                           <option value="">Select a Service</option>
                           <option value="House Keeping">House Keeping </option>
-                          <option value="House Cleaning">House Keeping </option>
+                          <option value="House Cleaning">House Cleaning </option>
                         </select>
                       </div>
                     </div>

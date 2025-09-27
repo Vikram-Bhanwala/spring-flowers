@@ -225,25 +225,16 @@ border:2px solid white;
 .hero_new_housekeeping_animate.hero_new_animate_in {
   opacity: 1;
   transform: translateX(0);
-}
-.btn_explre{
-    padding: 5px 20px;
-    background: white;
-    border: 2px solid black;
-    color: black !important;
-    text-decoration: none !important;
-}
+  }
+  .btn_explre{
+      padding: 5px 20px;
+      background: #ffffff00;
+      border: 2px solid black;
+      color: black !important;
+      text-decoration: none !important;
+  }
 .subscribe-box-main .subscribe-box input {
     border-bottom: 1px solid black;
-}
-
-.Home-Organization-frame-middle-frame-sc {
-    flex: 0 0 50% !important;
-    min-width: 300px !important;
-    scroll-snap-align: start !important;
- height: 600px !important;           /* natural height based on content */
-    align-self: flex-start !important; /* prevent flexbox from stretching */
-    overflow: visible !important;  
 }
 
   </style>
@@ -259,7 +250,7 @@ border:2px solid white;
     </h1>
     <div class="container hero_container">
     <div class="row hero_row animate_on_scroll_hero_main_icon">
-      <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="col-lg-3 col-md-3 col-sm-6 hero_icon_col">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
             <img src="<?php echo base_url() ?>assets/img/new/lsicon_leaf-outline.png" alt="">
@@ -267,7 +258,7 @@ border:2px solid white;
           <h3>Ecofriendly</h3>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="col-lg-3 col-md-3 col-sm-6 hero_icon_col">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
             <img src="<?php echo base_url() ?>assets/img/new/la_hands.png" alt="">
@@ -275,7 +266,7 @@ border:2px solid white;
           <h3>25 Years of Experience</h3>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="col-lg-3 col-md-3 col-sm-6 hero_icon_col">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
             <img src="<?php echo base_url() ?>assets/img/new/gg_smile.png" alt="">
@@ -283,7 +274,7 @@ border:2px solid white;
           <h3>2000+ Happy Customers</h3>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="col-lg-3 col-md-3 col-sm-6 hero_icon_col">
         <div class="clean_home_banner_icon_box">
           <div class="clean_home_banner_icon_img_box">
             <img src="<?php echo base_url() ?>assets/img/new/healthicons_domestic-worker-alt-outline.png" alt="">
@@ -325,7 +316,7 @@ border:2px solid white;
       <div class="col-lg-6 col-md-6 col-sm-12">
         <div class="hero_main_house_cleaning_box">
           <div class="hero_main_house_cleaning_img_box">
-            <img src="<?php echo base_url()?>/public/assets/img/new/jon2.jpg" alt="">
+            <img src="<?php echo base_url()?>assets/img/new/jon2.jpg" alt="">
             <div class="hero_main_house_cleaning_overlay">
               <div class="hero_main_house_cleaning_text">
                 <h2>We clean , you relax</h2>
@@ -376,44 +367,54 @@ border:2px solid white;
 
         <!-- Product 1 -->
         <div class="product-card">
+          <a href="<?php echo base_url()?>property-form">
             <img src="<?php echo base_url() ?>assets/img/new/stsn2.png" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
                 <h3>Apartments/ <br/>Flats</h3>
                 </div>
+                </a>
         </div>
 
         <!-- Product 2 -->
         <div class="product-card">
+          <a href="<?php echo base_url()?>property-form">
             <img src="<?php echo base_url() ?>assets/img/new/stsn1.png" alt="Washing Up Pad">
             <div class="product-info">
                 <h3>House/ <br/>Villas</h3>
                 
             </div>
+                </a>
         </div>
 
         <!-- Product 3 -->
         <div class="product-card">
+          <a href="<?php echo base_url()?>property-form">
             <img src="<?php echo base_url() ?>assets/img/new/stsn3.png" alt="Window Cleaning 2-Pack">
             <div class="product-info">
                 <h3>Student <br/>Accommodation</h3>
                  </div>
+                </a>
         </div>
 
         <!-- Product 4 -->
         <div class="product-card">
+          <a href="<?php echo base_url()?>property-form">
             <img src="<?php echo base_url() ?>assets/img/new/stsn4.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Office <br/>Space</h3>
                
             </div>
+                </a>
         </div>
         
         <div class="product-card">
+          <a href="<?php echo base_url()?>property-form">
             <img src="<?php echo base_url() ?>assets/img/new/stsn5.png" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
                 <h3>Airbnb/ <br/>Holiday Let</h3>
                
             </div>
+                </a>
         </div>
 
     </div>
@@ -581,22 +582,28 @@ Purpose Cloth</h3>
   ?>
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const animatedRows = document.querySelectorAll(".hero_new_animate_on_scroll");
+  const animatedRows = document.querySelectorAll(".hero_new_animate_on_scroll");
 
-    const observer = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("hero_new_animate_up");
-            observer.unobserve(entry.target); // run only once
-          }
-        });
-      },
-      { threshold: 0.2 } // trigger when 20% is visible
-    );
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("hero_new_animate_up");
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    { threshold: 0.05 } // smaller value
+  );
 
-    animatedRows.forEach(row => observer.observe(row));
-  });
+  animatedRows.forEach(row => observer.observe(row));
+
+  // fallback: ensure it's visible after 2s
+  setTimeout(() => {
+    animatedRows.forEach(row => row.classList.add("hero_new_animate_up"));
+  }, 2000);
+});
+
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
@@ -624,6 +631,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 });
 </script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const imgAnimate = document.querySelectorAll(".hero_new_home_about_img_animate");
 

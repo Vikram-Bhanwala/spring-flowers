@@ -162,9 +162,6 @@
    border-width: 0 2px 2px 0;
    transform: rotate(45deg);
    }
-   .weekly_days_select_main_box_30{
-    width:30% !important
-   }
    .weekly_days_select_main_box_100{
     width:100% !important
    }

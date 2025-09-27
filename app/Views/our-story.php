@@ -35,9 +35,8 @@ include('header.php');
 .our_story_banner_story {
   margin: 0;
   letter-spacing: 8px;
-  font-weight: 700;
-  overflow: hidden;
-    font-family:IvyOraDisplay-Regular;
+  /* font-weight: 700; */
+  overflow: hidden;font-family: IvyOraDisplay-Light;
 }
 
 .our_story_banner_our {
@@ -164,15 +163,10 @@ padding:100px 0px;
 .why_we_started_sec{
     padding:60px 0px
 }
-.our_story_home_sec .image-stack{
-    width:50% !important
-}
-.our_story_home_sec .content{
-    width:30% !important
-}
+
 .content h2{
-    font-size: 40px !important;
-    line-height: 52px !important;
+    font-size: 40px ;
+    line-height: 52px ;
     color: black !important;
     font-weight: 500 !important;
 }
@@ -211,9 +205,6 @@ padding:100px 0px;
 .hero_new_home_about_img_animate.hero_new_animate_up {
   opacity: 1;
   transform: translateY(0);
-}
-.the_journey_main_columns{
-  width:60% !important
 }
 .the_journey_main_row{
   display:flex;
@@ -356,6 +347,14 @@ padding:100px 0px;
     margin-bottom:40px;
     margin-top:60px
 }
+
+.btn_explre{
+    padding: 5px 20px;
+    background: #ffffff00;
+    border: 2px solid black;
+    color: black !important;
+    text-decoration: none !important;
+} 
 </style>
 <!-- our story banenr sec -->
 <section class="our_story_banner_sec">
@@ -393,7 +392,7 @@ padding:100px 0px;
             </div>
         </div>
         <div class="row indain_greene_main_row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 meet_dian_green_col">
                 <div class="indain_greene_first_main_cont_box">
                     <p>Indiana Greene began her journey with a simple belief: a home deserves more than just cleaning—it deserves care, attention, and love. From her early experiences helping families maintain their homes, she envisioned a service that was personal, trustworthy, and truly transformative.</p>
                 </div>
@@ -403,7 +402,7 @@ padding:100px 0px;
                     <img src="<?php echo base_url() ?>assets/img/new/indian_greene_img.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 meet_dian_green_col">
                 <div class="indain_greene_second_main_cont_box">
                     <p>Indiana Greene began her journey with a simple belief: a home deserves more than just cleaning—it deserves care, attention, and love. From her early experiences helping families maintain their homes, she envisioned a service that was personal, trustworthy, and truly transformative.</p>
                 </div>
@@ -571,7 +570,7 @@ padding:100px 0px;
     <div class="content">
       <h2>I’m Indiana, your go-to guru for all things housekeeping, from Professional Housekeeping Services, lifestyle, and luxury living.</h2>
       <p>Join me on this journey to discover the five guiding principles of housekeeping that will not only bring order and beauty into your home but also nurture your soul.</p>
-      <button>Explore More</button>
+      <a class="btn_explre" href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank">Explore More</a>
     </div>
   </div>
   </section>

@@ -297,7 +297,7 @@ include('header.php');
                      <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="register_form_main_imput_box">
                            <label>Address</label>
-                           <textarea name="address" placeholder=""></textarea>
+                           <textarea name="address" placeholder="Enter Your Address"></textarea>
                         </div>
                      </div>
                      <div class="col-lg-12 col-md-12 col-sm-12">

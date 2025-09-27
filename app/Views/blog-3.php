@@ -294,7 +294,7 @@ include('header.php');
 
 
                     <div class="blog_youtube_box">
-                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/SVLW_Ic79UY" title="Client Welcome to The Clean Spring Flower Group of Companies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/LKSZxOeapP8" title="Principle Five - Zooming Out" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                            <h2>Understanding "Zooming Out": A New Perspective on Home Presentation</h2>
                            <h3>The Contrast: Zooming In vs. Zooming Out</h3>

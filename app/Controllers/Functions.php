@@ -63,7 +63,7 @@ class Functions extends BaseController
 			if ($this->request->isAJAX()) {
 				return $this->response->setJSON(['success' => true]);
 			}
-			return redirect()->to('/keeper-thankyou');
+			return redirect()->to('/property-thank-you');
 		}else{
 			if ($this->request->isAJAX()) {
 				return $this->response->setStatusCode(400)->setJSON(['success' => false]);

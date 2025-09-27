@@ -300,7 +300,7 @@ include('header.php');
                     </ul>
 
                     <div class="blog_youtube_box">
-                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/SVLW_Ic79UY" title="Client Welcome to The Clean Spring Flower Group of Companies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/mOaKYY4BfEY" title="10 Customer Service Guidelines" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                             <h2>Upholding Integrity and Client Focus: The Pillars of Exceptional Service</h2>
                             <p>This section will explore the ethical considerations and client-centric approach that are vital for building long-term relationships and a positive reputation in the housekeeping industry.</p>

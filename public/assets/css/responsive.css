@@ -358,7 +358,9 @@ a{
     font-size:45px !important;
         margin-bottom: 30px !important;
 }
-
+.indain_greene_first_main_cont_box h2 {
+    position: static !important;
+}
 
 
 

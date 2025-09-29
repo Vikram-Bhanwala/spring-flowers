@@ -102,6 +102,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
      <script src="<?php echo base_url() ?>assets/js/main.js"></script>
 
+     
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+      // Get today's date in YYYY-MM-DD format
+      const today = new Date().toISOString().split("T")[0];
+
+      // Apply to all date inputs
+      document.querySelectorAll('input[type="date"]').forEach(dateInput => {
+         dateInput.setAttribute("min", today);
+      });
+   });
+</script>
+
 </body>
 </html>
 

@@ -355,6 +355,20 @@ padding:100px 0px;
     color: black !important;
     text-decoration: none !important;
 } 
+.indain_greene_first_main_cont_box h2 {
+    font-family: IvyOraDisplay-Regular;
+    font-size: 45px;
+    position: absolute;
+    right: -22%;
+    z-index: 9999 !important;
+}
+
+.indain_greene_sec_min_three_part{
+  position: relative;
+}
+.indiana_greene_main_img_col{
+  z-index:-1
+}
 </style>
 <!-- our story banenr sec -->
 <section class="our_story_banner_sec">
@@ -382,7 +396,7 @@ padding:100px 0px;
 </section>
 
 <!-- meet indian greene sec -->
-<section class="indain_greene_sec">
+<!-- <section class="indain_greene_sec">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
@@ -409,7 +423,40 @@ padding:100px 0px;
             </div>
         </div>
     </div>
+</section> -->
+
+
+
+<section class="indain_greene_sec indain_greene_sec_min_three_part">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="indain_greene_heading_box">
+                    <h2>MEET INDIANA GREENE</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row indain_greene_main_row">
+            <div class="col-lg-4 col-md-4 col-sm-12 meet_dian_green_col">
+                <div class="indain_greene_first_main_cont_box">
+                    <h2>What Drives Her</h2>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 indiana_greene_main_img_col">
+                <div class="indain_greene_main_img_box">
+                    <img src="<?php echo base_url() ?>assets/img/new/indian_greene_img.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 meet_dian_green_col">
+                <div class="indain_greene_second_main_cont_box">
+                    <p>Indiana Greene began her journey with a simple belief: a home deserves more than just cleaning—it deserves care, attention, and love. From her early experiences helping families maintain their homes, she envisioned a service that was personal, trustworthy, and truly transformative.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+
 
 <!-- the hjouney sec -->
 <section class="the_journey_main_sec">

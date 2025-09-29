@@ -352,7 +352,7 @@ border:2px solid white;
       <div class="content">
         <h1>INDIANA GREEN</h1>
         <h2>I didn't always possess expert<br/> housekeeping knowledge.</h2>
-        <p>Indiana Greene began her journey with a simple belief - that a clean home is more than a routine; it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
+        <p>Indiana Greene began her journey with a simple belief — that a clean home is more than a routine, it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
         <a class="btn_explre" href="<?php echo base_url()?>our-story">Explore More</a>
       </div>
     </div>

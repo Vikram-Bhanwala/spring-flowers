@@ -30,6 +30,10 @@ $routes->get('property-thank-you','Home::PropertythankView');
 
 $routes->post('/contact-function','Functions::ContactFunction');
 $routes->post('/keeper-form-submit','Functions::KeeperFormSubmit');
+$routes->post('/property-form-submit','Functions::PropertyFormSubmit');
+$routes->post('/property-date-submit','Functions::PropertyDateSubmit');
+$routes->post('/registration-submit','Functions::RegistrationSubmit');
+$routes->get('/test-registration-route','Functions::TestRegistrationRoute');
 $routes->post('/subscribe','Functions::Subscribe');
 
 // Admin routes

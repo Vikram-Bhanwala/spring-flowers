@@ -1,0 +1,56 @@
+ERROR - 2025-09-27 14:47:30 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'spring', 3306, '', 0)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#11 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#3 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#5 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#15 {main}
+CRITICAL - 2025-09-27 14:47:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: keeper-form-submit]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `keeper_forms` (`timing`, `date`, `num_kitchens`, `num_rooms`, `name`, `num_bathrooms`, `town_area`, `phone`, `postal_code`, `city`, `address`) VALUES (:timing:, :date:, :num_kitchens:, :num_rooms:, :name:, :num_bathrooms:, :town_area:, :phone:, :postal_code:, :city:, :address:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Functions.php(60): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')

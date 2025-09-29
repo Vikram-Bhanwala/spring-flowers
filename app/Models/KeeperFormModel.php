@@ -25,9 +25,14 @@ class KeeperFormModel extends Model
         'postal_code',
         'city',
         'address',
+        'plan',
+        'selected_date',
+        'selected_days',
     ];
 
-    protected $useTimestamps = false;
+    protected $useTimestamps = true;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
 }
 
 

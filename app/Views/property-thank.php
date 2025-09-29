@@ -176,6 +176,66 @@ include('header.php');
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_cont_box">
                     <h2>Thank you for trusting us to make your space sparkle</h2>
+                    
+                    <?php 
+                    $bookingDetails = session()->get('booking_details');
+                    if ($bookingDetails): ?>
+                    <div style="margin: 30px 0; padding: 20px; border: 1px solid #ddd; background: #f9f9f9; display: none;">
+                        <h3 style="font-size: 24px; margin-bottom: 20px; font-family: IvyOraDisplay-Regular;">Booking Details</h3>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>Name:</strong> <?php echo htmlspecialchars($bookingDetails['name'] ?? ''); ?>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>Phone:</strong> <?php echo htmlspecialchars($bookingDetails['phone'] ?? ''); ?>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>Address:</strong> <?php echo htmlspecialchars($bookingDetails['address'] ?? ''); ?>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>City:</strong> <?php echo htmlspecialchars($bookingDetails['city'] ?? ''); ?>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>Postal Code:</strong> <?php echo htmlspecialchars($bookingDetails['postal_code'] ?? ''); ?>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px;">
+                            <strong>Property Details:</strong> 
+                            <?php echo htmlspecialchars($bookingDetails['num_rooms'] ?? ''); ?> rooms, 
+                            <?php echo htmlspecialchars($bookingDetails['num_kitchens'] ?? ''); ?> kitchen(s), 
+                            <?php echo htmlspecialchars($bookingDetails['num_bathrooms'] ?? ''); ?> bathroom(s)
+                        </div>
+                        
+                        <?php if (isset($bookingDetails['plan'])): ?>
+                        <div style="margin-bottom: 15px;">
+                            <strong>Service Plan:</strong> <?php echo htmlspecialchars($bookingDetails['plan']); ?>
+                        </div>
+                        <?php endif; ?>
+                        
+                        <?php if (isset($bookingDetails['selected_date']) && !empty($bookingDetails['selected_date'])): ?>
+                        <div style="margin-bottom: 15px;">
+                            <strong>Start Date:</strong> <?php echo date('F j, Y', strtotime($bookingDetails['selected_date'])); ?>
+                        </div>
+                        <?php endif; ?>
+                        
+                        <?php if (isset($bookingDetails['selected_days']) && !empty($bookingDetails['selected_days'])): ?>
+                        <div style="margin-bottom: 15px;">
+                            <strong>Selected Days:</strong> <?php echo htmlspecialchars($bookingDetails['selected_days']); ?>
+                        </div>
+                        <?php endif; ?>
+                        
+                        <?php if (isset($bookingDetails['timing'])): ?>
+                        <div style="margin-bottom: 15px;">
+                            <strong>Timing:</strong> <?php echo htmlspecialchars($bookingDetails['timing']); ?>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
+                    
                     <a href="<?php echo base_url()?>" class="cont_btn">Continue</a>
                 </div>
             </div>

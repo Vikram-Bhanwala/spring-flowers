@@ -1,0 +1,236 @@
+ERROR - 2025-09-28 12:17:45 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'spring', 3306, '', 0)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#11 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#3 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#5 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#15 {main}
+CRITICAL - 2025-09-28 12:17:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: keeper-form-submit]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `keeper_forms` (`timing`, `date`, `num_kitchens`, `num_rooms`, `name`, `num_bathrooms`, `town_area`, `phone`, `postal_code`, `city`, `address`) VALUES (:timing:, :date:, :num_kitchens:, :num_rooms:, :name:, :num_bathrooms:, :town_area:, :phone:, :postal_code:, :city:, :address:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Functions.php(60): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+ERROR - 2025-09-28 12:18:12 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'spring', 3306, '', 0)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#4 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#11 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ke...', Array, false)
+#3 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#5 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(60): CodeIgniter\BaseModel->save(Array)
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#15 {main}
+CRITICAL - 2025-09-28 12:18:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: keeper-form-submit]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `keeper_forms` (`timing`, `date`, `num_kitchens`, `num_rooms`, `name`, `num_bathrooms`, `town_area`, `phone`, `postal_code`, `city`, `address`) VALUES (:timing:, :date:, :num_kitchens:, :num_rooms:, :name:, :num_bathrooms:, :town_area:, :phone:, :postal_code:, :city:, :address:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Functions.php(60): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->KeeperFormSubmit()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-09-28 12:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:33:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:42:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:42:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:44:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 12:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-28 14:03:27 --> ContactFunction called
+INFO - 2025-09-28 14:03:27 --> Request method: POST
+INFO - 2025-09-28 14:03:27 --> Is AJAX: yes
+INFO - 2025-09-28 14:03:27 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Keeping","message":"asdfasdf"}
+INFO - 2025-09-28 14:03:27 --> Save result: success
+INFO - 2025-09-28 14:03:27 --> Returning AJAX success response
+INFO - 2025-09-28 14:05:37 --> ContactFunction called
+INFO - 2025-09-28 14:05:37 --> Request method: POST
+INFO - 2025-09-28 14:05:37 --> Is AJAX: yes
+INFO - 2025-09-28 14:05:37 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Cleaning","message":"dfs"}
+INFO - 2025-09-28 14:05:37 --> Save result: success
+INFO - 2025-09-28 14:05:37 --> Returning AJAX success response
+INFO - 2025-09-28 14:06:51 --> ContactFunction called
+INFO - 2025-09-28 14:06:51 --> Request method: POST
+INFO - 2025-09-28 14:06:51 --> Is AJAX: yes
+INFO - 2025-09-28 14:06:51 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"adf"}
+INFO - 2025-09-28 14:06:51 --> Save result: success
+INFO - 2025-09-28 14:06:51 --> Returning AJAX success response
+DEBUG - 2025-09-28 14:07:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-28 14:25:18 --> ContactFunction called
+INFO - 2025-09-28 14:25:18 --> Request method: POST
+INFO - 2025-09-28 14:25:18 --> Is AJAX: yes
+INFO - 2025-09-28 14:25:18 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"aqwer"}
+INFO - 2025-09-28 14:25:18 --> Save result: success
+INFO - 2025-09-28 14:25:18 --> Returning AJAX success response
+DEBUG - 2025-09-28 14:25:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:26:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:26:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 14:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-28 14:45:44 --> ContactFunction called
+INFO - 2025-09-28 14:45:44 --> Request method: POST
+INFO - 2025-09-28 14:45:44 --> Is AJAX: yes
+INFO - 2025-09-28 14:45:44 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"adf"}
+INFO - 2025-09-28 14:45:44 --> Save result: success
+INFO - 2025-09-28 14:45:44 --> Returning AJAX success response
+INFO - 2025-09-28 14:45:54 --> ContactFunction called
+INFO - 2025-09-28 14:45:54 --> Request method: POST
+INFO - 2025-09-28 14:45:54 --> Is AJAX: yes
+INFO - 2025-09-28 14:45:54 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"adf"}
+INFO - 2025-09-28 14:45:54 --> Save result: success
+INFO - 2025-09-28 14:45:54 --> Returning AJAX success response
+INFO - 2025-09-28 14:46:33 --> ContactFunction called
+INFO - 2025-09-28 14:46:33 --> Request method: POST
+INFO - 2025-09-28 14:46:33 --> Is AJAX: yes
+INFO - 2025-09-28 14:46:33 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"adfafa"}
+INFO - 2025-09-28 14:46:33 --> Save result: success
+INFO - 2025-09-28 14:46:33 --> Returning AJAX success response
+DEBUG - 2025-09-28 14:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:55:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 15:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-28 16:07:37 --> RegistrationSubmit called
+INFO - 2025-09-28 16:07:37 --> Request method: POST
+INFO - 2025-09-28 16:07:37 --> Is AJAX: yes
+INFO - 2025-09-28 16:07:37 --> POST data: {"job_type":"Cook","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"live_out_work","availability_type":"full_time_availability","start_date":"flexible_start","message":"Zx"}
+INFO - 2025-09-28 16:07:37 --> Registration data: {"job_type":"Cook","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"live_out_work","availability_type":"full_time_availability","start_date":"flexible_start","message":"Zx","cv_filename":"1759075657_homepage.pdf","cv_path":"uploads\/cv\/1759075657_homepage.pdf","status":"pending"}
+INFO - 2025-09-28 16:07:37 --> Registration save result: success
+INFO - 2025-09-28 16:07:37 --> Returning AJAX success response for registration
+INFO - 2025-09-28 16:08:56 --> RegistrationSubmit called
+INFO - 2025-09-28 16:08:56 --> Request method: POST
+INFO - 2025-09-28 16:08:56 --> Is AJAX: yes
+INFO - 2025-09-28 16:08:56 --> POST data: {"job_type":"Companion","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1234@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"flexible_work","availability_type":"full_time_availability","start_date":"flexible_start","message":"asdfg"}
+INFO - 2025-09-28 16:08:56 --> Registration data: {"job_type":"Companion","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1234@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"flexible_work","availability_type":"full_time_availability","start_date":"flexible_start","message":"asdfg","cv_filename":"1759075736_homepage.pdf","cv_path":"uploads\/cv\/1759075736_homepage.pdf","status":"pending"}
+INFO - 2025-09-28 16:08:56 --> Registration save result: success
+INFO - 2025-09-28 16:08:56 --> Returning AJAX success response for registration
+DEBUG - 2025-09-28 16:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 16:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 16:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 16:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 16:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-28 16:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

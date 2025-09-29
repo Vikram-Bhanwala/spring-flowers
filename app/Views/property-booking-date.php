@@ -189,20 +189,27 @@
 <!-- date form sec -->
 <section class="property_date_main_sec">
    <div class="container property_date_main_container">
-      <div class="property_date_main_box">
+      <?php if (session()->getFlashdata('error')): ?>
+      <div style="background: #ffebee; color: #c62828; padding: 15px; margin-bottom: 20px; border: 1px solid #ffcdd2; border-radius: 4px; text-align: center;">
+         <?php echo session()->getFlashdata('error'); ?>
+      </div>
+      <?php endif; ?>
+      
+      <form id="propertyDateForm" action="<?php echo base_url()?>property-date-submit" method="post">
+         <div class="property_date_main_box">
          <!-- Left Side Plans -->
          <div class="property_date_main_left">
             <div class="property_date_main_plan" data-plan="Daily">
-               <span  class="property_date_main_dailty">Daily</span> <span class="property_date_main_discount">75% Discount</span>
+               <span  class="property_date_main_dailty">Daily</span> <span class="property_date_main_discount">7.5% Discount</span>
             </div>
             <div class="property_date_main_plan" data-plan="Weekly">
-               <span class="property_date_main_dailty">Weekly</span> <span class="property_date_main_discount">50% Discount</span>
+               <span class="property_date_main_dailty">Weekly</span> <span class="property_date_main_discount">5.0% Discount</span>
             </div>
             <div class="property_date_main_plan" data-plan="Fortnightly">
-               <span class="property_date_main_dailty">Fortnightly</span> <span class="property_date_main_discount">40% Discount</span>
+               <span class="property_date_main_dailty">Fortnightly</span> <span class="property_date_main_discount">4.0% Discount</span>
             </div>
             <div class="property_date_main_plan bb-none" data-plan="Monthly">
-               <span class="property_date_main_dailty">Monthly</span> <span class="property_date_main_discount">30% Discount</span>
+               <span class="property_date_main_dailty">Monthly</span> <span class="property_date_main_discount">3.0% Discount</span>
             </div>
          </div>
          <!-- Right Side Forms (different for each plan) -->
@@ -499,7 +506,13 @@
                </div>
             </div>
          </div>
+         <!-- Submit Button -->
+         <div style="text-align: center; margin-top: 30px;">
+            <button type="button" id="backBtn" onclick="window.location.href='<?php echo base_url()?>property-form'" style="padding: 10px 20px; background: transparent; border: 2px solid black; color: black; margin-right: 20px; cursor: pointer;">Back</button>
+            <button type="submit" id="submitBtn" style="padding: 10px 20px; background: black; color: white; border: none; cursor: pointer; display: none;">Continue</button>
+         </div>
       </div>
+      </form>
    </div>
 </section>
 <?php
@@ -509,6 +522,8 @@
    const plans = document.querySelectorAll(".property_date_main_plan");
    const rightBox = document.getElementById("property_date_main_right");
    const forms = document.querySelectorAll(".property_date_main_form");
+   const submitBtn = document.getElementById("submitBtn");
+   const form = document.getElementById("propertyDateForm");
    
    const dataStore = {
      selectedPlan: "",
@@ -533,6 +548,7 @@
    
        dataStore.selectedPlan = plan.getAttribute("data-plan");
        console.log("Plan Selected:", dataStore);
+       checkFormCompletion();
      });
    });
    
@@ -542,8 +558,80 @@
        const parent = btn.closest(".property_date_main_form");
        parent.querySelectorAll(".property_date_main_time_btn").forEach(b => b.classList.remove("active"));
        btn.classList.add("active");
-       dataStore.formData.timing = btn.getAttribute("data-time");
+       dataStore.formData.timing = btn.value;
        console.log("Timing Selected:", dataStore);
+       checkFormCompletion();
      });
+   });
+
+   // Handle date inputs
+   document.querySelectorAll('input[type="date"]').forEach(dateInput => {
+     dateInput.addEventListener("change", () => {
+       dataStore.formData.selectedDate = dateInput.value;
+       console.log("Date Selected:", dataStore);
+       checkFormCompletion();
+     });
+   });
+
+   // Handle day checkboxes
+   document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+     checkbox.addEventListener("change", () => {
+       const selectedDays = [];
+       document.querySelectorAll('input[type="checkbox"]:checked').forEach(cb => {
+         selectedDays.push(cb.id);
+       });
+       dataStore.formData.selectedDays = selectedDays.join(',');
+       console.log("Days Selected:", dataStore);
+       checkFormCompletion();
+     });
+   });
+
+   function checkFormCompletion() {
+     const hasPlan = dataStore.selectedPlan !== "";
+     const hasDate = dataStore.formData.selectedDate !== undefined && dataStore.formData.selectedDate !== "";
+     const hasTiming = dataStore.formData.timing !== undefined && dataStore.formData.timing !== "";
+     
+     // For weekly, fortnightly, monthly plans, also check if days are selected
+     const needsDays = ['Weekly', 'Fortnightly', 'Monthly'].includes(dataStore.selectedPlan);
+     const hasDays = !needsDays || (dataStore.formData.selectedDays !== undefined && dataStore.formData.selectedDays !== "");
+     
+     if (hasPlan && hasDate && hasTiming && hasDays) {
+       submitBtn.style.display = "inline-block";
+     } else {
+       submitBtn.style.display = "none";
+     }
+   }
+
+   // Handle form submission
+   form.addEventListener("submit", function(e) {
+     e.preventDefault();
+     
+     // Create hidden inputs for form data
+     const planInput = document.createElement("input");
+     planInput.type = "hidden";
+     planInput.name = "plan";
+     planInput.value = dataStore.selectedPlan;
+     form.appendChild(planInput);
+
+     const dateInput = document.createElement("input");
+     dateInput.type = "hidden";
+     dateInput.name = "selected_date";
+     dateInput.value = dataStore.formData.selectedDate || "";
+     form.appendChild(dateInput);
+
+     const daysInput = document.createElement("input");
+     daysInput.type = "hidden";
+     daysInput.name = "selected_days";
+     daysInput.value = dataStore.formData.selectedDays || "";
+     form.appendChild(daysInput);
+
+     const timingInput = document.createElement("input");
+     timingInput.type = "hidden";
+     timingInput.name = "timing";
+     timingInput.value = dataStore.formData.timing || "";
+     form.appendChild(timingInput);
+
+     // Submit the form
+     form.submit();
    });
 </script>

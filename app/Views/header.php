@@ -21,6 +21,19 @@
     z-index: 99999999999 !important;
 }
 
+
+.thank-you-popup-content h2{
+ color:rgb(0, 0, 0) !important;
+
+}
+.thank-you-popup-content p{
+ color:rgb(0, 0, 0) !important;
+}
+.thank-you-popup-content .close-btn{
+color:rgb(255, 255, 255) !important;
+background:rgb(0, 0, 0) !important;
+}
+
 /* Overlay */
 .contact_form_side_overlay {
   position: fixed;
@@ -156,6 +169,71 @@
 .social_box img{
   height:40px
 }
+
+/* Thank You Popup Styles */
+.thank-you-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+}
+
+.thank-you-popup-content {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: popupSlideIn 0.3s ease-out;
+}
+
+@keyframes popupSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8) translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.thank-you-popup h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.thank-you-popup p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.thank-you-popup .close-btn {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.thank-you-popup .close-btn:hover {
+  background: #219a52;
+}
 .Housekeeping-Companions-frame{
   overflow:hidden !important
 }
@@ -199,6 +277,18 @@
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <!-- Close Button -->
+          <div style="text-align: right; margin-bottom: 20px;">
+            <button id="contact_form_side_close" style="
+              background: none; 
+              border: none; 
+              font-size: 24px; 
+              cursor: pointer; 
+              color: #333;
+              padding: 5px 10px;
+            " title="Close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
           
           <!-- Your Form -->
           <div class="contact_form_side_form_box">
@@ -241,13 +331,13 @@
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
-                        <button class="contact_lets_conect_btn" id="contact_side_submit_btn" type="submit">Let’s Connect</button>
+                        <button class="contact_lets_conect_btn" id="contact_side_submit_btn" type="submit">Let's Connect</button>
                       </div>
                       </div>
                 </form>
                 <div class="col-lg-12 col-md-12 col-sm-12">
                   <div class="contact_side_akshay_main_input_box">
-                    <div id="contact_side_success" style="display:none;color:green;font-weight:600;">Thank you for connecting with us.</div>
+                    <div id="contact_side_success" style="display:none;color:green;font-weight:600;min-height:200px;width:100%;">Thank you for connecting with us.</div>
                     <div id="contact_side_error" style="display:none;color:#b00020;font-weight:600;">An error occurred. Please try again.</div>
                   </div>
                 </div>
@@ -290,6 +380,16 @@
     </div>
   </div>
 </section>
+
+<!-- Thank You Popup -->
+<div id="thankYouPopup" class="thank-you-popup">
+  <div class="thank-you-popup-content">
+    <h2>Thank You!</h2>
+    <p id="thankYouMessage">Thank you for connecting with us. We'll get back to you soon!</p>
+    <button class="close-btn" onclick="closeThankYouPopup()">Close</button>
+  </div>
+</div>
+
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const openBtns = document.querySelectorAll(".contact_side_btn"); // all buttons with class
@@ -300,6 +400,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const successBox = document.getElementById("contact_side_success");
   const errorBox = document.getElementById("contact_side_error");
   const submitBtn = document.getElementById("contact_side_submit_btn");
+  
+  // Debug: Check if elements are found
+  console.log('Contact form elements found:', {
+    form: !!form,
+    successBox: !!successBox,
+    errorBox: !!errorBox,
+    submitBtn: !!submitBtn
+  });
+  
+  // Test function to manually show success message
+  window.testSuccessMessage = function() {
+    showThankYouPopup("This is a test message to verify the popup is working!");
+  };
 
   openBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -321,42 +434,131 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
+      console.log('Form submission started');
+      
       if (successBox) successBox.style.display = "none";
       if (errorBox) errorBox.style.display = "none";
       if (submitBtn) submitBtn.disabled = true;
+      
       try {
         const formData = new FormData(form);
+        console.log('Form data prepared:', Object.fromEntries(formData));
+        
         const response = await fetch(form.action, {
           method: "POST",
           headers: { "X-Requested-With": "XMLHttpRequest" },
           body: formData
         });
-        if (!response.ok) throw new Error("Request failed");
+        
+        console.log('Response status:', response.status);
+        console.log('Response ok:', response.ok);
+        
+        if (!response.ok) {
+          console.error('Response not ok:', response.status, response.statusText);
+          throw new Error("Request failed");
+        }
+        
         const data = await response.json();
-        if (data && data.success) {
-          if (successBox) {
-            successBox.textContent = data.message || "Thank you for connecting with us.";
-            successBox.style.display = "block";
-          }
-          alert(data.message || "Thank you for connecting with us.");
-          // do not hide the form; just show success message
+        console.log('Response data:', data);
+        console.log('Data success value:', data.success);
+        console.log('Data type:', typeof data.success);
+        
+        if (data && data.success === true) {
+          console.log('Success condition met, showing popup message');
+          
+          // Hide the form immediately
+          form.style.display = "none";
+          
+          // Show simple popup thank you message
+          showThankYouPopup(data.message || "Thank you for connecting with us!");
+          
+          // Refresh the page after 3 seconds
+          setTimeout(() => {
+            console.log('Refreshing page...');
+            window.location.reload();
+          }, 3000);
+          
         } else {
+          console.log('Success condition NOT met');
+          console.log('Data exists:', !!data);
+          console.log('Data success:', data ? data.success : 'no data');
+          console.log('Data message:', data ? data.message : 'no message');
+          
           if (errorBox) {
             errorBox.textContent = (data && data.message) || "An error occurred. Please try again.";
             errorBox.style.display = "block";
+            console.log('Error message displayed');
           }
-          alert((data && data.message) || "An error occurred. Please try again.");
         }
       } catch (err) {
+        console.error('Form submission error:', err);
+        console.error('Error message:', err.message);
+        
         if (errorBox) {
           errorBox.textContent = "An error occurred. Please try again.";
           errorBox.style.display = "block";
+          console.log('Error message displayed in catch block');
         }
-        alert("An error occurred. Please try again.");
       } finally {
         if (submitBtn) submitBtn.disabled = false;
+        console.log('Form submission completed');
       }
     });
   }
 });
+
+// Function to show thank you popup
+function showThankYouPopup(message) {
+  const popup = document.getElementById("thankYouPopup");
+  const messageElement = document.getElementById("thankYouMessage");
+  
+  if (popup && messageElement) {
+    messageElement.textContent = message;
+    popup.style.display = "flex";
+    console.log('Thank you popup displayed');
+    
+    // Add click outside to close functionality
+    popup.onclick = function(e) {
+      if (e.target === popup) {
+        closeThankYouPopup();
+      }
+    };
+  } else {
+    console.error('Thank you popup elements not found');
+  }
+}
+
+// Function to close thank you popup
+function closeThankYouPopup() {
+  const popup = document.getElementById("thankYouPopup");
+  if (popup) {
+    popup.style.display = "none";
+    console.log('Thank you popup closed');
+  }
+}
+
+// Function to close contact panel
+function closeContactPanel() {
+  const overlay = document.getElementById("contact_form_side_overlay");
+  const panel = document.getElementById("contact_form_side_panel");
+  const form = document.getElementById("contact_side_form");
+  const successBox = document.getElementById("contact_side_success");
+  
+  if (overlay) overlay.classList.remove("active");
+  if (panel) panel.classList.remove("active");
+  
+  // Reset form and success message for next use
+  if (form) form.style.display = "block";
+  if (successBox) {
+    successBox.style.display = "none";
+    successBox.innerHTML = "";
+  }
+  
+  // Also reset any dynamically created message container
+  const messageContainer = document.getElementById("contact_side_success");
+  if (messageContainer) {
+    messageContainer.style.display = "none";
+    messageContainer.innerHTML = "";
+  }
+}
 </script>

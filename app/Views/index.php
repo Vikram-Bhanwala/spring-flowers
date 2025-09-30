@@ -26,33 +26,32 @@
     color: white;
     text-align: right;
     line-height: 62px;
-}
-.hero_main_house_cleaning_img_box {
+}.hero_main_house_cleaning_img_box {
   position: relative;
   display: inline-block;
   width: 100%;
-  overflow:hidden
+  overflow: hidden;
 }
 
 .hero_main_house_cleaning_img_box img {
-  width: 75%;
+  width: 100%;
   display: block;
   height: auto !important;
-  transform: scale(1.2);
-  transition:all 0.6s ease;
+  transform: scale(1.2); /* start zoomed in */
+  transition: transform 0.6s ease;
 }
 
 .hero_main_house_cleaning_overlay {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.02); /* black transparent overlay */
+  background: rgba(0,0,0,0.02); /* transparent overlay */
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.6s ease; 
+  transition: background 0.6s ease;
 }
 
 .hero_main_house_cleaning_text {
@@ -61,53 +60,70 @@
   font-weight: 600;
   text-align: center;
 }
- .hero_main_house_cleaning_text h2{
-    font-size: 29px;
-    font-weight: 600;
-margin-bottom:20px
-}
-.hero_main_house_cleaning_text a{
-  background: rgba(255, 255, 255, 0.49);
-/* border-radius: 16px; */
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-color:white;
-border:2px solid white;
-    padding: 2px 25px;
-        font-size: 20px;
-    font-weight: 100;
-    text-decoration: none;
 
+.hero_main_house_cleaning_text h2 {
+  font-size: 29px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.hero_main_house_cleaning_heading_box h3{
-    font-family:IvyOraDisplay-Regular;
-    color:white;
-    font-size:50px;
-        font-weight: 700;
-} 
+
+.hero_main_house_cleaning_text a {
+  background: rgba(255, 255, 255, 0.49);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: white;
+  border: 2px solid white;
+  padding: 2px 25px;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  transition: all 0.4s ease; /* smooth hover */
+}
+
+.hero_main_house_cleaning_heading_box h3 {
+  font-family: IvyOraDisplay-Regular;
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+}
+
 .hero_main_house_cleaning_heading_box {
-    position: absolute;
-    bottom: -6%;
-    left: -7%;
+  position: absolute;
+  bottom: -6%;
+  left: -7%;
 }
-.hero_fourth_row{
-  margin-bottom:100px;
-  margin-top:100px
+
+.hero_fourth_row {
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
+
 .hero_main_house_cleaning_heading_box2 {
-    position: absolute;
-    bottom: -6%;
-    left: 44%;
+  position: absolute;
+  bottom: -6%;
+  left: 44%;
 }
+
 .hero_main_house_cleaning_img_box:hover img {
-  transform: scale(1); /* zoom effect */
+  transform: scale(1); /* zooms OUT on hover */
 }
 
 .hero_main_house_cleaning_img_box:hover .hero_main_house_cleaning_overlay {
-  background: linear-gradient(to bottom, rgb(0 0 0 / 20%) 58%, rgb(0 0 0 / 79%) 93%, rgb(0 0 0) 100%); 
-      width: 75%;
+  background: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 20%) 58%,
+    rgb(0 0 0 / 79%) 93%,
+    rgb(0 0 0) 100%
+  );
 }
+
+.hero_main_house_cleaning_img_box:hover .hero_main_house_cleaning_text a {
+  background: white;   /* bg changes */
+  color: #be9d7d;        /* text color changes */
+  border-color: white; /* keep border clean */
+}
+
 .hero_across_the_uk_box h2 {
     font-size: 59px;
     color: white;

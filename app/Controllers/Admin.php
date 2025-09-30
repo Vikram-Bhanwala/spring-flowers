@@ -112,4 +112,9 @@ class Admin extends BaseController
 
         return view('admin/lead-manager');
     }
+
+    // to show lead manager data a
+    public function LeadManageData(){
+        
+    }
 }

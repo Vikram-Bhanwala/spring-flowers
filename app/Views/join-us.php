@@ -8,7 +8,8 @@
    .join_us_head_box h2{
    font-family:IvyOraDisplay-Regular;
    margin-bottom:10px;
-   text-align:center
+   text-align:center;
+   font-size:55px !important
    }
    .join_us_head_box p{
    text-align:center;

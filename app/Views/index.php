@@ -74,8 +74,8 @@
   -webkit-backdrop-filter: blur(5px);
   color: white;
   border: 2px solid white;
-  padding: 2px 25px;
-  font-size: 20px;
+  padding: 5px 30px;
+  font-size: 17px;
   font-weight: 100;
   text-decoration: none;
   transition: all 0.4s ease; /* smooth hover */

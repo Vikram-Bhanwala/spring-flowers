@@ -8,7 +8,7 @@ include('header.php');
     position: relative;
     background-image: url('assets/img/new/blogs-banner.jpg');
     padding: 40px 0px;
-    background-size:100% 100%;
+    background-size:105% 121%;
     font-family:IvyOraDisplay-Regular;
     font-weight:100
 }

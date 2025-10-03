@@ -44,6 +44,7 @@
       padding: 20px;
       border: 1px solid black;
       display: none;
+      max-height:max-content !important
       }
       .property_date_main_form {
       display: none;

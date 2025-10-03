@@ -5,8 +5,13 @@
 	<title>Home page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/img/new/favicon.png">
+  
+  <!-- Optional: Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="<?php echo base_url() ?>assets/img/new/favicon.png">
+
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/images/icons/favicon.ico"/>
+	<!-- <link rel="icon" type="image/png" href="<?php echo base_url() ?>assets/images/icons/favicon.ico"/> -->
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/bootstrap.css">
 <!--===============================================================================================-->
@@ -89,7 +94,7 @@ background:rgb(0, 0, 0) !important;
         width: 100%;
         color:#00000047;
 margin-bottom:0px !important;
-    margin-left: 15px;
+    margin-left: 11px;
 
     }
     
@@ -298,19 +303,19 @@ margin-bottom:0px !important;
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Name</label>
-                        <input type="text" placeholder="Enter Your Name" name="name" required>
+                        <input type="text" placeholder="" name="name" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Phone Number</label>
-                        <input type="text" placeholder="Enter Phone Number" name="phone" required>
+                        <input type="text" placeholder="" name="phone" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Email Address</label>
-                        <input type="text" placeholder="Enter Email Address" name="email" required>
+                        <input type="text" placeholder="" name="email" required>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">
@@ -326,7 +331,7 @@ margin-bottom:0px !important;
                     <div class="col-lg-12 col-md-12 col-sm-12">
                       <div class="contact_side_akshay_main_input_box">
                         <label>Message</label>
-                        <textarea name="message" id="" plaecholder="Enter Message.." ></textarea>
+                        <textarea name="message" id="" plaecholder="" ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-sm-12">

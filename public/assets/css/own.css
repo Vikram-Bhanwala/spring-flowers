@@ -216,7 +216,7 @@ position: absolute;
     }
 
    .INDIANA-GREEN-main-frame .content h1 {
-    font-size: 70px;
+    font-size: 65px;
     margin-bottom: 10px;
     font-family: IvyOraDisplay-Regular;
     letter-spacing: 5px;
@@ -785,7 +785,7 @@ position: absolute;
 
 .slect_property_type_head_box h2 {
     font-family: IvyOraDisplay-Regular !important;
-    font-size: 40px;
+    font-size: 55px;
     text-align: left !important;
 }
 
@@ -918,5 +918,7 @@ border-radius: 5px;
     top: 35%;
 }
 
-
+.Housekeeping-Companions-frame{
+  display: none;
+}
 

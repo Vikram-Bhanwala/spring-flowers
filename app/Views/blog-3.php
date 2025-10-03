@@ -71,40 +71,38 @@ include('header.php');
 }
 .blog_main_sec h2{
     color:black;
-   font-family:IvyOraDisplay-Regular;
+   font-family:IvyOraDisplay-medium;
    margin-bottom:30px;
-   font-weight:600;
-   margin-top:30px
+   font-size:35px;
 
 }
 .blog_main_sec h3{
     color:black;
-   font-family:IvyOraDisplay-Regular;
+   font-family:IvyOraDisplay-medium;
    font-weight:500;
    margin-bottom:30px;
-   font-weight:600
+   font-size:30px;
 
 }
 .blog_main_sec h4{
     color:black;
-   font-family:IvyOraDisplay-Regular;
+   font-family:IvyOraDisplay-medium;
    margin-bottom:20px;
-   font-weight:600
+   font-size:25px;
 
 }
 .blog_main_sec h5{
     color:black;
-   font-family:IvyOraDisplay-Regular;
+   font-family:IvyOraDisplay-medium;
    margin-bottom:20px;
-   font-weight:600;
-   margin-top:30px
+   margin-top:30px;
+   font-size:23px;
 
 }
 .blog_main_sec h1{
     color:black;
-   font-family:IvyOraDisplay-Regular;
+   font-family:IvyOraDisplay-medium;
    margin-bottom:40px;
-   font-weight:600
 
 }
 .blog_main_sec p{
@@ -227,7 +225,8 @@ include('header.php');
     color: black !important;
     font-size: 15px;
     text-decoration:none !important;
-    font-weight:600
+    font-weight:600;
+    font-family:IvyOraDisplay-Regular;
 }
 .blogs_regular_box h6{
     margin-top:10px;

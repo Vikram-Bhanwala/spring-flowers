@@ -131,7 +131,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_img_box">
-                    <img src="<?php echo base_url() ?>assets/img/new/thank.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/thank_india.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -147,75 +147,69 @@ include('header.php');
 </section>
 
 <!-- house keeping campoins -->
-<section class="house_keeeping_compains_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12">
-                <div class="house_keeeping_compains_head_box">
-                    <h2>Housekeeping Companions</h2>
-                </div>
+
+  <section class="Housekeeping-Companions-frame">
+	 <div class="container">
+	<div class="housekeeping-companions">
+    <h2 class="home-heading">Housekeeping Companions</h2>
+    <div class="products-grid hero_new_housekeeping_animate">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <div class="product-info">
+                <h3>5 Housekeeping Tips for Joyful Living Book</h3>
+                <p>£4.99</p>
+                <a href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank" class="btn">Buy Now</a>
             </div>
         </div>
-        <div class="row house_keeeepiing_sldie_prod_row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="our_products_box">
-                <img src="assets/img/new/our-product1.png" alt="">
 
-                <div class="our_products_overlay">
-                    <div class="our_products_content">
-                    <h3>5 Housekeeping Tips for Joyful Living Book</h3>
-                    <h5>£4.99</h5>
-                    <a class="our_products_btn">Buy Now</a>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="our_products_box">
-                <img src="assets/img/new/our-product1.png" alt="">
-
-                <div class="our_products_overlay">
-                    <div class="our_products_content">
-                    <h3>Washing Up Pad</h3>
-                    <h5>£3.00</h5>
-                    <a class="our_products_btn">Buy Now</a>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="our_products_box">
-                <img src="assets/img/new/our-product1.png" alt="">
-
-                <div class="our_products_overlay">
-                    <div class="our_products_content">
-                    <h3>Window Cleaning 2-Pack</h3>
-                    <h5>£9.50</h5>
-                    <a class="our_products_btn">Buy Now</a>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="our_products_box">
-                <img src="assets/img/new/our-product1.png" alt="">
-
-                <div class="our_products_overlay">
-                    <div class="our_products_content">
-                    <h3>Replacement&nbsp;Head for Deep Clean Mop</h3>
-                    <h5>£6.99</h5>
-                    <a class="our_products_btn">Buy Now</a>
-                    </div>
-                </div>
-                </div>
-
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>assets/img/new/hc2.png" alt="Washing Up Pad">
+            <div class="product-info">
+                <h3>Washing Up Pad</h3>
+                <p>£3.00</p>
+                <a href="https://uk.e-cloth.com/products/wup-washing-up-pad" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
+            <div class="product-info">
+                <h3>Window Cleaning 
+2-Pack</h3>
+                <p>£9.50</p>
+                <a href="https://uk.e-cloth.com/products/wip-window-cleaning-pack" target="_blank"  class="btn">Buy Now</a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Replacement Head for Deep Clean 
+Mop</h3>
+                <p>£6.99</p>
+                <a href="https://uk.e-cloth.com/products/dch-deep-clean-mop-head" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        <!-- Product 5-->
+        <div class="product-card">
+            <img src="<?php echo base_url() ?>assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>General
+Purpose Cloth</h3>
+                <p>£4.00</p>
+                <a href="https://uk.e-cloth.com/products/gpi-general-purpose-cloth"  target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+
     </div>
-</section>
+</div>
+</div>
+  </section>    
 
 
 

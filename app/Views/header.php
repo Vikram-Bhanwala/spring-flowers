@@ -88,7 +88,7 @@ background:rgb(0, 0, 0) !important;
     .contact_side_akshay_main_input_box label{
         width: 100%;
         color:#00000047;
-
+margin-bottom:0px !important;
     margin-left: 15px;
 
     }

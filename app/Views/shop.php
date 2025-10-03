@@ -4,13 +4,14 @@ include('header.php');
 
 <style>
     
-   .blog_banner_sec {
+  .blog_banner_sec {
     position: relative;
     background-image: url('assets/img/new/shop-banner.jpg');
     padding: 40px 0px;
-    background-size:100% 100%;
-    font-family:IvyOraDisplay-Regular;
-    font-weight:100
+    background-size: 104% 142%;
+    font-family: IvyOraDisplay-Regular;
+    font-weight: 100;
+    background-position: center center;
 }
 
 .blog_banner_sec::before {

@@ -107,9 +107,9 @@
       color: white;
       }
       .form_main_biggg_box h4{
-      font-size:25px;
+      font-size:18px;
       text-align:center;
-      margin-bottom:20px
+      margin-bottom:15px
       }
       .daily_date_box,.property_date_main_timing{
       display:flex;
@@ -174,6 +174,18 @@
       width:100%;
       margin-bottom:10px
       }
+      .prop_booking_main_head_sec{
+         padding:50px 0px;
+         padding-bottom:10px !important
+
+      }
+      .prop_booking_main_head_box h2 {
+    font-size: 60px;
+    font-family: IvyOraDisplay-Regular;
+    text-align: center;
+}
+
+
    </style>
    <section class="top_time_line_sec">
       <div class="container">
@@ -187,6 +199,20 @@
       </div>
    </section>
    <!-- date form sec -->
+
+<section class="prop_booking_main_head_sec">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="prop_booking_main_head_box">
+               <h2>Set Your Cleaning Plan</h2>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+
    <section class="property_date_main_sec">
       <div class="container property_date_main_container">
          <?php if (session()->getFlashdata('error')): ?>

@@ -170,7 +170,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_img_box">
-                    <img src="<?php echo base_url() ?>assets/img/new/thank.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/thank_india.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">

@@ -85,7 +85,7 @@
   font-family: IvyOraDisplay-Regular;
   color: white;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .hero_main_house_cleaning_heading_box {
@@ -127,7 +127,7 @@
 .hero_across_the_uk_box h2 {
     font-size: 59px;
     color: white;
-    font-weight: 700;
+    font-weight: 100;
     text-align: right;
     line-height: 80px;
 }
@@ -335,7 +335,7 @@
             <img src="<?php echo base_url()?>assets/img/new/jon2.jpg" alt="">
             <div class="hero_main_house_cleaning_overlay">
               <div class="hero_main_house_cleaning_text">
-                <h2>We clean , you relax</h2>
+                <h2>Housekeeping you can trust</h2>
                 <a href="<?php echo base_url()?>select-keeper-type">Explore</a>
               </div>
             </div>
@@ -366,7 +366,7 @@
         <img src="<?php echo base_url() ?>assets/img/Rectangle-31.png" alt="Indiana Green" class="top home_about_side_top_img hero_new_home_about_img_animate">
       </div>
       <div class="content">
-        <h1>INDIANA GREEN</h1>
+        <h1>INDIANA GREENE</h1>
         <h2>I didn't always possess expert<br/> housekeeping knowledge.</h2>
         <p>Indiana Greene began her journey with a simple belief — that a clean home is more than a routine, it’s a reflection of comfort, care, and well-being. With years of experience in housekeeping and home care, she has built a reputation for blending meticulous detail with a warm, personal touch. Today, Indiana leads with the same philosophy that started it all: transforming everyday spaces into homes that feel truly lived in and loved.</p>
         <a class="btn_explre" href="<?php echo base_url()?>our-story">Explore More</a>

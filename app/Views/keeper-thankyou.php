@@ -10,7 +10,7 @@ include('header.php');
     }
     .thankyou_main_img_box img{
         width: 100% !important;
-        height:300px;
+        /* height:300px; */
         object-fit:cover;
         object-position:top center
     }
@@ -18,7 +18,7 @@ include('header.php');
         padding:60px 0px
     }
     .thankyou_main_cont_box h2 {
-    font-size: 65px;
+    font-size: 70px;
     font-family: IvyOraDisplay-Regular;
     font-weight: 200;
     margin-bottom:30px
@@ -156,7 +156,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="thankyou_main_img_box">
-                    <img src="<?php echo base_url() ?>assets/img/new/thank.png" alt="">
+                    <img src="<?php echo base_url() ?>assets/img/new/thank_india.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">

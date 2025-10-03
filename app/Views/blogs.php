@@ -130,7 +130,8 @@ include('header.php');
     color: black !important;
     font-size: 15px;
     text-decoration:none !important;
-    font-weight:600
+    font-weight:600;
+    font-family:IvyOraDisplay-Regular;
 }
 .blogs_regular_box h6{
     margin-top:10px;

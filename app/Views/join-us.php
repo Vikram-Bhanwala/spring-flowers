@@ -44,7 +44,7 @@
    }
    .join_us_content h3 {
    margin: 0 0 5px 0;
-   font-size: 50px;
+   font-size: 60px;
    font-weight: 100;
    font-family:IvyOraDisplay-Regular;
    }

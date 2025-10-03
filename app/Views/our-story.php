@@ -71,7 +71,7 @@ include('header.php');
     justify-content:center
 }
 .our_story_content_banner_box h2 {
-    font-size: 47px;
+    font-size: 54px;
     color: white;
     text-align: right;
     line-height: 64px;
@@ -95,13 +95,13 @@ include('header.php');
 padding:100px 0px;
 }
 .indain_greene_heading_box h2{
-    font-size:50px;
+    font-size:53px;
     font-family:IvyOraDisplay-Regular;
 }
 .indain_greene_heading_box h2 {
-    font-size: 60px;
+    font-size: 53px;
     font-family: IvyOraDisplay-Regular;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     margin-bottom:10px;
 }
@@ -116,7 +116,7 @@ padding:100px 0px;
     margin-top:95%
 }
 .indain_greene_second_main_cont_box{
-    margin-top:150%
+    margin-top:125%
 }
 
 .indain_greene_heading_box,
@@ -231,7 +231,7 @@ padding:100px 0px;
 }
 .early_row,.mid_row {
   position: relative;
-  margin-bottom:50px
+  margin-bottom:80px
 }
 
 .the_journey_main_cont_box {
@@ -241,6 +241,7 @@ padding:100px 0px;
   right: 0;
   transform: translateY(0); /* No extra offset initially */
   will-change: transform;
+  padding:0px 25px !important
 }
 /* make row relative to hold absolute-positioned content */
 /* Make row relative to hold content */
@@ -261,9 +262,10 @@ padding:100px 0px;
 }
 .challenge_growth_main_head_box h2{
     font-family: IvyOraDisplay-Regular;
-    font-size:70px;
+    font-size:55px;
     text-align:center;
-    margin-bottom:50px
+    margin-bottom:50px;
+    text-transform:uppercase
 }
 .challenge_growth_main_sec{
   padding:60px 0px
@@ -327,9 +329,10 @@ padding:100px 0px;
 }
 .where_she_is_now_head_box h2{
     font-family: IvyOraDisplay-Regular;
-    font-size:70px;
+    font-size:60px;
     text-align:center;
-    margin-bottom:40px
+    margin-bottom:40px;
+    text-transform:uppercase
 }
 .where_she_is_now_img_box img{
   width:100% ;
@@ -357,7 +360,7 @@ padding:100px 0px;
 } 
 .indain_greene_first_main_cont_box h2 {
     font-family: IvyOraDisplay-Regular;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     right: -22%;
     z-index: 9999 !important;
@@ -442,14 +445,14 @@ padding:100px 0px;
                     <h2>What Drives Her</h2>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-5 col-sm-12 indiana_greene_main_img_col">
+            <div class="col-lg-4 col-md-4 col-sm-12 indiana_greene_main_img_col">
                 <div class="indain_greene_main_img_box">
                     <img src="<?php echo base_url() ?>assets/img/new/indian_greene_img.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-12 meet_dian_green_col">
+            <div class="col-lg-4 col-md-4 col-sm-12 meet_dian_green_col">
                 <div class="indain_greene_second_main_cont_box">
-                    <p>Indiana Greene began her journey with a simple belief: a home deserves more than just cleaning—it deserves care, attention, and love. From her early experiences helping families maintain their homes, she envisioned a service that was personal, trustworthy, and truly transformative.</p>
+                    <p>India’s story is proof that extraordinary things can grow from unexpected beginnings. Her approach combines practicality, empathy, and determination — empowering others to embrace change, overcome challenges, and redefine success on their own terms.</p>
                 </div>
             </div>
         </div>

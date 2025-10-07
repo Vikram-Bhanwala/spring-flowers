@@ -26,6 +26,7 @@ $routes->get('property-form','Home::PropertyFormView');
 $routes->get('property-date','Home::PropertyDateFormView');
 $routes->get('property-thank-you','Home::PropertythankView');
 
+$routes->get('/zooming-in-cleaning-habit-unlocked-self-worth-inner-peace','Home::BlogFourNew');
 
 
 $routes->post('/contact-function','Functions::ContactFunction');
@@ -35,7 +36,6 @@ $routes->post('/property-date-submit','Functions::PropertyDateSubmit');
 $routes->post('/registration-submit','Functions::RegistrationSubmit');
 $routes->get('/test-registration-route','Functions::TestRegistrationRoute');
 $routes->post('/subscribe','Functions::Subscribe');
-
 // Admin routes
 $routes->group('admin', function($routes) {
     $routes->get('/', 'Admin::index');

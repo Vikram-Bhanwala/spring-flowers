@@ -406,6 +406,15 @@ include('header.php');
         <div class="row blog_regular_row">
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
+                     <a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace"><img src="<?php echo base_url()?>assets/img/new/bb4.jpg" alt=""></a>
+                    <h6><a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace">Zooming In: How a Cleaning Habit Unlocked Self-Worth and Inner Peace</a></h6>
+                    <div class="date_box_regular">
+                           <p> 07 Oct 2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="blogs_regular_box">
                      <a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning"><img src="<?php echo base_url()?>assets/img/new/bb1.png" alt=""></a>
                     <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
                     <div class="date_box_regular">

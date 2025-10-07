@@ -184,15 +184,24 @@ include('header.php');
             </div>
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="blog_main_big_blog_box">
-                    <a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning"><img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt=""></a>
-                    <h3><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h3>
+                    <a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace"><img src="<?php echo base_url() ?>assets/img/new/bb4.jpg" alt=""></a>
+                    <h3><a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace">Zooming In: How a Cleaning Habit Unlocked Self-Worth and Inner Peace</a></h3>
                     <div class="date_box_big">
-                           <p> 26 Sep 2025</p>
+                           <p> 07 Oct 2025</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row blog_regular_row">
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="blogs_regular_box">
+                     <a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning"><img src="<?php echo base_url()?>assets/img/new/blog1.jpg" alt=""></a>
+                    <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
+                    <div class="date_box_regular">
+                           <p> 26 Sep 2025</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-3 col-md-3 col-sm-12">
                 <div class="blogs_regular_box">
                      <a href="<?php echo base_url()?>10-essential-guidelines-for-becoming-a-superior-housekeeper"><img src="<?php echo base_url()?>assets/img/new/bb2.png" alt=""></a>
@@ -211,24 +220,6 @@ include('header.php');
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
-                    <h6><a href="#">Spring Cleaning 2025: A Complete Checklist for Every Room</a></h6>
-                    <div class="date_box_regular">
-                           <p> 13 Aug 2025</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blogs_regular_box">
-                     <img src="<?php echo base_url() ?>assets/img/new/blog1.jpg" alt="">
-                    <h6><a href="#">Why Housekeeping Services Are Becoming a Lifestyle Essential in the UK</a></h6>
-                    <div class="date_box_regular">
-                           <p> 12 Aug 2025</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </section>

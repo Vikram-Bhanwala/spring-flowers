@@ -95,7 +95,10 @@ class Home extends BaseController
         return view('property-thank');
     }
 
-
+    // for 4th blog
+    public function BlogFourNew(){
+        return view('blog-4');
+    }
 
 
 

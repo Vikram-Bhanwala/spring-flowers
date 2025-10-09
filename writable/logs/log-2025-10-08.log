@@ -1,0 +1,820 @@
+INFO - 2025-10-08 16:30:38 --> ContactFunction called
+INFO - 2025-10-08 16:30:38 --> Request method: POST
+INFO - 2025-10-08 16:30:38 --> Is AJAX: yes
+INFO - 2025-10-08 16:30:38 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Keeping","message":"test"}
+ERROR - 2025-10-08 16:30:38 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'spring', 3306, '', 0)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(31): CodeIgniter\BaseModel->save(Array)
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#11 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#5 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(31): CodeIgniter\BaseModel->save(Array)
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#15 {main}
+CRITICAL - 2025-10-08 16:30:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: contact-function]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contact` (`name`, `email`, `phone`, `service`, `message`) VALUES (:name:, :email:, :phone:, :service:, :message:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Functions.php(31): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:30:40 --> ContactFunction called
+INFO - 2025-10-08 16:30:40 --> Request method: POST
+INFO - 2025-10-08 16:30:40 --> Is AJAX: yes
+INFO - 2025-10-08 16:30:40 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Keeping","message":"test"}
+ERROR - 2025-10-08 16:30:40 --> Error connecting to the database: mysqli_sql_exception: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'spring', 3306, '', 0)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#4 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(31): CodeIgniter\BaseModel->save(Array)
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#11 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#13 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#16 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Connection refused in /Users/apple/Documents/spring-flowers/system/Database/MySQLi/Connection.php:246
+Stack trace:
+#0 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/apple/Documents/spring-flowers/system/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/apple/Documents/spring-flowers/system/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `co...', Array, false)
+#3 /Users/apple/Documents/spring-flowers/system/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#4 /Users/apple/Documents/spring-flowers/system/BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#5 /Users/apple/Documents/spring-flowers/system/Model.php(797): CodeIgniter\BaseModel->insert(Array, false)
+#6 /Users/apple/Documents/spring-flowers/system/BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#7 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(31): CodeIgniter\BaseModel->save(Array)
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#10 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#15 {main}
+CRITICAL - 2025-10-08 16:30:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+[Method: POST, Route: contact-function]
+in SYSTEMPATH/Database/BaseConnection.php on line 465.
+ 1 SYSTEMPATH/Database/BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `contact` (`name`, `email`, `phone`, `service`, `message`) VALUES (:name:, :email:, :phone:, :service:, :message:)', [...], false)
+ 3 SYSTEMPATH/Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH/BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH/Model.php(797): CodeIgniter\BaseModel->insert([...], false)
+ 6 SYSTEMPATH/BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 7 APPPATH/Controllers/Functions.php(31): CodeIgniter\BaseModel->save([...])
+ 8 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 9 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+10 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:04 --> ContactFunction called
+INFO - 2025-10-08 16:32:04 --> Request method: POST
+INFO - 2025-10-08 16:32:04 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:04 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Keeping","message":"test"}
+INFO - 2025-10-08 16:32:04 --> Save result: success
+CRITICAL - 2025-10-08 16:32:04 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:05 --> ContactFunction called
+INFO - 2025-10-08 16:32:05 --> Request method: POST
+INFO - 2025-10-08 16:32:05 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:05 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Keeping","message":"test"}
+INFO - 2025-10-08 16:32:05 --> Save result: success
+CRITICAL - 2025-10-08 16:32:05 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:17 --> ContactFunction called
+INFO - 2025-10-08 16:32:17 --> Request method: POST
+INFO - 2025-10-08 16:32:17 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:17 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:17 --> Save result: success
+CRITICAL - 2025-10-08 16:32:17 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:18 --> ContactFunction called
+INFO - 2025-10-08 16:32:18 --> Request method: POST
+INFO - 2025-10-08 16:32:18 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:18 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:18 --> Save result: success
+CRITICAL - 2025-10-08 16:32:18 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:18 --> ContactFunction called
+INFO - 2025-10-08 16:32:18 --> Request method: POST
+INFO - 2025-10-08 16:32:18 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:18 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:18 --> Save result: success
+CRITICAL - 2025-10-08 16:32:18 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:18 --> ContactFunction called
+INFO - 2025-10-08 16:32:18 --> Request method: POST
+INFO - 2025-10-08 16:32:18 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:18 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:18 --> Save result: success
+CRITICAL - 2025-10-08 16:32:18 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:18 --> ContactFunction called
+INFO - 2025-10-08 16:32:18 --> Request method: POST
+INFO - 2025-10-08 16:32:18 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:18 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:18 --> Save result: success
+CRITICAL - 2025-10-08 16:32:18 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:19 --> ContactFunction called
+INFO - 2025-10-08 16:32:19 --> Request method: POST
+INFO - 2025-10-08 16:32:19 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:19 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:19 --> Save result: success
+CRITICAL - 2025-10-08 16:32:19 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:19 --> ContactFunction called
+INFO - 2025-10-08 16:32:19 --> Request method: POST
+INFO - 2025-10-08 16:32:19 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:19 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:19 --> Save result: success
+CRITICAL - 2025-10-08 16:32:19 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:19 --> ContactFunction called
+INFO - 2025-10-08 16:32:19 --> Request method: POST
+INFO - 2025-10-08 16:32:19 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:19 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:19 --> Save result: success
+CRITICAL - 2025-10-08 16:32:19 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:32:19 --> ContactFunction called
+INFO - 2025-10-08 16:32:19 --> Request method: POST
+INFO - 2025-10-08 16:32:19 --> Is AJAX: yes
+INFO - 2025-10-08 16:32:19 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"test"}
+INFO - 2025-10-08 16:32:19 --> Save result: success
+CRITICAL - 2025-10-08 16:32:19 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:33:15 --> ContactFunction called
+INFO - 2025-10-08 16:33:15 --> Request method: POST
+INFO - 2025-10-08 16:33:15 --> Is AJAX: yes
+INFO - 2025-10-08 16:33:15 --> Contact data: {"name":"Jdj Jdjd","email":"Test@gmail.com","phone":"8685011980","service":"House Keeping","message":"test"}
+INFO - 2025-10-08 16:33:15 --> Save result: success
+CRITICAL - 2025-10-08 16:33:15 --> Error: Cannot access protected property CodeIgniter\Email\Email::$recipients
+[Method: POST, Route: contact-function]
+in APPPATH/Controllers/Functions.php on line 381.
+ 1 APPPATH/Controllers/Functions.php(37): App\Controllers\Functions->sendContactEmail([...])
+ 2 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Functions->ContactFunction()
+ 3 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 4 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+INFO - 2025-10-08 16:37:57 --> ContactFunction called
+INFO - 2025-10-08 16:37:57 --> Request method: POST
+INFO - 2025-10-08 16:37:57 --> Is AJAX: yes
+INFO - 2025-10-08 16:37:57 --> Contact data: {"name":"mmmm","email":"notsosilverstories@gmail.com","phone":"08685011980","service":"House Keeping","message":"afd"}
+INFO - 2025-10-08 16:37:57 --> Save result: success
+ERROR - 2025-10-08 16:38:01 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-08 16:38:01 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-33b510ff99dsm4087001a91.6 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-33b510ff99dsm4087001a91.6 - gsmtp
+
+INFO - 2025-10-08 16:38:01 --> Contact email sent: failed
+ERROR - 2025-10-08 16:38:01 --> Email error: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-33b510ff99dsm4087001a91.6 - gsmtp
+<br><pre>hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre>Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-33b510ff99dsm4087001a91.6 - gsmtp
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 8 Oct 2025 16:37:57 +0000
+From: &quot;Spring Flowers&quot; &lt;indiana@cleanspringflowers.com&gt;
+Return-Path: &lt;indiana@cleanspringflowers.com&gt;
+To: vikrambhanwala1@gmail.com
+Subject: =?UTF-8?Q?New=20Contact=20Form=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;indiana@cleanspringflowers.com&gt;
+User-Agent: CodeIgniter
+X-Sender: indiana@cleanspringflowers.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68e693659ebb17.95337158@cleanspringflowers.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68e693659ebef5.95024109&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68e693659ebef5.95024109
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Contact Form Submission
+Spring Flowers Website
+
+Name:
+mmmm
+
+Email:
+notsosilverstories@gmail.com
+
+Phone:
+08685011980
+
+Service:
+House Keeping
+
+Message:
+afd
+
+Submitted:
+2025-10-08 16:37:57
+
+This email was sent from the Spring Flowers contact form.
+
+
+--B_ALT_68e693659ebef5.95024109
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.message-field .value { min-height: 60px;=
+ }=0A=09=09=09&lt;/style&gt;=0A=09=09&lt;/head&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=
+=3D&quot;container&quot;&gt;=0A=09=09=09=09&lt;div class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;N=
+ew Contact Form Submission&lt;/h2&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;=
+/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=
+=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;=
+/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;mmmm&lt;/div&gt;=0A=09=09=09=09=09=
+&lt;/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div clas=
+s=3D&quot;label&quot;&gt;Email:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;notsosilv=
+erstories@gmail.com&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;div cla=
+ss=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Phone:&lt;/div&gt;=0A=09=
+=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;08685011980&lt;/div&gt;=0A=09=09=09=09=09&lt;/di=
+v&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D=
+&quot;label&quot;&gt;Service:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;House Keepi=
+ng&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field messa=
+ge-field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Message:&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;afd&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Sub=
+mitted:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2025-10-08 16:37:57&lt;=
+/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=
+=3D&quot;footer&quot;&gt;=0A=09=09=09=09=09&lt;p&gt;This email was sent from the Spring Flower=
+s contact form.&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09&lt;/div&gt;=0A=09=09&lt;/body&gt;=
+=0A=09=09&lt;/html&gt;
+
+--B_ALT_68e693659ebef5.95024109--</pre>
+INFO - 2025-10-08 16:38:01 --> Returning AJAX success response
+INFO - 2025-10-08 16:39:26 --> ContactFunction called
+INFO - 2025-10-08 16:39:26 --> Request method: POST
+INFO - 2025-10-08 16:39:26 --> Is AJAX: yes
+INFO - 2025-10-08 16:39:26 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"asdfsdf"}
+INFO - 2025-10-08 16:39:26 --> Save result: success
+ERROR - 2025-10-08 16:39:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-08 16:39:28 --> 220 smtp.gmail.com ESMTP d9443c01a7336-29034f36ccdsm1865875ad.101 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-29034f36ccdsm1865875ad.101 - gsmtp
+
+INFO - 2025-10-08 16:39:28 --> Contact email sent: failed
+ERROR - 2025-10-08 16:39:28 --> Email error: 220 smtp.gmail.com ESMTP d9443c01a7336-29034f36ccdsm1865875ad.101 - gsmtp
+<br><pre>hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.gmail.com at your service, [103.240.233.191]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre>Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-29034f36ccdsm1865875ad.101 - gsmtp
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 8 Oct 2025 16:39:26 +0000
+From: &quot;Spring Flowers&quot; &lt;vikrambhanwala1@gmail.com&gt;
+Return-Path: &lt;vikrambhanwala1@gmail.com&gt;
+To: vikrambhanwala1@gmail.com
+Subject: =?UTF-8?Q?New=20Contact=20Form=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;vikrambhanwala1@gmail.com&gt;
+User-Agent: CodeIgniter
+X-Sender: vikrambhanwala1@gmail.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68e693be81ec70.98255391@gmail.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68e693be81ef92.46712014&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68e693be81ef92.46712014
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Contact Form Submission
+Spring Flowers Website
+
+Name:
+Vikram Bhanwala
+
+Email:
+vikrambhanwala1@gmail.com
+
+Phone:
+08685011980
+
+Service:
+House Keeping
+
+Message:
+asdfsdf
+
+Submitted:
+2025-10-08 16:39:26
+
+This email was sent from the Spring Flowers contact form.
+
+
+--B_ALT_68e693be81ef92.46712014
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.message-field .value { min-height: 60px;=
+ }=0A=09=09=09&lt;/style&gt;=0A=09=09&lt;/head&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=
+=3D&quot;container&quot;&gt;=0A=09=09=09=09&lt;div class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;N=
+ew Contact Form Submission&lt;/h2&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;=
+/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=
+=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;=
+/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Vikram Bhanwala&lt;/div&gt;=0A=09=
+=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=
+=09&lt;div class=3D&quot;label&quot;&gt;Email:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;valu=
+e&quot;&gt;vikrambhanwala1@gmail.com&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=
+=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Phone:&lt;/d=
+iv&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;08685011980&lt;/div&gt;=0A=09=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;di=
+v class=3D&quot;label&quot;&gt;Service:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;H=
+ouse Keeping&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;f=
+ield message-field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Message:&lt;/div=
+&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;asdfsdf&lt;/div&gt;=0A=09=09=09=09=09&lt;=
+/div&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Submitted:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2025-1=
+0-08 16:39:26&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09&lt;div class=3D&quot;footer&quot;&gt;=0A=09=09=09=09=09&lt;p&gt;This email was sent from t=
+he Spring Flowers contact form.&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09&lt;/div&gt;=
+=0A=09=09&lt;/body&gt;=0A=09=09&lt;/html&gt;
+
+--B_ALT_68e693be81ef92.46712014--</pre>
+INFO - 2025-10-08 16:39:28 --> Returning AJAX success response
+INFO - 2025-10-08 16:46:48 --> ContactFunction called
+INFO - 2025-10-08 16:46:48 --> Request method: POST
+INFO - 2025-10-08 16:46:48 --> Is AJAX: yes
+INFO - 2025-10-08 16:46:48 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"adsf"}
+INFO - 2025-10-08 16:46:48 --> Save result: success
+INFO - 2025-10-08 16:46:53 --> Contact email sent: success
+INFO - 2025-10-08 16:46:53 --> Returning AJAX success response
+INFO - 2025-10-08 16:48:22 --> ContactFunction called
+INFO - 2025-10-08 16:48:22 --> Request method: POST
+INFO - 2025-10-08 16:48:22 --> Is AJAX: yes
+INFO - 2025-10-08 16:48:22 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"adf"}
+INFO - 2025-10-08 16:48:22 --> Save result: success
+INFO - 2025-10-08 16:48:26 --> Contact email sent: success
+INFO - 2025-10-08 16:48:26 --> Returning AJAX success response
+INFO - 2025-10-08 16:55:10 --> ContactFunction called
+INFO - 2025-10-08 16:55:10 --> Request method: POST
+INFO - 2025-10-08 16:55:10 --> Is AJAX: yes
+INFO - 2025-10-08 16:55:10 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1@gmail.com","phone":"08685011980","service":"House Keeping","message":"test"}
+INFO - 2025-10-08 16:55:10 --> Save result: success
+INFO - 2025-10-08 16:55:14 --> Contact email sent: success
+INFO - 2025-10-08 16:55:14 --> Returning AJAX success response
+DEBUG - 2025-10-08 16:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:00:55 --> Keeper form email sent: success
+DEBUG - 2025-10-08 17:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:05:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-08 17:05:23 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:587 (Operation timed out) in /Users/apple/Documents/spring-flowers/system/Email/Email.php:1905
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', '/Users/apple/Do...', 1905)
+#1 /Users/apple/Documents/spring-flowers/system/Email/Email.php(1905): fsockopen('smtp.gmail.com', 587, NULL, NULL, 5)
+#2 /Users/apple/Documents/spring-flowers/system/Email/Email.php(1818): CodeIgniter\Email\Email->SMTPConnect()
+#3 /Users/apple/Documents/spring-flowers/system/Email/Email.php(1703): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /Users/apple/Documents/spring-flowers/system/Email/Email.php(1597): CodeIgniter\Email\Email->spoolEmail()
+#5 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(637): CodeIgniter\Email\Email->send()
+#6 /Users/apple/Documents/spring-flowers/app/Controllers/Functions.php(208): App\Controllers\Functions->sendPropertyFormEmail(Array)
+#7 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(933): App\Controllers\Functions->PropertyDateSubmit()
+#8 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+#9 /Users/apple/Documents/spring-flowers/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/apple/Documents/spring-flowers/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /Users/apple/Documents/spring-flowers/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/apple/Documents/spring-flowers/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/apple/Documents/spring-flowers/system/rewrite.php(44): require_once('/Users/apple/Do...')
+#14 {main}
+ERROR - 2025-10-08 17:05:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-08 17:05:23 --> 
+INFO - 2025-10-08 17:05:23 --> Property form email sent: failed
+ERROR - 2025-10-08 17:05:23 --> Property form email error: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Wed, 8 Oct 2025 17:05:18 +0000
+From: &quot;Spring Flowers&quot; &lt;indiana@cleanspringflowers.com&gt;
+Return-Path: &lt;indiana@cleanspringflowers.com&gt;
+To: indiana@cleanspringflowers.com
+Subject: =?UTF-8?Q?New=20Property=20Booking=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;indiana@cleanspringflowers.com&gt;
+User-Agent: CodeIgniter
+X-Sender: indiana@cleanspringflowers.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68e699ce1f6a19.52632246@cleanspringflowers.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68e699ce1f6ca4.77894239&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68e699ce1f6ca4.77894239
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Property Booking Submission
+Spring Flowers Website
+
+🏠 New Property Booking Request
+A customer has submitted a property booking form!
+
+Customer Information
+
+Name:
+Vikram Bhanwala
+
+Phone:
+08685011980
+
+Property Details
+
+Address:
+Hno D602 The Atrium
+
+City:
+sec 37 D gurugram
+
+Town/Area:
+Bourton-on-the-water
+
+Postal Code:
+122006
+
+Property Specifications
+
+Number of Rooms:
+2
+
+Number of Kitchens:
+1
+
+Number of Bathrooms:
+2
+
+Booking Details
+
+Service Plan:
+Daily
+
+Selected Date:
+2025-10-30
+
+Selected Days:
+
+Timing:
+Morning
+
+Submitted:
+2025-10-08 17:05:18
+
+This email was sent from the Spring Flowers property booking form.
+
+
+--B_ALT_68e699ce1f6ca4.77894239
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.section { margin-bottom: 25px; padding: =
+15px; background-color: #f8f9fa; border-radius: 5px; }=0A=09=09=09=09.secti=
+on-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-botto=
+m: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }=0A=09=09=
+=09=09.booking-highlight { background-color: #e8f5e8; border-left: 4px soli=
+d #27ae60; padding: 15px; margin: 20px 0; }=0A=09=09=09&lt;/style&gt;=0A=09=09&lt;/h=
+ead&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=3D&quot;container&quot;&gt;=0A=09=09=09=09&lt;div=
+ class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;New Property Booking Submission&lt;/h2=
+&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=
+=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;booking-hig=
+hlight&quot;&gt;=0A=09=09=09=09=09=09&lt;h3 style=3D&quot;margin: 0; color: #27ae60;&quot;&gt;=
+=F0=9F=8F=A0 New Property Booking Request&lt;/h3&gt;=0A=09=09=09=09=09=09&lt;p style=
+=3D&quot;margin: 5px 0 0 0; font-weight: bold;&quot;&gt;A customer has submitted a prope=
+rty booking form!&lt;/p&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=
+=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-tit=
+le&quot;&gt;Customer Information&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;/div&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;value&quot;&gt;Vikram Bhanwala&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Phone:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;0868501=
+1980&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=
+=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;section-title&quot;&gt;Property Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Address:&lt;/div&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Hno D602 The Atrium&lt;/div&gt;=0A=09=
+=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;City:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;value&quot;&gt;sec 37 D gurugram&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;labe=
+l&quot;&gt;Town/Area:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Bourton-on-=
+the-water&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Postal Code:&lt;/div&gt;=
+=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;122006&lt;/div&gt;=0A=09=09=09=09=09=
+=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div c=
+lass=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Property=
+ Specifications&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Rooms:&lt;/div&gt;=0A=09=09=09=09=09=
+=09=09&lt;div class=3D&quot;value&quot;&gt;2&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=
+=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;=
+Number of Kitchens:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;1&lt;/di=
+v&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Bathrooms:&lt;/div&gt;=0A=09=
+=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=
+=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;s=
+ection&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Booking Details&lt;/=
+div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div =
+class=3D&quot;label&quot;&gt;Service Plan:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;va=
+lue&quot;&gt;Daily&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Selected Date:&lt;/div=
+&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2025-10-30&lt;/div&gt;=0A=09=09=09=
+=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=
+=09=09&lt;div class=3D&quot;label&quot;&gt;Selected Days:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div=
+ class=3D&quot;value&quot;&gt;&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div=
+ class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Timing:&lt;/div&gt;=
+=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Morning&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;di=
+v class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Submitted:&lt;/div=
+&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2025-10-08 17:05:18&lt;/div&gt;=0A=09=
+=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;footer&quot;=
+&gt;=0A=09=09=09=09=09&lt;p&gt;This email was sent from the Spring Flowers property =
+booking form.&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09&lt;/div&gt;=0A=09=09&lt;/body&gt;=0A=
+=09=09&lt;/html&gt;
+
+--B_ALT_68e699ce1f6ca4.77894239--</pre>
+DEBUG - 2025-10-08 17:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:06:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:06:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-08 17:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:06:49 --> Property form email sent: success
+DEBUG - 2025-10-08 17:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-08 17:18:29 --> RegistrationSubmit called
+INFO - 2025-10-08 17:18:29 --> Request method: POST
+INFO - 2025-10-08 17:18:29 --> Is AJAX: yes
+INFO - 2025-10-08 17:18:29 --> POST data: {"job_type":"Companion","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1234@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"live_in_work","availability_type":"full_time_availability","start_date":"asap_start","message":""}
+INFO - 2025-10-08 17:18:29 --> Registration data: {"job_type":"Companion","name":"Vikram Bhanwala","phone":"08685011980","email":"vikrambhanwala1234@gmail.com","country_of_living":"India","county":"Haryana","type_of_work":"live_in_work","availability_type":"full_time_availability","start_date":"asap_start","message":"","cv_filename":null,"cv_path":null,"status":"pending"}
+INFO - 2025-10-08 17:18:29 --> Registration save result: success
+INFO - 2025-10-08 17:18:33 --> Registration form email sent: success
+INFO - 2025-10-08 17:18:33 --> Returning AJAX success response for registration

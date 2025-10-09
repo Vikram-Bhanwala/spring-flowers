@@ -1,0 +1,6 @@
+INFO - 2025-10-06 16:38:43 --> ContactFunction called
+INFO - 2025-10-06 16:38:43 --> Request method: POST
+INFO - 2025-10-06 16:38:43 --> Is AJAX: yes
+INFO - 2025-10-06 16:38:43 --> Contact data: {"name":"Vikram Bhanwala","email":"vikrambhanwala1234@gmail.com","phone":"08685011980","service":"House Cleaning","message":"we"}
+INFO - 2025-10-06 16:38:43 --> Save result: success
+INFO - 2025-10-06 16:38:43 --> Returning AJAX success response

@@ -19,8 +19,20 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/own.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/css/responsive.css">
 <!--===============================================================================================-->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NFNLBTKB');</script>
+<!-- End Google Tag Manager -->
+<meta name="google-site-verification" content="tTMq8R6kj1f1WAohRhmxE4TCtt154uSV_LGXQMd31AY" />
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNLBTKB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<style>
     header {
     z-index: 99999999999 !important;
@@ -239,6 +251,30 @@ margin-bottom:0px !important;
 .thank-you-popup .close-btn:hover {
   background: #219a52;
 }
+
+/* Loading state for submit button */
+.contact_lets_conect_btn:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+  background-color: #ccc !important;
+  transition: all 0.3s ease;
+}
+
+.contact_lets_conect_btn.loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.contact_lets_conect_btn.loading::after {
+  content: "Please wait...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
 .Housekeeping-Companions-frame{
   overflow:hidden !important
 }
@@ -441,9 +477,19 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       console.log('Form submission started');
       
+      // Hide previous messages
       if (successBox) successBox.style.display = "none";
       if (errorBox) errorBox.style.display = "none";
-      if (submitBtn) submitBtn.disabled = true;
+      
+      // Disable submit button and show loading state
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.classList.add('loading');
+        
+        // Store original text
+        const originalText = submitBtn.textContent;
+        submitBtn.setAttribute('data-original-text', originalText);
+      }
       
       try {
         const formData = new FormData(form);
@@ -505,7 +551,18 @@ document.addEventListener("DOMContentLoaded", () => {
           console.log('Error message displayed in catch block');
         }
       } finally {
-        if (submitBtn) submitBtn.disabled = false;
+        // Restore submit button state
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('loading');
+          
+          // Restore original button text
+          const originalText = submitBtn.getAttribute('data-original-text');
+          if (originalText) {
+            submitBtn.textContent = originalText;
+            submitBtn.removeAttribute('data-original-text');
+          }
+        }
         console.log('Form submission completed');
       }
     });

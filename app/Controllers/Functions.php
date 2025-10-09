@@ -33,6 +33,9 @@ class Functions extends BaseController
         // Log the save result
         log_message('info', 'Save result: ' . ($save_contact ? 'success' : 'failed'));
 
+        // Send email notification
+        $emailSent = $this->sendContactEmail($data);
+
 		if($save_contact){
 			if ($this->request->isAJAX()) {
 				log_message('info', 'Returning AJAX success response');
@@ -101,6 +104,11 @@ class Functions extends BaseController
 		];
 
 		$save = $keeper->save($data);
+
+		// Send email notification for keeper form
+		if($save) {
+			$emailSent = $this->sendKeeperFormEmail($data);
+		}
 
 		if($save){
 			if ($this->request->isAJAX()) {
@@ -194,6 +202,11 @@ class Functions extends BaseController
 		// Save to database only once at the end
 		$keeper = new KeeperFormModel();
 		$save = $keeper->save($data);
+
+		// Send email notification for property form
+		if($save) {
+			$emailSent = $this->sendPropertyFormEmail($data);
+		}
 
 		if($save){
 			// Store booking details in session for thank you page
@@ -310,6 +323,11 @@ class Functions extends BaseController
 		// Log the save result
 		log_message('info', 'Registration save result: ' . ($save ? 'success' : 'failed'));
 
+		// Send email notification for registration form
+		if($save) {
+			$emailSent = $this->sendRegistrationFormEmail($data);
+		}
+
 		if($save){
 			if ($this->request->isAJAX()) {
 				log_message('info', 'Returning AJAX success response for registration');
@@ -363,6 +381,603 @@ class Functions extends BaseController
 			return $this->response->setStatusCode(400)->setJSON(['success' => false, 'message' => 'Unable to subscribe. Try again.']);
 		}
 		return 'Error saving subscription';
+	}
+
+	/**
+	 * Send contact form email notification
+	 */
+	private function sendContactEmail($data)
+	{
+		try {
+			$email = \Config\Services::email();
+			$emailConfig = new \Config\Email();
+			
+			// Set email configuration
+			$email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+			$email->setTo($emailConfig->recipients);
+			$email->setSubject('New Contact Form Submission - Spring Flowers');
+			
+			// Create HTML email template
+			$htmlMessage = $this->createContactEmailTemplate($data);
+			$email->setMessage($htmlMessage);
+			
+			// Send email
+			$result = $email->send();
+			
+			// Log email result
+			log_message('info', 'Contact email sent: ' . ($result ? 'success' : 'failed'));
+			if (!$result) {
+				log_message('error', 'Email error: ' . $email->printDebugger());
+			}
+			
+			return $result;
+		} catch (\Exception $e) {
+			log_message('error', 'Email sending failed: ' . $e->getMessage());
+			return false;
+		}
+	}
+
+	/**
+	 * Create HTML email template for contact form
+	 */
+	private function createContactEmailTemplate($data)
+	{
+		$html = '
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="UTF-8">
+			<style>
+				body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+				.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+				.header { background-color: #f8f9fa; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }
+				.content { background-color: #ffffff; padding: 30px; border: 1px solid #e9ecef; }
+				.footer { background-color: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; font-size: 12px; color: #6c757d; }
+				.field { margin-bottom: 15px; }
+				.label { font-weight: bold; color: #495057; }
+				.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; border-radius: 3px; }
+				.message-field .value { min-height: 60px; }
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<h2>New Contact Form Submission</h2>
+					<p>Spring Flowers Website</p>
+				</div>
+				<div class="content">
+					<div class="field">
+						<div class="label">Name:</div>
+						<div class="value">' . htmlspecialchars($data['name'] ?? '') . '</div>
+					</div>
+					<div class="field">
+						<div class="label">Email:</div>
+						<div class="value">' . htmlspecialchars($data['email'] ?? '') . '</div>
+					</div>
+					<div class="field">
+						<div class="label">Phone:</div>
+						<div class="value">' . htmlspecialchars($data['phone'] ?? '') . '</div>
+					</div>
+					<div class="field">
+						<div class="label">Service:</div>
+						<div class="value">' . htmlspecialchars($data['service'] ?? '') . '</div>
+					</div>
+					<div class="field message-field">
+						<div class="label">Message:</div>
+						<div class="value">' . nl2br(htmlspecialchars($data['message'] ?? '')) . '</div>
+					</div>
+					<div class="field">
+						<div class="label">Submitted:</div>
+						<div class="value">' . date('Y-m-d H:i:s') . '</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>This email was sent from the Spring Flowers contact form.</p>
+				</div>
+			</div>
+		</body>
+		</html>';
+		
+		return $html;
+	}
+
+	/**
+	 * Send keeper form email notification
+	 */
+	private function sendKeeperFormEmail($data)
+	{
+		try {
+			$email = \Config\Services::email();
+			$emailConfig = new \Config\Email();
+			
+			// Set email configuration
+			$email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+			$email->setTo($emailConfig->recipients);
+			$email->setSubject('New Keeper Form Submission - Spring Flowers');
+			
+			// Create HTML email template
+			$htmlMessage = $this->createKeeperFormEmailTemplate($data);
+			$email->setMessage($htmlMessage);
+			
+			// Send email
+			$result = $email->send();
+			
+			// Log email result
+			log_message('info', 'Keeper form email sent: ' . ($result ? 'success' : 'failed'));
+			if (!$result) {
+				log_message('error', 'Keeper form email error: ' . $email->printDebugger());
+			}
+			
+			return $result;
+		} catch (\Exception $e) {
+			log_message('error', 'Keeper form email sending failed: ' . $e->getMessage());
+			return false;
+		}
+	}
+
+	/**
+	 * Create HTML email template for keeper form
+	 */
+	private function createKeeperFormEmailTemplate($data)
+	{
+		$html = '
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="UTF-8">
+			<style>
+				body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+				.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+				.header { background-color: #f8f9fa; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }
+				.content { background-color: #ffffff; padding: 30px; border: 1px solid #e9ecef; }
+				.footer { background-color: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; font-size: 12px; color: #6c757d; }
+				.field { margin-bottom: 15px; }
+				.label { font-weight: bold; color: #495057; }
+				.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; border-radius: 3px; }
+				.section { margin-bottom: 25px; padding: 15px; background-color: #f8f9fa; border-radius: 5px; }
+				.section-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<h2>New Keeper Form Submission</h2>
+					<p>Spring Flowers Website</p>
+				</div>
+				<div class="content">
+					<div class="section">
+						<div class="section-title">Personal Information</div>
+						<div class="field">
+							<div class="label">Name:</div>
+							<div class="value">' . htmlspecialchars($data['name'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Phone:</div>
+							<div class="value">' . htmlspecialchars($data['phone'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Property Details</div>
+						<div class="field">
+							<div class="label">Address:</div>
+							<div class="value">' . htmlspecialchars($data['address'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">City:</div>
+							<div class="value">' . htmlspecialchars($data['city'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Town/Area:</div>
+							<div class="value">' . htmlspecialchars($data['town_area'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Postal Code:</div>
+							<div class="value">' . htmlspecialchars($data['postal_code'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Property Specifications</div>
+						<div class="field">
+							<div class="label">Number of Rooms:</div>
+							<div class="value">' . htmlspecialchars($data['num_rooms'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Number of Kitchens:</div>
+							<div class="value">' . htmlspecialchars($data['num_kitchens'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Number of Bathrooms:</div>
+							<div class="value">' . htmlspecialchars($data['num_bathrooms'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Service Details</div>
+						<div class="field">
+							<div class="label">Timing:</div>
+							<div class="value">' . htmlspecialchars($data['timing'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Preferred Date:</div>
+							<div class="value">' . htmlspecialchars($data['date'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="field">
+						<div class="label">Submitted:</div>
+						<div class="value">' . date('Y-m-d H:i:s') . '</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>This email was sent from the Spring Flowers keeper form.</p>
+				</div>
+			</div>
+		</body>
+		</html>';
+		
+		return $html;
+	}
+
+	/**
+	 * Send property form email notification
+	 */
+	private function sendPropertyFormEmail($data)
+	{
+		try {
+			$email = \Config\Services::email();
+			$emailConfig = new \Config\Email();
+			
+			// Set email configuration
+			$email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+			$email->setTo($emailConfig->recipients);
+			$email->setSubject('New Property Booking Submission - Spring Flowers');
+			
+			// Create HTML email template
+			$htmlMessage = $this->createPropertyFormEmailTemplate($data);
+			$email->setMessage($htmlMessage);
+			
+			// Send email
+			$result = $email->send();
+			
+			// Log email result
+			log_message('info', 'Property form email sent: ' . ($result ? 'success' : 'failed'));
+			if (!$result) {
+				log_message('error', 'Property form email error: ' . $email->printDebugger());
+			}
+			
+			return $result;
+		} catch (\Exception $e) {
+			log_message('error', 'Property form email sending failed: ' . $e->getMessage());
+			return false;
+		}
+	}
+
+	/**
+	 * Create HTML email template for property form
+	 */
+	private function createPropertyFormEmailTemplate($data)
+	{
+		$html = '
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="UTF-8">
+			<style>
+				body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+				.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+				.header { background-color: #f8f9fa; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }
+				.content { background-color: #ffffff; padding: 30px; border: 1px solid #e9ecef; }
+				.footer { background-color: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; font-size: 12px; color: #6c757d; }
+				.field { margin-bottom: 15px; }
+				.label { font-weight: bold; color: #495057; }
+				.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; border-radius: 3px; }
+				.section { margin-bottom: 25px; padding: 15px; background-color: #f8f9fa; border-radius: 5px; }
+				.section-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+				.booking-highlight { background-color: #e8f5e8; border-left: 4px solid #27ae60; padding: 15px; margin: 20px 0; }
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<h2>New Property Booking Submission</h2>
+					<p>Spring Flowers Website</p>
+				</div>
+				<div class="content">
+					<div class="booking-highlight">
+						<h3 style="margin: 0; color: #27ae60;">🏠 New Property Booking Request</h3>
+						<p style="margin: 5px 0 0 0; font-weight: bold;">A customer has submitted a property booking form!</p>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Customer Information</div>
+						<div class="field">
+							<div class="label">Name:</div>
+							<div class="value">' . htmlspecialchars($data['name'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Phone:</div>
+							<div class="value">' . htmlspecialchars($data['phone'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Property Details</div>
+						<div class="field">
+							<div class="label">Address:</div>
+							<div class="value">' . htmlspecialchars($data['address'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">City:</div>
+							<div class="value">' . htmlspecialchars($data['city'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Town/Area:</div>
+							<div class="value">' . htmlspecialchars($data['town_area'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Postal Code:</div>
+							<div class="value">' . htmlspecialchars($data['postal_code'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Property Specifications</div>
+						<div class="field">
+							<div class="label">Number of Rooms:</div>
+							<div class="value">' . htmlspecialchars($data['num_rooms'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Number of Kitchens:</div>
+							<div class="value">' . htmlspecialchars($data['num_kitchens'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Number of Bathrooms:</div>
+							<div class="value">' . htmlspecialchars($data['num_bathrooms'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Booking Details</div>
+						<div class="field">
+							<div class="label">Service Plan:</div>
+							<div class="value">' . htmlspecialchars($data['plan'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Selected Date:</div>
+							<div class="value">' . htmlspecialchars($data['selected_date'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Selected Days:</div>
+							<div class="value">' . htmlspecialchars($data['selected_days'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Timing:</div>
+							<div class="value">' . htmlspecialchars($data['timing'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="field">
+						<div class="label">Submitted:</div>
+						<div class="value">' . date('Y-m-d H:i:s') . '</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>This email was sent from the Spring Flowers property booking form.</p>
+				</div>
+			</div>
+		</body>
+		</html>';
+		
+		return $html;
+	}
+
+	/**
+	 * Send registration form email notification
+	 */
+	private function sendRegistrationFormEmail($data)
+	{
+		try {
+			$email = \Config\Services::email();
+			$emailConfig = new \Config\Email();
+			
+			// Set email configuration
+			$email->setFrom($emailConfig->fromEmail, $emailConfig->fromName);
+			$email->setTo($emailConfig->recipients);
+			$email->setSubject('New Job Application Submission - Spring Flowers');
+			
+			// Create HTML email template
+			$htmlMessage = $this->createRegistrationFormEmailTemplate($data);
+			$email->setMessage($htmlMessage);
+			
+			// Send email
+			$result = $email->send();
+			
+			// Log email result
+			log_message('info', 'Registration form email sent: ' . ($result ? 'success' : 'failed'));
+			if (!$result) {
+				log_message('error', 'Registration form email error: ' . $email->printDebugger());
+			}
+			
+			return $result;
+		} catch (\Exception $e) {
+			log_message('error', 'Registration form email sending failed: ' . $e->getMessage());
+			return false;
+		}
+	}
+
+	/**
+	 * Create HTML email template for registration form
+	 */
+	private function createRegistrationFormEmailTemplate($data)
+	{
+		// Format work type for display
+		$workTypeDisplay = '';
+		switch($data['type_of_work'] ?? '') {
+			case 'live_in_work':
+				$workTypeDisplay = 'Live-in Work';
+				break;
+			case 'live_out_work':
+				$workTypeDisplay = 'Live-out Work';
+				break;
+			case 'flexible_work':
+				$workTypeDisplay = 'Flexible Work';
+				break;
+			default:
+				$workTypeDisplay = $data['type_of_work'] ?? '';
+		}
+
+		// Format availability for display
+		$availabilityDisplay = '';
+		switch($data['availability_type'] ?? '') {
+			case 'full_time_availability':
+				$availabilityDisplay = 'Full Time Availability';
+				break;
+			case 'part_time_availability':
+				$availabilityDisplay = 'Part Time Availability';
+				break;
+			case 'flexible_availability':
+				$availabilityDisplay = 'Flexible Availability';
+				break;
+			default:
+				$availabilityDisplay = $data['availability_type'] ?? '';
+		}
+
+		// Format start date for display
+		$startDateDisplay = '';
+		switch($data['start_date'] ?? '') {
+			case 'asap_start':
+				$startDateDisplay = 'ASAP';
+				break;
+			case 'flexible_start':
+				$startDateDisplay = 'Flexible Start Date';
+				break;
+			default:
+				$startDateDisplay = $data['start_date'] ?? '';
+		}
+
+		$html = '
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<meta charset="UTF-8">
+			<style>
+				body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+				.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+				.header { background-color: #f8f9fa; padding: 20px; text-align: center; border-radius: 5px 5px 0 0; }
+				.content { background-color: #ffffff; padding: 30px; border: 1px solid #e9ecef; }
+				.footer { background-color: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; font-size: 12px; color: #6c757d; }
+				.field { margin-bottom: 15px; }
+				.label { font-weight: bold; color: #495057; }
+				.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; border-radius: 3px; }
+				.section { margin-bottom: 25px; padding: 15px; background-color: #f8f9fa; border-radius: 5px; }
+				.section-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-bottom: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }
+				.application-highlight { background-color: #fff3cd; border-left: 4px solid #ffc107; padding: 15px; margin: 20px 0; }
+				.cv-info { background-color: #d1ecf1; border-left: 4px solid #17a2b8; padding: 10px; margin: 10px 0; }
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="header">
+					<h2>New Job Application Submission</h2>
+					<p>Spring Flowers Website</p>
+				</div>
+				<div class="content">
+					<div class="application-highlight">
+						<h3 style="margin: 0; color: #856404;">💼 New Job Application Received</h3>
+						<p style="margin: 5px 0 0 0; font-weight: bold;">A candidate has submitted a job application!</p>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Applicant Information</div>
+						<div class="field">
+							<div class="label">Name:</div>
+							<div class="value">' . htmlspecialchars($data['name'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Email:</div>
+							<div class="value">' . htmlspecialchars($data['email'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Phone:</div>
+							<div class="value">' . htmlspecialchars($data['phone'] ?? '') . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Job Application Details</div>
+						<div class="field">
+							<div class="label">Job Type:</div>
+							<div class="value">' . htmlspecialchars($data['job_type'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Type of Work:</div>
+							<div class="value">' . htmlspecialchars($workTypeDisplay) . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Availability:</div>
+							<div class="value">' . htmlspecialchars($availabilityDisplay) . '</div>
+						</div>
+						<div class="field">
+							<div class="label">Start Date:</div>
+							<div class="value">' . htmlspecialchars($startDateDisplay) . '</div>
+						</div>
+					</div>
+					
+					<div class="section">
+						<div class="section-title">Location Information</div>
+						<div class="field">
+							<div class="label">Country of Living:</div>
+							<div class="value">' . htmlspecialchars($data['country_of_living'] ?? '') . '</div>
+						</div>
+						<div class="field">
+							<div class="label">County:</div>
+							<div class="value">' . htmlspecialchars($data['county'] ?? '') . '</div>
+						</div>
+					</div>';
+
+		// Add CV information if available
+		if (!empty($data['cv_filename'])) {
+			$html .= '
+					<div class="cv-info">
+						<div class="label">📄 CV/Resume Attached:</div>
+						<div class="value">' . htmlspecialchars($data['cv_filename']) . '</div>
+						<p style="margin: 5px 0 0 0; font-size: 12px; color: #666;">CV file has been uploaded and saved to the server.</p>
+					</div>';
+		}
+
+		// Add message if provided
+		if (!empty($data['message'])) {
+			$html .= '
+					<div class="section">
+						<div class="section-title">Additional Message</div>
+						<div class="field">
+							<div class="label">Message:</div>
+							<div class="value">' . nl2br(htmlspecialchars($data['message'])) . '</div>
+						</div>
+					</div>';
+		}
+
+		$html .= '
+					<div class="field">
+						<div class="label">Application Status:</div>
+						<div class="value">' . htmlspecialchars($data['status'] ?? 'pending') . '</div>
+					</div>
+					
+					<div class="field">
+						<div class="label">Submitted:</div>
+						<div class="value">' . date('Y-m-d H:i:s') . '</div>
+					</div>
+				</div>
+				<div class="footer">
+					<p>This email was sent from the Spring Flowers job application form.</p>
+				</div>
+			</div>
+		</body>
+		</html>';
+		
+		return $html;
 	}
 
 }

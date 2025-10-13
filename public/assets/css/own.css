@@ -94,7 +94,7 @@ nav a:hover {
     content: "";
     height: 100%;
     width: 100%;
-        background: #00000045;
+        background: #000000 !important;
     left: 0px;
 }
 .hero.top {

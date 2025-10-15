@@ -33,6 +33,45 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFNLBTKB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<!-- schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Clean Spring Flowers",
+  "image": "https://cleanspringflowers.com/public/assets/img/logo.png",
+  "@id": "",
+  "url": "https://cleanspringflowers.com/",
+  "telephone": "+447923639015",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Linden cottage, Mitre street",
+    "addressLocality": "Cheltenham",
+    "postalCode": "GL537JS",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "sameAs": "https://www.linkedin.com/company/clean-spring-flowers/" 
+}
+</script>
+
+<!-- schema end -->
+
+
 	<style>
     header {
     z-index: 99999999999 !important;

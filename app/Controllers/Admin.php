@@ -105,13 +105,26 @@ class Admin extends BaseController
         return session()->get('is_admin_logged_in') === true;
     }
     // for lead manager
-    public function LeadManagerView(){
-        if (!$this->isLoggedIn()) {
-            return redirect()->to('/admin/login');
-        }
-
-        return view('admin/lead-manager');
+   public function LeadManagerView(){
+    if (!$this->isLoggedIn()) {
+        return redirect()->to('/admin/login');
     }
+
+    $db = \Config\Database::connect();
+
+    $contactData = $db->table('contact')->get()->getResultArray();
+    $keeperData = $db->table('keeper_forms')->get()->getResultArray();
+    $registrationData = $db->table('registrations')->get()->getResultArray();
+    $subscriptionData = $db->table('subscriptions')->get()->getResultArray();
+
+    return view('admin/lead-manager', [
+        'contactData' => $contactData,
+        'keeperData' => $keeperData,
+        'registrationData' => $registrationData,
+        'subscriptionData' => $subscriptionData
+    ]);
+}
+
 
     // to show lead manager data a
     public function LeadManageData(){

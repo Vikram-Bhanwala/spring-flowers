@@ -135,7 +135,8 @@
   <div class="lead_manager_sidebar">
     <div class="lead_box_main">
       <a href="#">Profile</a>
-      <a href="#" class="active">Lead Manager</a>
+      <a href="<?php echo base_url() ?>admin/lead-manager" class="active">Lead Manager</a>
+      <a href="<?php echo base_url() ?>admin/logout" class="">Logout </a>
     </div>
   </div>
 

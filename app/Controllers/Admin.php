@@ -29,14 +29,14 @@ class Admin extends BaseController
             return redirect()->to('/admin/login');
         }
         
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/admin/lead-manager');
     }
 
     public function login()
     {
         // Redirect to dashboard if already logged in
         if ($this->isLoggedIn()) {
-            return redirect()->to('/admin/dashboard');
+            return redirect()->to('/admin/lead-manager');
         }
 
         return view('admin/login');
@@ -70,7 +70,7 @@ class Admin extends BaseController
             ];
             session()->set($sessionData);
 
-            return redirect()->to('/admin/dashboard')->with('success', 'Welcome back, ' . $admin['name'] . '!');
+            return redirect()->to('/admin/lead-manager')->with('success', 'Welcome back, ' . $admin['name'] . '!');
         } else {
             return redirect()->back()->with('error', 'Invalid password for email: ' . $email . '. Please check your password or contact support.');
         }
@@ -91,7 +91,7 @@ class Admin extends BaseController
             'recent_keepers' => $this->keeperModel->orderBy('id', 'DESC')->limit(5)->find(),
         ];
 
-        return view('admin/dashboard', $data);
+        return redirect()->to('/admin/lead-manager');
     }
 
     public function logout()

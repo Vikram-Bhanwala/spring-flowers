@@ -980,6 +980,14 @@ class Functions extends BaseController
 		return $html;
 	}
 
+	// // robot 
+	// public function Robot(){
+	// 	return view('robots.txt');
+	// }
+	// sitemap 
+	// public function Sitemap(){
+	// 	return view('sitemap.xml');
+	// }
 }
 
 ?>

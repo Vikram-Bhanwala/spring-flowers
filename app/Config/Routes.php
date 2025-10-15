@@ -35,6 +35,12 @@ $routes->post('/property-form-submit','Functions::PropertyFormSubmit');
 $routes->post('/property-date-submit','Functions::PropertyDateSubmit');
 $routes->post('/registration-submit','Functions::RegistrationSubmit');
 $routes->get('/test-registration-route','Functions::TestRegistrationRoute');
+// $routes->get('/robots.txt','Functions::Robot');
+// $routes->get('/sitemap.xml','Functions::Sitemap');
+$routes->get('robots.txt', 'Home::robot');
+$routes->get('sitemap.xml', 'Home::sitemap');
+
+$routes->get('/test-registration-route','Functions::TestRegistrationRoute');
 $routes->post('/subscribe','Functions::Subscribe');
 // Admin routes
 $routes->group('admin', function($routes) {
@@ -46,3 +52,4 @@ $routes->group('admin', function($routes) {
     $routes->get('lead-manager','Admin::LeadManagerView');
     
 });
+

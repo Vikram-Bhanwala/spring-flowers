@@ -239,3 +239,15 @@ DEBUG - 2025-10-15 05:37:23 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-15 05:37:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-15 05:37:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-15 05:45:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-15 06:24:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "robots.txt"
+[Method: GET, Route: robots.txt]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('robots.txt')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('robots.txt', [], true)
+ 3 APPPATH\Controllers\Functions.php(985): view('robots.txt')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Functions->Robot()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Functions))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

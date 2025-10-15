@@ -100,6 +100,15 @@ class Home extends BaseController
         return view('blog-4');
     }
 
+public function robot()
+{
+    return $this->response->setContentType('text/plain')->setBody(file_get_contents(ROOTPATH . 'public/robots.txt'));
+}
+
+public function sitemap()
+{
+    return $this->response->setContentType('application/xml')->setBody(file_get_contents(ROOTPATH . 'public/sitemap.xml'));
+}
 
 
 }

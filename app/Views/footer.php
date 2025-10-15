@@ -29,7 +29,7 @@
     <div class="footer_new_box">
       <div class="footer_column">
         <ul>
-          <li><a href="<?php echo base_url()?>">Home</a></li>
+          <li><a href="https://cleanspringflowers.com/">Home</a></li>
           <li><a href="<?php echo base_url()?>shop">Shop</a></li>
           <li><a href="<?php echo base_url()?>our-story">Our Story</a></li>
           <li><a href="<?php echo base_url()?>blogs">Blogs</a></li>

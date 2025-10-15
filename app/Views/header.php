@@ -327,7 +327,7 @@ margin-bottom:0px !important;
 	<!-- Header -->
   <header>
     <div class="logo">
-      <a href="<?php echo base_url()?>"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="Clean Springflowers Logo"></a>
+      <a href="https://cleanspringflowers.com/"><img src="<?php echo base_url() ?>assets/img/logo.png" alt="Clean Springflowers Logo"></a>
     </div>
 
     <nav id="nav-menu">

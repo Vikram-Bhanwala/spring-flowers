@@ -53,3 +53,9 @@ $routes->group('admin', function($routes) {
     
 });
 
+
+$routes->view('/office-cleaning-cheltenham','landing1');
+$routes->view('/end-of-tenancy-cleaning','landing2');
+$routes->view('/maid-service','landing3');
+$routes->view('/building-cleaning-cheltenham','landing4');
+$routes->view('/student-accommodation-cleaning','landing5');

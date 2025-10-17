@@ -362,11 +362,62 @@ a{
     position: static !important;
 }
 
+.landing_banner_main_img_box img
+ {
+    height: 300px;
+}
+.office_cleanign_main_sec {
+    padding: 30px 0px;
+    background: white;
+}
+.office_cleanign_main_box h2 {
+    font-size: 24px;
+}
+.what_we_offer_img_box img {
+    margin-bottom: 25px;
+}
+.what_we_offer_cont_box {
+    padding-left: 0px;
+}
 
+.what_we_offer_cont_box h2 {
+    font-size: 30px;
+}
+.what_we_offer_cont_box h5 {
+    font-size: 20px;
+}
 
-
-
-
+.what_we_offer_sec {
+    padding-bottom: 30px;
+}
+.what_we_offer_cont_box2 h2{
+    font-size: 30px;
+}
+.faq_main_sec{
+    padding-bottom: 30px;
+}
+.faq_head_box h2 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.faq_main_box{
+    padding:0px
+}
+.ready_to_transform_main_head_box h2 {
+    font-family: IvyOraDisplay-Light;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.ready_to_transform_main_sec {
+    padding-bottom: 30px;
+    background: white;
+}
+.reversing_row_new{
+    display: flex;
+    flex-direction: column-reverse;
+}
 
 
 

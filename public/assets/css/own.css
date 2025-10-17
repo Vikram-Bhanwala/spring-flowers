@@ -927,3 +927,226 @@ border-radius: 5px;
     object-fit: cover;
     height: 150px;
 }
+
+/* landing pages */
+.landing_banner_main_sec{
+  overflow: hidden;
+}
+.landing_banner_main_img_box img{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.office_cleanign_main_sec{
+  padding:60px 0px;
+  background:white;
+
+}
+.office_cleanign_main_box h2{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 30px;
+    font-family: IvyOraDisplay-Light;
+
+}
+.office_cleanign_main_box p{
+  text-align: center;
+}
+.what_we_offer_img_box img{
+  width: 100%;
+}
+.what_we_offer_sec{
+  padding-bottom:50px ;
+  background: white;
+}
+
+.what_we_offer_cont_box{
+  padding-left: 5%;
+}
+.what_we_offer_cont_box h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+    font-family: IvyOraDisplay-Light;
+
+}
+.what_we_offer_cont_box h5{
+  font-size: 25px;
+  margin: 20px 0px;
+    font-family: IvyOraDisplay-Light;
+
+}
+
+
+.what_we_offer_cont_box2{
+  padding-right: 5%;
+}
+.what_we_offer_cont_box2 h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+    font-family: IvyOraDisplay-Light;
+
+}
+.what_we_offer_cont_box2 h5{
+  font-size: 25px;
+  margin: 20px 0px;
+    font-family: IvyOraDisplay-Light;
+
+}
+.what_we_offer_cont_box2 ul{
+    padding: 20px 0px;
+    padding-left: 5%;
+}
+.what_we_offer_cont_box2 li{
+  margin:5px 0px
+}
+
+.what_we_offer_cont_box ul{
+    padding: 20px 0px;
+    padding-left: 5%;
+    color:black
+}
+.what_we_offer_cont_box li{
+  margin:5px 0px;
+  color:black
+}
+.what_we_offer_sec{
+  color: black !important;
+}
+.faq_head_box h2{
+  text-transform: uppercase;
+  font-size: 60px;
+    font-family: IvyOraDisplay-Light;
+font-weight: 500;
+line-height: 70px;
+}
+.faq_main_sec{
+  padding-bottom:60px;
+  background:white
+}
+.faq_main_box{
+  padding-left: 5%;
+}
+
+.faq_main_box {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px; /* ✅ left-right padding */
+  font-family: "Arial", sans-serif;
+}
+
+.faq_main_item {
+  border-bottom: 1px solid #000;
+}
+
+.faq_main_question {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  text-align: left;
+  padding: 18px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  outline: none !important;
+}
+
+.faq_main_item.active .faq_main_question {
+  background: #000;
+  color: #fff;
+}
+
+.faq_main_icon {
+  font-size: 20px;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.faq_main_answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0;
+  outline: none !important;
+
+}
+
+.faq_main_answer p {
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.faq_main_answer.active {
+  max-height: 200px;
+  padding: 0;
+}
+
+/* ✅ center line between question and answer */
+.faq_main_line {
+  height: 1px;
+  background: #fff;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* By default active FAQ */
+.faq_main_item.active .faq_main_answer {
+  background: #000;
+  color: #fff;
+}
+
+.ready_to_transform_main_sec{
+  padding-bottom: 60px;
+  background: white;
+}
+.ready_to_transform_main_cont_box h2 {
+    font-family: IvyOraDisplay-Light;
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+.ready_to_transform_main_cont_box{
+  padding: 30px;
+  border:1px solid black
+}
+.ready_to_transform_main_form_box textarea{
+  padding: 10px 10px;
+}
+.contact_side_akshay_main_input_box textarea::placeholder {
+  font-size: 14px;          /* ⚠ padding doesn’t work directly on placeholder text */
+}
+.ready_to_transform_main_head_box h2{
+   font-family: IvyOraDisplay-Light;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

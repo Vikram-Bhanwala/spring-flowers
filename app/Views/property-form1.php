@@ -1,6 +1,7 @@
 <?php
 include('header.php');
 ?>
+	<title>Booking Form</title>
 <style>
     .register_form_main_sec {
         padding:60px 0px;

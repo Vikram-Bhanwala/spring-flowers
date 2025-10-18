@@ -1,6 +1,7 @@
 <?php
 include('header.php');
 ?>
+	<title>Thank You</title>
 <style>
     .top_time_line_sec{
         padding:40px 0px

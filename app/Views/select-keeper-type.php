@@ -2,6 +2,7 @@
 include('header.php');
 ?>
 
+	<title>Keeper Type</title>
 <style>
     
     .slect_property_type_column {

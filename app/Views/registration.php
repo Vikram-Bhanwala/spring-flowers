@@ -1,6 +1,8 @@
 <?php
    include('header.php');
    ?>
+   
+	<title>Registration</title>
 <style>
    .register_form_main_sec {
    padding:60px 0px;

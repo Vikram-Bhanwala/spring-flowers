@@ -25,7 +25,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="office_cleanign_main_box">
-                    <h2>Professional Building Cleaning Services in Cheltenham</h2>
+                    <h1>Professional Building Cleaning Services in Cheltenham</h1>
                     <p>Keeping your property clean and well-maintained is essential,  whether it’s a bustling apartment complex, a busy commercial space, or any facility in need of expert care. At <b>Clean Spring Flowers</b>, we are a trusted <b>building cleaning company</b> serving Cheltenham and the surrounding areas.</p>
                     <p>We specialize in a wide range of cleaning services tailored to meet the needs of both residential and commercial properties. From daily janitorial cleaning to deep cleans and ongoing maintenance, we ensure your building always looks its best.</p>
                 </div>
@@ -48,7 +48,7 @@ include('header.php');
                 <div class="what_we_offer_cont_box">
                     <h2>Apartment Building Cleaning Services You Can Rely On</h2>
                     <p>Managing an apartment complex comes with its challenges, especially when it comes to cleanliness and hygiene. Our <b>apartment building cleaning services</b> are designed to keep every common area, hallway, lobby, and amenity space spotless.</p>
-                    <p><b>We provide:</b></p>
+                    <p  class="we_offer_remove_space"><b>We provide:</b></p>
                     <ul>
                         <li>Thorough floor cleaning and carpet maintenance</li>
                         <li>Window and glass cleaning for a sparkling finish</li>
@@ -56,6 +56,7 @@ include('header.php');
                         <li>Trash and recycling management</li>
                     </ul>
                     <p>Our team also works with property managers to follow a detailed <b>apartment building cleaning checklist</b>, ensuring nothing is missed and residents enjoy a consistently clean environment.</p>
+                    <button class="connect-btn contact_side_btn" id="contact_form_side_open_btn">Connect With Us</button>
                 </div>
             </div>
         </div>
@@ -72,7 +73,7 @@ include('header.php');
                 <div class="what_we_offer_cont_box2">
                     <h2>Comprehensive Commercial Building Cleaning Services</h2>
                     <p>Businesses need a professional touch to maintain clean and safe working spaces. Our <b>commercial building cleaning services</b> cover offices, retail spaces, and multi-level commercial facilities.</p>
-                    <p>We offer:</p>
+                    <p class="we_offer_remove_space">We offer:</p>
                     <ul>
                         <li>Desk, workstation, and communal area cleaning</li>
                         <li>Kitchen and breakroom sanitation</li>
@@ -166,7 +167,7 @@ include('header.php');
 
                     <div class="faq_main_item">
                         <button class="faq_main_question">
-                       Why choose Clean Spring Flowers?
+                      Why should I choose Clean Spring Flowers for my building cleaning needs?
                         <span class="faq_main_icon">+</span>
                         </button>
                         <div class="faq_main_answer">

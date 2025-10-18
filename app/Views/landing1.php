@@ -65,7 +65,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="office_cleanign_main_box">
-                    <h2>Office Cleaning in Cheltenham That Actually Makes a Difference</h2>
+                    <h1>Office Cleaning in Cheltenham That Actually Makes a Difference</h1>
                     <p>Let’s be honest, most offices get cleaned, but rarely to a standard that actually makes a difference. At Clean Spring Flowers, we believe your workspace should feel as good as it looks. That’s why our office cleaning services in Cheltenham go beyond just dusting desks and emptying bins. We focus on the details that matter: fresh carpets, sparkling windows, and a genuinely clean environment that your team actually enjoys working in. Because a clean office isn’t just about appearances, it’s about productivity, health, and pride in the space you work in.</p>
                 </div>
             </div>
@@ -87,11 +87,11 @@ include('header.php');
                 <div class="what_we_offer_cont_box">
                     <h2>What We Offer</h2>
                     <p>We don’t do “one-size-fits-all.” Every office is different, and so is every cleaning plan. Here’s what makes our service stand out:</p>
-                    <h5>Office Cleaning</h5>
+                    <h3>Office Cleaning</h3>
                     <p>We don’t just wipe down surfaces, we create a workspace that’s inviting and hygienic. From communal kitchens to individual workstations, we tackle the hidden dust and grime that most cleaning services ignore. It’s about creating an environment where your team can thrive.</p>
-                    <h5>Carpet Cleaning</h5>
+                    <h3>Carpet Cleaning</h3>
                     <p>Carpets are a magnet for dirt, dust, and allergens. Our carpet cleaning isn’t just surface-level. We go deep, removing dirt, spills, and odours so your carpets not only look better, they feel better too. This isn’t a quick fix; it’s a long-term solution that keeps your office healthier.</p>
-                    <h5>Window Cleaning in Cheltenham</h5>
+                    <h3>Window Cleaning in Cheltenham</h3>
                     <p>Nothing makes a space feel brighter than clean windows. Our window cleaning in Cheltenham service ensures that natural light floods in and your office feels open and welcoming. <br> Streaks, smudges, and grime? Gone.</p>
                 </div>
             </div>
@@ -114,6 +114,7 @@ include('header.php');
                         <li><b>Eco-Friendly Approach:</b> Safe for your staff, your clients, and the planet.</li>
                     </ul>   
                     <p>Team You Can Trust: Our staff are trained, vetted, and genuinely care about doing a great job.</p>
+                    <button class="connect-btn contact_side_btn" id="contact_form_side_open_btn">Connect With Us</button>
                 </div>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">

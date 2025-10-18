@@ -1,6 +1,8 @@
 <?php
    include('header.php');
    ?>
+   
+	<title>Join Us</title>
 <style>
    .join_us_sec{
    padding:60px 0px;

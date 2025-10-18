@@ -1,6 +1,8 @@
 <?php
    include('header.php');
    ?>
+   
+	<title>Book a Servie</title>
 <style>
    .join_us_sec{
    padding:60px 0px;

@@ -1,6 +1,8 @@
 <?php
 include('header.php');
 ?>
+
+	<title>Our Story</title>
 <style>
     
    .our_story_banner_sec {

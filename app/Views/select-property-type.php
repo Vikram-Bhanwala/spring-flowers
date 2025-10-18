@@ -1,6 +1,8 @@
 <?php
 include('header.php');
 ?>
+
+	<title>Property Type</title>
 <style>
 /* Column animation */
 .slect_property_type_column {

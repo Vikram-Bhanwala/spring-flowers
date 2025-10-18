@@ -1,6 +1,8 @@
    <?php
       include('header.php');
       ?>
+      
+	<title>Booking Form</title>
    <style>
       .property_date_main_head_box h2{
       font-size:55px;

@@ -25,7 +25,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="office_cleanign_main_box">
-                    <h2>Professional Maid Services for Your Home</h2>
+                    <h1>Professional Maid Services for Your Home</h1>
                     <p>At <b>Clean Spring Flowers</b>, we understand that keeping your home clean and organised isn’t always easy. Between work, family, and life’s little surprises, maintaining a spotless home can feel overwhelming. That’s why we offer <b>reliable housemaid services</b> tailored to your needs.</p>
                     <p>Whether you need occasional help or a regular routine, our <b>maid services for the home</b> are designed to make your life easier, giving you more time to enjoy the things that matter most.</p>
                 </div>
@@ -39,16 +39,17 @@ include('header.php');
 <section class="what_we_offer_sec">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-5 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="what_we_offer_img_box">
                     <img src="<?php echo base_url()?>assets/img/new/ld3-2.png" alt="">
                 </div>
             </div>
-            <div class="col-lg-7 col-md-7 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <div class="what_we_offer_cont_box">
                     <h2>Residential Maid Service You Can Trust</h2>
                     <p>Our <b>residential maid service</b> focuses on providing a clean, comfortable, and welcoming environment for your family. Every member of our team is <b>trained, experienced, and committed</b> to delivering thorough cleaning that meets your expectations.</p>
                     <p>From dusting and vacuuming to deep cleaning kitchens and bathrooms, we make sure every corner of your home shines. With <b>house maid service</b> from Clean Spring Flowers, you can relax knowing your home is in good hands.</p>
+                    <button class="connect-btn contact_side_btn" id="contact_form_side_open_btn">Connect With Us</button>
                 </div>
             </div>
         </div>
@@ -222,7 +223,7 @@ include('header.php');
                     <h2>Make Your Home a Cleaner, Happier Place</h2>
                     <p>With <b>house maid service</b> from Clean Spring Flowers, you can finally take a break from chores and enjoy more family time. Our <b>residential maid service</b> brings convenience, peace of mind, and a sparkling clean home every time.</p>
                     <p>Don’t let housework take over your life. Experience professional <b>maid services for home</b> today!</p>
-                    <h5>Book Your Maid Service Today</h5>
+                    <h2>Book Your Maid Service Today</h2>
                     <p>Contact us to schedule your <b>housemaid services</b> and experience a home that’s cleaner, fresher, and stress-free. Get in touch or call us.</p>
                 </div>
             </div>

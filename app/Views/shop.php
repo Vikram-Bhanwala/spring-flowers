@@ -2,6 +2,7 @@
 include('header.php');
 ?>
 
+	<title>Shop</title>
 <style>
     
   .blog_banner_sec {

@@ -942,7 +942,7 @@ border-radius: 5px;
   background:white;
 
 }
-.office_cleanign_main_box h2{
+.office_cleanign_main_box h1{
   text-align: center;
   font-size: 45px;
   margin-bottom: 30px;
@@ -969,7 +969,7 @@ border-radius: 5px;
     font-family: IvyOraDisplay-Light;
 
 }
-.what_we_offer_cont_box h5{
+.what_we_offer_cont_box h3{
   font-size: 25px;
   margin: 20px 0px;
     font-family: IvyOraDisplay-Light;
@@ -986,7 +986,7 @@ border-radius: 5px;
     font-family: IvyOraDisplay-Light;
 
 }
-.what_we_offer_cont_box2 h5{
+.what_we_offer_cont_box2 h3{
   font-size: 25px;
   margin: 20px 0px;
     font-family: IvyOraDisplay-Light;
@@ -1000,10 +1000,12 @@ border-radius: 5px;
   margin:5px 0px
 }
 
-.what_we_offer_cont_box ul{
-    padding: 20px 0px;
+.what_we_offer_cont_box ul {
+    padding: 5px 0px;
     padding-left: 5%;
-    color:black
+    color: black;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px;
 }
 .what_we_offer_cont_box li{
   margin:5px 0px;
@@ -1126,8 +1128,12 @@ line-height: 70px;
     font-size: 40px;
     margin-bottom: 35px;
 }
-
-
+ul p{
+  margin: 0px !important;
+}
+.we_offer_remove_space{
+  margin: 0px !important;
+}
 
 
 

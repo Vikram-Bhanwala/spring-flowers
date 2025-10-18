@@ -25,7 +25,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="office_cleanign_main_box">
-                    <h2>Student Accommodation Cleaning Made Simple</h2>
+                    <h1>Student Accommodation Cleaning Made Simple</h1>
                     <p><b>A Cleaner Student Home, A Happier Student Life</b>. Student life is busy with lectures, assignments, social life, and exams. Keeping your student accommodation clean can easily fall to the bottom of your to-do list. That’s where <b>Clean Spring Flowers</b> comes in.</p>
                     <p>Our <b>student accommodation cleaning services</b> are tailored to meet the unique needs of students living in shared houses, halls of residence, or private flats. From routine cleaning to deep cleans, we help make your living space a comfortable, hygienic environment where you can focus on what matters most.</p>
                 </div>
@@ -54,6 +54,7 @@ include('header.php');
                         <li><b>Eco-Friendly Approach</b>: Safe products that care for your home and the environment.</li>
                     </ul>
                     <p>We understand that student living is different. Mess can build up quickly in shared accommodations, and cleaning isn’t always fun. That’s why our service is fast, reliable, and designed for student life.</p>
+                    <button class="connect-btn contact_side_btn" id="contact_form_side_open_btn">Connect With Us</button>
                 </div>
             </div>
         </div>
@@ -107,7 +108,7 @@ include('header.php');
                         <li>Let our professional team handle the rest.</li>
                     </ul>
                     <p>Enjoy a fresh, clean home without worrying about chores. Our student accommodation cleaning services are reliable, thorough, and affordable for students.</p>
-                    <h5>Why Students Love Our Service</h5>
+                    <h3>Why Students Love Our Service</h3>
                     <ul>
                         <li>Saves time for studies and social life</li>
                         <li>Clean, healthy, and stress-free living environment</li>
@@ -232,7 +233,6 @@ include('header.php');
                     <h2>Connect With Us</h2>
                     <p><b>Keep your student house clean without lifting a finger!</b></p>
                     <p>Call Clean Spring Flowers today or book online to schedule your next student accommodation cleaning.</p>
-                    <p>Sure! Here’s a <b>shorter FAQ section with 4 questions</b> for your Student Accommodation Cleaning page:</p>
                 </div>
             </div>
         </div>

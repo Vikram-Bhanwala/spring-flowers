@@ -1,6 +1,8 @@
 <?php
 include('header.php');
 ?>
+
+	<title>10 Essential Guidelines for Becoming a Superior Housekeeper</title>
 <style>
    .blog_main_banner_sec {
     width: 100%;

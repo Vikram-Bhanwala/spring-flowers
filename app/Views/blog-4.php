@@ -1,10 +1,12 @@
 <?php
 include('header.php');
 ?>
+
+	<title>Zooming In: How a Cleaning Habit Unlocked Self-Worth and Inner Peace</title>
 <style>
    .blog_main_banner_sec {
     width: 100%;
-    background-image: url('public/assets/img/new/bb4.jpg');
+    background-image: url('https://cleanspringflowers.com/public/assets/img/new/bb4.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

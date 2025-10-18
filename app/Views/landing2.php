@@ -25,7 +25,7 @@ include('header.php');
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
                 <div class="office_cleanign_main_box">
-                    <h2>End of Tenancy Cleaning in Cheltenham, Because Every Goodbye Deserves a Fresh Start </h2>
+                    <h1>End of Tenancy Cleaning in Cheltenham, Because Every Goodbye Deserves a Fresh Start </h1>
                     <p>You’ve packed the boxes. You’ve labelled them all (well, most of them). The moving van is booked. And now you’re standing in your old home, a place that’s seen midnight snacks, Netflix marathons, and maybe a few coffee spills on the carpet, wondering how on earth you’ll get it spotless before you hand back the keys.</p>
                     <p>That’s where we step in.</p>
                     <p>At <b>Clean Spring Flowers</b>, we believe the end <b>of tenancy cleaning</b> isn’t just about scrubbing surfaces. It’s about leaving a space as fresh as the day you moved in, and giving you the peace of mind to move forward without a worry (or a frown from your landlord).</p>

@@ -1,6 +1,8 @@
 <?php
 include('header.php');
 ?>
+
+	<title>Privacy Policy</title>
 <style>
    .privacy_policy_banner_sec {
     position: relative;

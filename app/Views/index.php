@@ -2,6 +2,8 @@
   <?php
   include('header.php');
   ?>
+  
+	<title>Home page</title>
   <style>
     .bner_home_new_bnt{
       padding:10px 50px;

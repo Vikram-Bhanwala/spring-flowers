@@ -1,6 +1,8 @@
 <?php
 include('header.php');
 ?>
+
+	<title>The "Zooming Out" Technique: Elevate Your Home Presentation from Exceptional to Phenomenal</title>
 <style>
    .blog_main_banner_sec {
     width: 100%;

@@ -50,6 +50,7 @@ $routes->group('admin', function($routes) {
     $routes->get('dashboard', 'Admin::dashboard');
     $routes->get('logout', 'Admin::logout');
     $routes->get('lead-manager','Admin::LeadManagerView');
+    $routes->post('update-lead-status', 'Admin::updateLeadStatus');
     
 });
 

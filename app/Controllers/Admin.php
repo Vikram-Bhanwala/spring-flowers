@@ -112,10 +112,10 @@ class Admin extends BaseController
 
     $db = \Config\Database::connect();
 
-    $contactData = $db->table('contact')->get()->getResultArray();
-    $keeperData = $db->table('keeper_forms')->get()->getResultArray();
-    $registrationData = $db->table('registrations')->get()->getResultArray();
-    $subscriptionData = $db->table('subscriptions')->get()->getResultArray();
+    $contactData = $db->table('contact')->orderBy('id', 'DESC')->get()->getResultArray();
+    $keeperData = $db->table('keeper_forms')->orderBy('id', 'DESC')->get()->getResultArray();
+    $registrationData = $db->table('registrations')->orderBy('id', 'DESC')->get()->getResultArray();
+    $subscriptionData = $db->table('subscriptions')->orderBy('id', 'DESC')->get()->getResultArray();
 
     return view('admin/lead-manager', [
         'contactData' => $contactData,
@@ -129,5 +129,51 @@ class Admin extends BaseController
     // to show lead manager data a
     public function LeadManageData(){
         
+    }
+
+    // Update lead status
+    public function updateLeadStatus()
+    {
+        if (!$this->isLoggedIn()) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Unauthorized']);
+        }
+
+        $table = $this->request->getPost('table');
+        $id = $this->request->getPost('id');
+        $status = $this->request->getPost('status');
+
+        // Validate inputs
+        if (empty($table) || empty($id) || empty($status)) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Missing required parameters']);
+        }
+
+        // Validate status values
+        $validStatuses = ['open', 'started', 'done', 'closed'];
+        if (!in_array($status, $validStatuses)) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Invalid status']);
+        }
+
+        // Validate table names
+        $validTables = ['contact', 'keeper_forms', 'registrations', 'subscriptions'];
+        if (!in_array($table, $validTables)) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Invalid table']);
+        }
+
+        try {
+            $db = \Config\Database::connect();
+            
+            // Update the status
+            $result = $db->table($table)
+                ->where('id', $id)
+                ->update(['status' => $status]);
+
+            if ($result) {
+                return $this->response->setJSON(['success' => true, 'message' => 'Status updated successfully']);
+            } else {
+                return $this->response->setJSON(['success' => false, 'message' => 'Failed to update status']);
+            }
+        } catch (\Exception $e) {
+            return $this->response->setJSON(['success' => false, 'message' => 'Database error: ' . $e->getMessage()]);
+        }
     }
 }

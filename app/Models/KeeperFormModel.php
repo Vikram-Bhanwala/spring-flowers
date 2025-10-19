@@ -28,6 +28,7 @@ class KeeperFormModel extends Model
         'plan',
         'selected_date',
         'selected_days',
+        'status',
     ];
 
     protected $useTimestamps = true;

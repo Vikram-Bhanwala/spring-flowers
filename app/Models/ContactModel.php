@@ -12,6 +12,7 @@ class ContactModel extends Model{
         'email',
         'service',
         'message',
+        'status',
         'created_at',
     ];
 }

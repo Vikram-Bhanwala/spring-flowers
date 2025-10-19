@@ -15,6 +15,7 @@ class SubscriptionModel extends Model
 
     protected $allowedFields    = [
         'email',
+        'status',
     ];
 
     protected $useTimestamps = false;

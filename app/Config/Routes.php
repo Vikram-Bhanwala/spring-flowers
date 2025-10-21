@@ -52,6 +52,15 @@ $routes->group('admin', function($routes) {
     $routes->get('lead-manager','Admin::LeadManagerView');
     $routes->post('update-lead-status', 'Admin::updateLeadStatus');
     
+    // Blog Management Routes
+    $routes->get('blog-list', 'Admin::blogList');
+    $routes->get('blog-add', 'Admin::blogAdd');
+    $routes->get('blog-edit/(:num)', 'Admin::blogEdit/$1');
+    $routes->post('blog-save', 'Admin::blogSave');
+        $routes->post('blog-update/(:num)', 'Admin::blogUpdate/$1');
+        $routes->get('blog-delete/(:num)', 'Admin::blogDelete/$1');
+        $routes->post('upload-image', 'Admin::uploadImage');
+    
 });
 
 

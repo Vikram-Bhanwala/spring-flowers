@@ -85,16 +85,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const section = document.querySelector(".animate_on_scroll_hero_main_icon");
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        section.classList.add("show");
-        observer.unobserve(section); // animate once
-      }
+  // Check if the element exists before creating observer
+  if (section) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          section.classList.add("show");
+          observer.unobserve(section); // animate once
+        }
+      });
     });
-  });
 
-  observer.observe(section);
+    observer.observe(section);
+  }
 });
 </script> 
 <!--===============================================================================================-->	

@@ -148,10 +148,9 @@
     cursor: pointer;
     min-width: 120px;
   }
-  .status_open { color: #28a745; font-weight: bold; }
-  .status_started { color: #ffc107; font-weight: bold; }
-  .status_done { color: #17a2b8; font-weight: bold; }
-  .status_closed { color: #6c757d; font-weight: bold; }
+  .status_new { color: #28a745; font-weight: bold; }
+  .status_won { color: #17a2b8; font-weight: bold; }
+  .status_lost { color: #dc3545; font-weight: bold; }
 </style>
 
 <div class="lead_manage_main_box">
@@ -160,6 +159,7 @@
     <div class="lead_box_main">
       <a href="#">Profile</a>
       <a href="<?php echo base_url() ?>admin/lead-manager" class="active">Lead Manager</a>
+      <a href="<?php echo base_url() ?>admin/blog-list">Blog Management</a>
       <a href="<?php echo base_url() ?>admin/logout" class="">Logout </a>
     </div>
   </div>
@@ -193,14 +193,13 @@
                           <!-- Status Management -->
             <div class="status_section">
               <label class="status_label">Lead Status:</label>
-              <select class="status_dropdown status_<?= esc($c['status'] ?? 'open') ?>" 
+              <select class="status_dropdown status_<?= esc($c['status'] ?? 'new') ?>" 
                       data-table="contact" 
                       data-id="<?= esc($c['id']) ?>"
                       onchange="updateLeadStatus(this)">
                 <option value="new" <?= ($c['status'] ?? 'new') == 'new' ? 'selected' : '' ?>>New</option>
-                <option value="won" <?= ($c['status'] ?? 'won') == 'won' ? 'selected' : '' ?>>Won</option>
-                <option value="lost" <?= ($c['status'] ?? 'lost') == 'lost' ? 'selected' : '' ?>>Lost</option>
-                <!-- <option value="closed" <?= ($c['status'] ?? 'open') == 'closed' ? 'selected' : '' ?>>Closed</option> -->
+                <option value="won" <?= ($c['status'] ?? 'new') == 'won' ? 'selected' : '' ?>>Won</option>
+                <option value="lost" <?= ($c['status'] ?? 'new') == 'lost' ? 'selected' : '' ?>>Lost</option>
               </select>
             </div>
             </div>
@@ -225,6 +224,14 @@
               <p><strong>Phone</strong><br><?= esc($k['phone']) ?></p>
               <p><strong>City</strong><br><?= esc($k['city']) ?></p>
               <p><strong>Timing</strong><br><?= esc($k['timing']) ?></p>
+              
+            <?php if($k['plan'] == ''){
+              echo "Lead Type : House Cleaning";
+            }else{
+              echo "Lead Type : House Keeping";
+            }?>
+          
+              
             </div>
             <button class="lead_manager_toggle_btn"><img src="<?= base_url()?>assets/img/new/dash-down.svg" alt=""></button>
           </div>
@@ -241,14 +248,13 @@
             <!-- Status Management -->
             <div class="status_section">
               <label class="status_label">Lead Status:</label>
-              <select class="status_dropdown status_<?= esc($k['status'] ?? 'open') ?>" 
+              <select class="status_dropdown status_<?= esc($k['status'] ?? 'new') ?>" 
                       data-table="keeper_forms" 
                       data-id="<?= esc($k['id']) ?>"
                       onchange="updateLeadStatus(this)">
                 <option value="new" <?= ($k['status'] ?? 'new') == 'new' ? 'selected' : '' ?>>New</option>
-                <option value="won" <?= ($k['status'] ?? 'won') == 'won' ? 'selected' : '' ?>>Won</option>
-                <option value="lost" <?= ($k['status'] ?? 'lost') == 'lost' ? 'selected' : '' ?>>Lost</option>
-                <!-- <option value="closed" <?= ($k['status'] ?? 'open') == 'closed' ? 'selected' : '' ?>>Closed</option> -->
+                <option value="won" <?= ($k['status'] ?? 'new') == 'won' ? 'selected' : '' ?>>Won</option>
+                <option value="lost" <?= ($k['status'] ?? 'new') == 'lost' ? 'selected' : '' ?>>Lost</option>
               </select>
             </div>
           </div>
@@ -280,14 +286,13 @@
             <!-- Status Management -->
             <div class="status_section">
               <label class="status_label">Lead Status:</label>
-              <select class="status_dropdown status_<?= esc($r['status'] ?? 'open') ?>" 
+              <select class="status_dropdown status_<?= esc($r['status'] ?? 'new') ?>" 
                       data-table="registrations" 
                       data-id="<?= esc($r['id']) ?>"
                       onchange="updateLeadStatus(this)">
                 <option value="new" <?= ($r['status'] ?? 'new') == 'new' ? 'selected' : '' ?>>New</option>
-                <option value="won" <?= ($r['status'] ?? 'won') == 'won' ? 'selected' : '' ?>>Won</option>
-                <option value="lost" <?= ($r['status'] ?? 'lost') == 'lost' ? 'selected' : '' ?>>Lost</option>
-                <!-- <option value="closed" <?= ($r['status'] ?? 'open') == 'closed' ? 'selected' : '' ?>>Closed</option> -->
+                <option value="won" <?= ($r['status'] ?? 'new') == 'won' ? 'selected' : '' ?>>Won</option>
+                <option value="lost" <?= ($r['status'] ?? 'new') == 'lost' ? 'selected' : '' ?>>Lost</option>
               </select>
             </div>
           </div>
@@ -314,14 +319,13 @@
             <!-- Status Management -->
             <div class="status_section">
               <label class="status_label">Lead Status:</label>
-              <select class="status_dropdown status_<?= esc($s['status'] ?? 'open') ?>" 
+              <select class="status_dropdown status_<?= esc($s['status'] ?? 'new') ?>" 
                       data-table="subscriptions" 
                       data-id="<?= esc($s['id']) ?>"
                       onchange="updateLeadStatus(this)">
                 <option value="new" <?= ($s['status'] ?? 'new') == 'new' ? 'selected' : '' ?>>New</option>
-                <option value="won" <?= ($s['status'] ?? 'won') == 'won' ? 'selected' : '' ?>>Won</option>
-                <option value="lost" <?= ($s['status'] ?? 'lost') == 'lost' ? 'selected' : '' ?>>Lost</option>
-                <!-- <option value="closed" <?= ($s['status'] ?? 'open') == 'closed' ? 'selected' : '' ?>>Closed</option> -->
+                <option value="won" <?= ($s['status'] ?? 'new') == 'won' ? 'selected' : '' ?>>Won</option>
+                <option value="lost" <?= ($s['status'] ?? 'new') == 'lost' ? 'selected' : '' ?>>Lost</option>
               </select>
             </div>
           </div>

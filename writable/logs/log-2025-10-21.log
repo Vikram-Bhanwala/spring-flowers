@@ -1,0 +1,993 @@
+DEBUG - 2025-10-21 12:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:28:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-21 12:29:35 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-21 12:29:35 --> 220 smtp.gmail.com ESMTP 98e67ed59e1d1-33d5ddf11a5sm10961548a91.3 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-33d5ddf11a5sm10961548a91.3 - gsmtp
+
+INFO - 2025-10-21 12:29:35 --> Property form email sent: failed
+ERROR - 2025-10-21 12:29:35 --> Property form email error: 220 smtp.gmail.com ESMTP 98e67ed59e1d1-33d5ddf11a5sm10961548a91.3 - gsmtp
+<br><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre>Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-33d5ddf11a5sm10961548a91.3 - gsmtp
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Tue, 21 Oct 2025 12:29:32 +0000
+From: &quot;Spring Flowers&quot; &lt;indiana@cleanspringflowers.com&gt;
+Return-Path: &lt;indiana@cleanspringflowers.com&gt;
+To: indiana@cleanspringflowers.com
+Subject: =?UTF-8?Q?New=20Property=20Booking=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;indiana@cleanspringflowers.com&gt;
+User-Agent: CodeIgniter
+X-Sender: indiana@cleanspringflowers.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68f77cac26dd38.87322380@cleanspringflowers.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68f77cac26e0f8.47968830&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68f77cac26e0f8.47968830
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Property Booking Submission
+Spring Flowers Website
+
+🏠 New Property Booking Request
+A customer has submitted a property booking form!
+
+Customer Information
+
+Name:
+Vikram Bhanwala
+
+Phone:
+08685011980
+
+Property Details
+
+Address:
+Hno D602 The Atrium
+
+City:
+sec 37 D gurugram
+
+Town/Area:
+Bath
+
+Postal Code:
+122006
+
+Property Specifications
+
+Number of Rooms:
+1
+
+Number of Kitchens:
+1
+
+Number of Bathrooms:
+1
+
+Booking Details
+
+Service Plan:
+Daily
+
+Selected Date:
+2025-10-22
+
+Selected Days:
+
+Timing:
+Morning
+
+Submitted:
+2025-10-21 12:29:32
+
+This email was sent from the Spring Flowers property booking form.
+
+
+--B_ALT_68f77cac26e0f8.47968830
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.section { margin-bottom: 25px; padding: =
+15px; background-color: #f8f9fa; border-radius: 5px; }=0A=09=09=09=09.secti=
+on-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-botto=
+m: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }=0A=09=09=
+=09=09.booking-highlight { background-color: #e8f5e8; border-left: 4px soli=
+d #27ae60; padding: 15px; margin: 20px 0; }=0A=09=09=09&lt;/style&gt;=0A=09=09&lt;/h=
+ead&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=3D&quot;container&quot;&gt;=0A=09=09=09=09&lt;div=
+ class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;New Property Booking Submission&lt;/h2=
+&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=
+=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;booking-hig=
+hlight&quot;&gt;=0A=09=09=09=09=09=09&lt;h3 style=3D&quot;margin: 0; color: #27ae60;&quot;&gt;=
+=F0=9F=8F=A0 New Property Booking Request&lt;/h3&gt;=0A=09=09=09=09=09=09&lt;p style=
+=3D&quot;margin: 5px 0 0 0; font-weight: bold;&quot;&gt;A customer has submitted a prope=
+rty booking form!&lt;/p&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=
+=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-tit=
+le&quot;&gt;Customer Information&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;/div&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;value&quot;&gt;Vikram Bhanwala&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Phone:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;0868501=
+1980&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=
+=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;section-title&quot;&gt;Property Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Address:&lt;/div&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Hno D602 The Atrium&lt;/div&gt;=0A=09=
+=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;City:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;value&quot;&gt;sec 37 D gurugram&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;labe=
+l&quot;&gt;Town/Area:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Bath&lt;/div&gt;=
+=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=
+=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Postal Code:&lt;/div&gt;=0A=09=09=09=09=09=
+=09=09&lt;div class=3D&quot;value&quot;&gt;122006&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=
+=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Property Specifications&lt;/=
+div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div =
+class=3D&quot;label&quot;&gt;Number of Rooms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D=
+&quot;value&quot;&gt;1&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=
+=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Kitchens:=
+&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;1&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;label&quot;&gt;Number of Bathrooms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;=
+div class=3D&quot;value&quot;&gt;1&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/d=
+iv&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=
+=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Booking Details&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Ser=
+vice Plan:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Daily&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=
+=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Selected Date:&lt;/div&gt;=0A=09=09=09=09=09=
+=09=09&lt;div class=3D&quot;value&quot;&gt;2025-10-22&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Selected Days:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;=
+&gt;&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;=
+&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Timing:&lt;/div&gt;=0A=09=09=09=09=
+=09=09=09&lt;div class=3D&quot;value&quot;&gt;Morning&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;fiel=
+d&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Submitted:&lt;/div&gt;=0A=09=09=09=
+=09=09=09&lt;div class=3D&quot;value&quot;&gt;2025-10-21 12:29:32&lt;/div&gt;=0A=09=09=09=09=09&lt;/=
+div&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;footer&quot;&gt;=0A=09=09=09=
+=09=09&lt;p&gt;This email was sent from the Spring Flowers property booking form.=
+&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09&lt;/div&gt;=0A=09=09&lt;/body&gt;=0A=09=09&lt;/html&gt;
+
+--B_ALT_68f77cac26e0f8.47968830--</pre>
+DEBUG - 2025-10-21 12:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-21 12:31:31 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-21 12:31:31 --> 220 smtp.gmail.com ESMTP d2e1a72fcca58-7a2300f3c38sm11252583b3a.37 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7a2300f3c38sm11252583b3a.37 - gsmtp
+
+INFO - 2025-10-21 12:31:31 --> Keeper form email sent: failed
+ERROR - 2025-10-21 12:31:31 --> Keeper form email error: 220 smtp.gmail.com ESMTP d2e1a72fcca58-7a2300f3c38sm11252583b3a.37 - gsmtp
+<br><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:5d30:5bf7:fcd5:3d8e:eac5:de56]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre>Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7a2300f3c38sm11252583b3a.37 - gsmtp
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Tue, 21 Oct 2025 12:31:28 +0000
+From: &quot;Spring Flowers&quot; &lt;indiana@cleanspringflowers.com&gt;
+Return-Path: &lt;indiana@cleanspringflowers.com&gt;
+To: indiana@cleanspringflowers.com
+Subject: =?UTF-8?Q?New=20Keeper=20Form=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;indiana@cleanspringflowers.com&gt;
+User-Agent: CodeIgniter
+X-Sender: indiana@cleanspringflowers.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68f77d209cc9f0.15065929@cleanspringflowers.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68f77d209ccc31.38802585&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68f77d209ccc31.38802585
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Keeper Form Submission
+Spring Flowers Website
+
+Personal Information
+
+Name:
+test
+
+Phone:
+08685011980
+
+Property Details
+
+Address:
+Hno D602 The Atrium
+
+City:
+sec 37 D gurugram
+
+Town/Area:
+Bath
+
+Postal Code:
+122006
+
+Property Specifications
+
+Number of Rooms:
+1
+
+Number of Kitchens:
+1
+
+Number of Bathrooms:
+1
+
+Service Details
+
+Timing:
+Full Time
+
+Preferred Date:
+2025-10-21
+
+Submitted:
+2025-10-21 12:31:28
+
+This email was sent from the Spring Flowers keeper form.
+
+
+--B_ALT_68f77d209ccc31.38802585
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.section { margin-bottom: 25px; padding: =
+15px; background-color: #f8f9fa; border-radius: 5px; }=0A=09=09=09=09.secti=
+on-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-botto=
+m: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }=0A=09=09=
+=09&lt;/style&gt;=0A=09=09&lt;/head&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=3D&quot;contain=
+er&quot;&gt;=0A=09=09=09=09&lt;div class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;New Keeper F=
+orm Submission&lt;/h2&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;/p&gt;=0A=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=09=09&lt;div cl=
+ass=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Personal =
+Information&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=
+=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;value&quot;&gt;test&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div c=
+lass=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Phone:&lt;/div&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;08685011980&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;di=
+v class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Prope=
+rty Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=
+=09=09=09&lt;div class=3D&quot;label&quot;&gt;Address:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;value&quot;&gt;Hno D602 The Atrium&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;labe=
+l&quot;&gt;City:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;sec 37 D gurugra=
+m&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;=
+&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Town/Area:&lt;/div&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Bath&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Postal Code:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;1=
+22006&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=
+=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div cl=
+ass=3D&quot;section-title&quot;&gt;Property Specifications&lt;/div&gt;=0A=09=09=09=09=09=09&lt;di=
+v class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Ro=
+oms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;1&lt;/div&gt;=0A=09=09=09=
+=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=
+=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Kitchens:&lt;/div&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;value&quot;&gt;1&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Num=
+ber of Bathrooms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;1&lt;/div&gt;=
+=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=
+=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;secti=
+on-title&quot;&gt;Service Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=
+=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Timing:&lt;/div&gt;=0A=09=09=09=09=
+=09=09=09&lt;div class=3D&quot;value&quot;&gt;Full Time&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=
+=3D&quot;label&quot;&gt;Preferred Date:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value=
+&quot;&gt;2025-10-21&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=
+=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09&lt;di=
+v class=3D&quot;label&quot;&gt;Submitted:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;=
+&gt;2025-10-21 12:31:28&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09&lt;div class=3D&quot;footer&quot;&gt;=0A=09=09=09=09=09&lt;p&gt;This email was sent =
+from the Spring Flowers keeper form.&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=09=09&lt;/=
+div&gt;=0A=09=09&lt;/body&gt;=0A=09=09&lt;/html&gt;
+
+--B_ALT_68f77d209ccc31.38802585--</pre>
+DEBUG - 2025-10-21 12:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:35:56 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:33 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:34 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:34 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:34 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:34 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:35 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:35 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-10-21 12:36:35 --> ParseError: syntax error, unexpected variable "$k", expecting "("
+[Method: GET, Route: admin/lead-manager]
+in APPPATH/Views/admin/lead-manager.php on line 229.
+ 1 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1167): CodeIgniter\View\View->render('admin/lead-manager', [], true)
+ 3 APPPATH/Controllers/Admin.php(120): view('admin/lead-manager', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Admin->LeadManagerView()
+ 5 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH/rewrite.php(44): require_once('/Users/apple/Documents/spring-flowers/public/index.php')
+DEBUG - 2025-10-21 12:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:39:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:40:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:41:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:42:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 12:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:13:26 --> Status update request - Table: keeper_forms, ID: 42, Status: won
+DEBUG - 2025-10-21 13:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:13:29 --> Status update request - Table: keeper_forms, ID: 42, Status: lost
+DEBUG - 2025-10-21 13:21:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:21:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:41:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:43:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:47:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:47:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:52:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:52:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:53:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:55:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:56:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:22 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdfA","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:58:22 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:31 --> Blog Update Data: {"meta_title":"testingASADF","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:58:31 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:58:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:52 --> Blog Update Data: {"meta_title":"ASFASFASDFAS","meta_description":"affads","title":"TSETATASFD","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:58:52 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:58:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:12 --> Blog Update Data: {"meta_title":"LODA","meta_description":"LODA","title":"LODA","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:12 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:27 --> Blog Update Data: {"meta_title":"testing","meta_description":"affadsASDF","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:27 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:31 --> Blog Update Data: {"meta_title":"testing","meta_description":"affadsASDF","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:31 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:31 --> Blog Update Data: {"meta_title":"testing","meta_description":"affadsASDF","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:31 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:32 --> Blog Update Data: {"meta_title":"testing","meta_description":"affadsASDF","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:32 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 13:59:38 --> Blog Update Data: {"meta_title":"testing","meta_description":"affadsASDF","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 13:59:38 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 13:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:43 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 14:00:43 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:49 --> Blog Update Data: {"meta_title":"testingGHJKHGF","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 14:00:49 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:08 --> Blog Update Data: {"meta_title":"TTETSTASTFASDFASDF","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+ERROR - 2025-10-21 14:01:08 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:01:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:58 --> Blog Update Data: {"meta_title":"qwertrwerewqer","meta_description":"ADSFASFASDF","title":"AEWRSTDYFUGJYFTDRSE","main_description":"","image":"","image_alt":"waerstdyfhgj","date":"2025-10-21","slug":"aaewrstdyfugjkytredf","category":"Home Maintenance","status":"published"}
+ERROR - 2025-10-21 14:01:58 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:02:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:02:08 --> Blog Update Data: {"meta_title":"qwerewqwer","meta_description":"ADSFASFASDF","title":"AEWRSTDYFUGJYFTDRSE","main_description":"","image":"","image_alt":"waerstdyfhgj","date":"2025-10-21","slug":"aaewrstdyfugjkytredf","category":"Home Maintenance","status":"published"}
+ERROR - 2025-10-21 14:02:08 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:02:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:04:07 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:04:07 --> Request method: POST
+INFO - 2025-10-21 14:04:07 --> Is logged in: yes
+DEBUG - 2025-10-21 14:04:07 --> Blog Update Data: {"meta_title":"asfdasdf","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:04:07 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:04:07 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:04:07 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:04:15 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:04:15 --> Request method: POST
+INFO - 2025-10-21 14:04:15 --> Is logged in: yes
+DEBUG - 2025-10-21 14:04:15 --> Blog Update Data: {"meta_title":"asfdasdf","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:04:15 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:04:15 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:04:15 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:04:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:04:23 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:04:23 --> Request method: POST
+INFO - 2025-10-21 14:04:23 --> Is logged in: yes
+DEBUG - 2025-10-21 14:04:23 --> Blog Update Data: {"meta_title":"asfdasdf","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:04:23 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:04:23 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:04:23 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:05:50 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:05:50 --> Request method: POST
+INFO - 2025-10-21 14:05:50 --> Is logged in: yes
+DEBUG - 2025-10-21 14:05:50 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:05:50 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:05:50 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:05:50 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:06:21 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:06:21 --> Request method: POST
+INFO - 2025-10-21 14:06:21 --> Is logged in: yes
+DEBUG - 2025-10-21 14:06:21 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:06:21 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:06:21 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:06:21 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:06:32 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:06:32 --> Request method: POST
+INFO - 2025-10-21 14:06:32 --> Is logged in: yes
+DEBUG - 2025-10-21 14:06:32 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:06:32 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:06:32 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:06:32 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:08:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:08:54 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:08:54 --> Request method: POST
+INFO - 2025-10-21 14:08:54 --> Is logged in: yes
+DEBUG - 2025-10-21 14:08:54 --> Blog Update Data: {"meta_title":"QWERTY","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:08:54 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:08:54 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:08:54 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:08:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:08:58 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:08:58 --> Request method: POST
+INFO - 2025-10-21 14:08:58 --> Is logged in: yes
+DEBUG - 2025-10-21 14:08:58 --> Blog Update Data: {"meta_title":"QWERTY","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:08:58 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:08:58 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:08:58 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:09:03 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:09:03 --> Request method: POST
+INFO - 2025-10-21 14:09:03 --> Is logged in: yes
+DEBUG - 2025-10-21 14:09:03 --> Blog Update Data: {"meta_title":"QWERTY","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:09:03 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:09:03 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:09:03 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:09:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:09:11 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:09:11 --> Request method: POST
+INFO - 2025-10-21 14:09:11 --> Is logged in: yes
+DEBUG - 2025-10-21 14:09:11 --> Blog Update Data: {"meta_title":"QWERTY","meta_description":"affads","title":"asDF","main_description":"","image":"test.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:09:11 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:09:11 --> Blog Update Request Method: POST
+ERROR - 2025-10-21 14:09:11 --> Blog Update Validation Errors: {"main_description":"Main description is required"}
+DEBUG - 2025-10-21 14:09:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:09:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:13:51 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:13:51 --> Request method: POST
+INFO - 2025-10-21 14:13:51 --> Is logged in: yes
+DEBUG - 2025-10-21 14:13:51 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"asdfxdfghjk","image":"","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:13:51 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:13:51 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:13:51 --> Blog post updated successfully: ID 3
+DEBUG - 2025-10-21 14:13:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:13:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:14:05 --> BlogUpdate method called for ID: 4
+INFO - 2025-10-21 14:14:05 --> Request method: POST
+INFO - 2025-10-21 14:14:05 --> Is logged in: yes
+DEBUG - 2025-10-21 14:14:05 --> Blog Update Data: {"meta_title":"aa","meta_description":"ADSFASFASDF","title":"AEWRSTDYFUGJYFTDRSE","main_description":"QWearstdyfghjm","image":"","image_alt":"waerstdyfhgj","date":"2025-10-21","slug":"aaewrstdyfugjkytredf","category":"Home Maintenance","status":"published"}
+DEBUG - 2025-10-21 14:14:05 --> Blog Update ID: 4
+DEBUG - 2025-10-21 14:14:05 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:14:05 --> Blog post updated successfully: ID 4
+DEBUG - 2025-10-21 14:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:14:19 --> BlogUpdate method called for ID: 4
+INFO - 2025-10-21 14:14:19 --> Request method: POST
+INFO - 2025-10-21 14:14:19 --> Is logged in: yes
+DEBUG - 2025-10-21 14:14:19 --> Blog Update Data: {"meta_title":"aa","meta_description":"a","title":"a","main_description":"a","image":"","image_alt":"a","date":"2025-10-21","slug":"a","category":"Home Maintenance","status":"published"}
+DEBUG - 2025-10-21 14:14:19 --> Blog Update ID: 4
+DEBUG - 2025-10-21 14:14:19 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:14:19 --> Blog post updated successfully: ID 4
+DEBUG - 2025-10-21 14:14:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:16:01 --> BlogUpdate method called for ID: 1
+INFO - 2025-10-21 14:16:01 --> Request method: POST
+INFO - 2025-10-21 14:16:01 --> Is logged in: yes
+DEBUG - 2025-10-21 14:16:01 --> Blog Update Data: {"meta_title":"10 Essential House Cleaning Tips for a Spotless Homea","meta_description":"Discover the best house cleaning tips and tricks to keep your home spotless. Professional cleaning advice from Spring Flowers cleaning services.","title":"10 Essential House Cleaning Tips for a Spotless Home","main_description":"Keeping your home clean and organized  doesn't have to be a daunting task. With the right techniques and a little planning, you can maintain a spotless home that you'll be proud to show off. Here are our top 10 essential house cleaning tips that will make your cleaning routine more efficient and effective.\r\n\r\n1. Start from the top and work your way down\r\n2. Use the right cleaning products for each surface\r\n3. Declutter before you clean\r\n4. Create a cleaning schedule\r\n5. Focus on high-traffic areas\r\n6. Don't forget about hidden spots\r\n7. Use microfiber cloths for better results\r\n8. Keep cleaning supplies organized\r\n9. Clean as you go\r\n10. Consider professional cleaning services for deep cleans","image":"","image_alt":"Professional house cleaning tips and techniques","date":"2025-10-22","slug":"10-essential-house-cleaning-tips","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:16:01 --> Blog Update ID: 1
+DEBUG - 2025-10-21 14:16:01 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:16:01 --> Blog post updated successfully: ID 1
+DEBUG - 2025-10-21 14:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:16:08 --> BlogUpdate method called for ID: 4
+INFO - 2025-10-21 14:16:08 --> Request method: POST
+INFO - 2025-10-21 14:16:08 --> Is logged in: yes
+DEBUG - 2025-10-21 14:16:08 --> Blog Update Data: {"meta_title":"q","meta_description":"a","title":"a","main_description":"a","image":"","image_alt":"a","date":"2025-10-21","slug":"a","category":"Home Maintenance","status":"published"}
+DEBUG - 2025-10-21 14:16:08 --> Blog Update ID: 4
+DEBUG - 2025-10-21 14:16:08 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:16:08 --> Blog post updated successfully: ID 4
+DEBUG - 2025-10-21 14:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:19:28 --> BlogUpdate method called for ID: 4
+INFO - 2025-10-21 14:19:28 --> Request method: POST
+INFO - 2025-10-21 14:19:28 --> Is logged in: yes
+DEBUG - 2025-10-21 14:19:28 --> Blog Update Data: {"meta_title":"q","meta_description":"a","title":"a","main_description":"a","image":"","image_alt":"a","date":"2025-10-21","slug":"a","category":"Home Maintenance","status":"published"}
+DEBUG - 2025-10-21 14:19:28 --> Blog Update ID: 4
+DEBUG - 2025-10-21 14:19:28 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:19:28 --> Blog post updated successfully: ID 4
+DEBUG - 2025-10-21 14:19:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:22:07 --> BlogUpdate method called for ID: 1
+INFO - 2025-10-21 14:22:07 --> Request method: POST
+INFO - 2025-10-21 14:22:07 --> Is logged in: yes
+DEBUG - 2025-10-21 14:22:07 --> Blog Update Data: {"meta_title":"10 Essential House Cleaning Tips for a Spotless Homeaa","meta_description":"Discover the best house cleaning tips and tricks to keep your home spotless. Professional cleaning advice from Spring Flowers cleaning services.","title":"10 Essential House Cleaning Tips for a Spotless Home","main_description":"Keeping your home clean and organized  doesn't have to be a daunting task. With the right techniques and a little planning, you can maintain a spotless home that you'll be proud to show off. Here are our top 10 essential house cleaning tips that will make your cleaning routine more efficient and effective.\r\n\r\n1. Start from the top and work your way down\r\n2. Use the right cleaning products for each surface\r\n3. Declutter before you clean\r\n4. Create a cleaning schedule\r\n5. Focus on high-traffic areas\r\n6. Don't forget about hidden spots\r\n7. Use microfiber cloths for better results\r\n8. Keep cleaning supplies organized\r\n9. Clean as you go\r\n10. Consider professional cleaning services for deep cleans","image":"","image_alt":"Professional house cleaning tips and techniques","date":"2025-10-22","slug":"10-essential-house-cleaning-tips","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:22:07 --> Blog Update ID: 1
+DEBUG - 2025-10-21 14:22:07 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:22:07 --> Blog post updated successfully: ID 1
+DEBUG - 2025-10-21 14:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:22:27 --> BlogUpdate method called for ID: 1
+INFO - 2025-10-21 14:22:27 --> Request method: POST
+INFO - 2025-10-21 14:22:27 --> Is logged in: yes
+DEBUG - 2025-10-21 14:22:27 --> Blog Update Data: {"meta_title":"10 Essential House Cleaning Tips for a Spotless Homeaa","meta_description":"Discover the best house cleaning tips and tricks to keep your home spotless. Professional cleaning advice from Spring Flowers cleaning services.","title":"10 Essential House Cleaning Tips for a Spotless Home","main_description":"Keeping your home clean and organized  doesn't have to be a daunting task. With the right techniques and a little planning, you can maintain a spotless home that you'll be proud to show off. Here are our top 10 essential house cleaning tips that will make your cleaning routine more efficient and effective.\r\n\r\n1. Start from the top and work your way down\r\n2. Use the right cleaning products for each surface\r\n3. Declutter before you clean\r\n4. Create a cleaning schedule\r\n5. Focus on high-traffic areas\r\n6. Don't forget about hidden spots\r\n7. Use microfiber cloths for better results\r\n8. Keep cleaning supplies organized\r\n9. Clean as you go\r\n10. Consider professional cleaning services for deep cleans","image":"","image_alt":"Professional house cleaning tips and techniques","date":"2025-10-22","slug":"10-essential-house-cleaning-tips","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:22:27 --> Blog Update ID: 1
+DEBUG - 2025-10-21 14:22:27 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:22:27 --> Blog post updated successfully: ID 1
+DEBUG - 2025-10-21 14:22:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:22:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:26:49 --> BlogUpdate method called for ID: 1
+INFO - 2025-10-21 14:26:49 --> Request method: POST
+INFO - 2025-10-21 14:26:49 --> Is logged in: yes
+DEBUG - 2025-10-21 14:26:49 --> Blog Update Data: {"meta_title":"10 Essential House Cleaning Tips for a Spotless Homeaa","meta_description":"Discover the best house cleaning tips and tricks to keep your home spotless. Professional cleaning advice from Spring Flowers cleaning services.","title":"10 Essential House Cleaning Tips for a Spotless Home","main_description":"Keeping your home clean and organized  doesn't have to be a daunting task. With the right techniques and a little planning, you can maintain a spotless home that you'll be proud to show off. Here are our top 10 essential house cleaning tips that will make your cleaning routine more efficient and effective.\r\n\r\n1. Start from the top and work your way down\r\n2. Use the right cleaning products for each surface\r\n3. Declutter before you clean\r\n4. Create a cleaning schedule\r\n5. Focus on high-traffic areas\r\n6. Don't forget about hidden spots\r\n7. Use microfiber cloths for better results\r\n8. Keep cleaning supplies organized\r\n9. Clean as you go\r\n10. Consider professional cleaning services for deep cleans","image":"http:\/\/localhost:8080\/uploads\/blog-images\/1761056797_20d53ff132fdb22a793e.png","image_alt":"Professional house cleaning tips and techniques","date":"2025-10-22","slug":"10-essential-house-cleaning-tips","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:26:49 --> Blog Update ID: 1
+DEBUG - 2025-10-21 14:26:49 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:26:49 --> Blog post updated successfully: ID 1
+DEBUG - 2025-10-21 14:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:28:32 --> BlogUpdate method called for ID: 1
+INFO - 2025-10-21 14:28:32 --> Request method: POST
+INFO - 2025-10-21 14:28:32 --> Is logged in: yes
+DEBUG - 2025-10-21 14:28:32 --> Blog Update Data: {"meta_title":"10 Essential House Cleaning Tips for a Spotless Homeaa","meta_description":"Discover the best house cleaning tips and tricks to keep your home spotless. Professional cleaning advice from Spring Flowers cleaning services.","title":"10 Essential House Cleaning Tips for a Spotless Home","main_description":"Keeping your home clean and organized  doesn't have to be a daunting task. With the right techniques and a little planning, you can maintain a spotless home that you'll be proud to show off. Here are our top 10 essential house cleaning tips that will make your cleaning routine more efficient and effective.\r\n\r\n1. Start from the top and work your way down\r\n2. Use the right cleaning products for each surface\r\n3. Declutter before you clean\r\n4. Create a cleaning schedule\r\n5. Focus on high-traffic areas\r\n6. Don't forget about hidden spots\r\n7. Use microfiber cloths for better results\r\n8. Keep cleaning supplies organized\r\n9. Clean as you go\r\n10. Consider professional cleaning services for deep cleans","image":"http:\/\/localhost:8080\/uploads\/blog-images\/1761056884_c42b71a46eed5f270749.png","image_alt":"Professional house cleaning tips and techniques","date":"2025-10-22","slug":"10-essential-house-cleaning-tips","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:28:32 --> Blog Update ID: 1
+DEBUG - 2025-10-21 14:28:32 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:28:32 --> Blog post updated successfully: ID 1
+DEBUG - 2025-10-21 14:28:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:28:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:36:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:37:05 --> BlogUpdate method called for ID: 5
+INFO - 2025-10-21 14:37:05 --> Request method: POST
+INFO - 2025-10-21 14:37:05 --> Is logged in: yes
+DEBUG - 2025-10-21 14:37:05 --> Blog Update Data: {"meta_title":"cfgvbnjhbgvf","meta_description":"cfvb n","title":"fcgvhbjn","main_description":"xdcfgvb n","image":"http:\/\/localhost:8080\/uploads\/blog-images\/1761057392_77214b831ce225ac56c0.png","image_alt":" vb","date":"2025-10-21","slug":"fcgvhbjn","category":"Cleaning Tips","status":"draft"}
+DEBUG - 2025-10-21 14:37:05 --> Blog Update ID: 5
+DEBUG - 2025-10-21 14:37:05 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:37:05 --> Blog post updated successfully: ID 5
+DEBUG - 2025-10-21 14:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:38:21 --> BlogUpdate method called for ID: 4
+INFO - 2025-10-21 14:38:21 --> Request method: POST
+INFO - 2025-10-21 14:38:21 --> Is logged in: yes
+DEBUG - 2025-10-21 14:38:21 --> Blog Update Data: {"meta_title":"q","meta_description":"a","title":"a","main_description":"a","image":"http:\/\/localhost:8080\/uploads\/blog-images\/1761057496_5986889cc0a36d07c2b8.png","image_alt":"a","date":"2025-10-21","slug":"a","category":"Home Maintenance","status":"published"}
+DEBUG - 2025-10-21 14:38:21 --> Blog Update ID: 4
+DEBUG - 2025-10-21 14:38:21 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:38:21 --> Blog post updated successfully: ID 4
+DEBUG - 2025-10-21 14:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-10-21 14:38:32 --> BlogUpdate method called for ID: 3
+INFO - 2025-10-21 14:38:32 --> Request method: POST
+INFO - 2025-10-21 14:38:32 --> Is logged in: yes
+DEBUG - 2025-10-21 14:38:32 --> Blog Update Data: {"meta_title":"testing","meta_description":"affads","title":"asDF","main_description":"asdfxdfghjk","image":"http:\/\/localhost:8080\/uploads\/blog-images\/1761057509_0da8bfe518687f2f05af.png","image_alt":"asdf","date":"2025-10-21","slug":"aafd","category":"Cleaning Tips","status":"published"}
+DEBUG - 2025-10-21 14:38:32 --> Blog Update ID: 3
+DEBUG - 2025-10-21 14:38:32 --> Blog Update Request Method: POST
+INFO - 2025-10-21 14:38:32 --> Blog post updated successfully: ID 3
+DEBUG - 2025-10-21 14:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:38:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-21 14:39:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

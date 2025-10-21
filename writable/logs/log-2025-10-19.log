@@ -7377,3 +7377,220 @@ DEBUG - 2025-10-19 10:58:14 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2025-10-19 10:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-19 10:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2025-10-19 11:00:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:54:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-10-19 14:55:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-10-19 14:55:23 --> 220 smtp.gmail.com ESMTP d9443c01a7336-29246ebcde4sm55585525ad.5 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:422b:a7e:c43c:ba94:4937:b725]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+starttls: 220 2.0.0 Ready to start TLS
+
+hello: 250-smtp.gmail.com at your service, [2401:4900:422b:a7e:c43c:ba94:4937:b725]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-29246ebcde4sm55585525ad.5 - gsmtp
+
+INFO - 2025-10-19 14:55:23 --> Property form email sent: failed
+ERROR - 2025-10-19 14:55:23 --> Property form email error: 220 smtp.gmail.com ESMTP d9443c01a7336-29246ebcde4sm55585525ad.5 - gsmtp
+<br><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:422b:a7e:c43c:ba94:4937:b725]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre><pre>starttls: 220 2.0.0 Ready to start TLS
+</pre><pre>hello: 250-smtp.gmail.com at your service, [2401:4900:422b:a7e:c43c:ba94:4937:b725]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+</pre>Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-29246ebcde4sm55585525ad.5 - gsmtp
+<br>Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Sun, 19 Oct 2025 14:55:20 +0000
+From: &quot;Spring Flowers&quot; &lt;indiana@cleanspringflowers.com&gt;
+Return-Path: &lt;indiana@cleanspringflowers.com&gt;
+To: indiana@cleanspringflowers.com
+Subject: =?UTF-8?Q?New=20Property=20Booking=20Submission=20-=20Spring=20Flowers?=
+Reply-To: &lt;indiana@cleanspringflowers.com&gt;
+User-Agent: CodeIgniter
+X-Sender: indiana@cleanspringflowers.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;68f4fbd84cbdb2.53677239@cleanspringflowers.com&gt;
+Mime-Version: 1.0
+
+
+Content-Type: multipart/alternative; boundary=&quot;B_ALT_68f4fbd84cc167.76400754&quot;
+
+This is a multi-part message in MIME format.
+Your email application may not support this format.
+
+--B_ALT_68f4fbd84cc167.76400754
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+New Property Booking Submission
+Spring Flowers Website
+
+🏠 New Property Booking Request
+A customer has submitted a property booking form!
+
+Customer Information
+
+Name:
+Jdj Jdjd
+
+Phone:
+08685011980
+
+Property Details
+
+Address:
+Hno D602 The Atrium
+
+City:
+sec 37 D gurugram
+
+Town/Area:
+Bristol
+
+Postal Code:
+122006
+
+Property Specifications
+
+Number of Rooms:
+1
+
+Number of Kitchens:
+2
+
+Number of Bathrooms:
+2
+
+Booking Details
+
+Service Plan:
+Daily
+
+Selected Date:
+2025-10-29
+
+Selected Days:
+
+Timing:
+Morning
+
+Submitted:
+2025-10-19 14:55:20
+
+This email was sent from the Spring Flowers property booking form.
+
+
+--B_ALT_68f4fbd84cc167.76400754
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+=0A=09=09&lt;!DOCTYPE html&gt;=0A=09=09&lt;html&gt;=0A=09=09&lt;head&gt;=0A=09=09=09&lt;meta cha=
+rset=3D&quot;UTF-8&quot;&gt;=0A=09=09=09&lt;style&gt;=0A=09=09=09=09body { font-family: Arial,=
+ sans-serif; line-height: 1.6; color: #333; }=0A=09=09=09=09.container { ma=
+x-width: 600px; margin: 0 auto; padding: 20px; }=0A=09=09=09=09.header { ba=
+ckground-color: #f8f9fa; padding: 20px; text-align: center; border-radius: =
+5px 5px 0 0; }=0A=09=09=09=09.content { background-color: #ffffff; padding:=
+ 30px; border: 1px solid #e9ecef; }=0A=09=09=09=09.footer { background-colo=
+r: #f8f9fa; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; =
+font-size: 12px; color: #6c757d; }=0A=09=09=09=09.field { margin-bottom: 15=
+px; }=0A=09=09=09=09.label { font-weight: bold; color: #495057; }=0A=09=09=
+=09=09.value { margin-top: 5px; padding: 8px; background-color: #f8f9fa; bo=
+rder-radius: 3px; }=0A=09=09=09=09.section { margin-bottom: 25px; padding: =
+15px; background-color: #f8f9fa; border-radius: 5px; }=0A=09=09=09=09.secti=
+on-title { font-size: 18px; font-weight: bold; color: #2c3e50; margin-botto=
+m: 15px; border-bottom: 2px solid #3498db; padding-bottom: 5px; }=0A=09=09=
+=09=09.booking-highlight { background-color: #e8f5e8; border-left: 4px soli=
+d #27ae60; padding: 15px; margin: 20px 0; }=0A=09=09=09&lt;/style&gt;=0A=09=09&lt;/h=
+ead&gt;=0A=09=09&lt;body&gt;=0A=09=09=09&lt;div class=3D&quot;container&quot;&gt;=0A=09=09=09=09&lt;div=
+ class=3D&quot;header&quot;&gt;=0A=09=09=09=09=09&lt;h2&gt;New Property Booking Submission&lt;/h2=
+&gt;=0A=09=09=09=09=09&lt;p&gt;Spring Flowers Website&lt;/p&gt;=0A=09=09=09=09&lt;/div&gt;=0A=09=
+=09=09=09&lt;div class=3D&quot;content&quot;&gt;=0A=09=09=09=09=09&lt;div class=3D&quot;booking-hig=
+hlight&quot;&gt;=0A=09=09=09=09=09=09&lt;h3 style=3D&quot;margin: 0; color: #27ae60;&quot;&gt;=
+=F0=9F=8F=A0 New Property Booking Request&lt;/h3&gt;=0A=09=09=09=09=09=09&lt;p style=
+=3D&quot;margin: 5px 0 0 0; font-weight: bold;&quot;&gt;A customer has submitted a prope=
+rty booking form!&lt;/p&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=
+=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;section-tit=
+le&quot;&gt;Customer Information&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=
+=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Name:&lt;/div&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;value&quot;&gt;Jdj Jdjd&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;labe=
+l&quot;&gt;Phone:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;08685011980&lt;/di=
+v&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=0A=
+=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;se=
+ction-title&quot;&gt;Property Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field=
+&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Address:&lt;/div&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Hno D602 The Atrium&lt;/div&gt;=0A=09=09=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=
+=09&lt;div class=3D&quot;label&quot;&gt;City:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;va=
+lue&quot;&gt;sec 37 D gurugram&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=
+=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Town/A=
+rea:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Bristol&lt;/div&gt;=0A=09=
+=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=
+=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Postal Code:&lt;/div&gt;=0A=09=09=09=09=09=09=09=
+&lt;div class=3D&quot;value&quot;&gt;122006&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=
+=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=
+=09=09=09=09=09&lt;div class=3D&quot;section-title&quot;&gt;Property Specifications&lt;/div&gt;=
+=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div clas=
+s=3D&quot;label&quot;&gt;Number of Rooms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;val=
+ue&quot;&gt;1&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;fi=
+eld&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Number of Kitchens:&lt;/div&gt;=
+=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;2&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/=
+div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div =
+class=3D&quot;label&quot;&gt;Number of Bathrooms:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div clas=
+s=3D&quot;value&quot;&gt;2&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=
+=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;section&quot;&gt;=0A=09=09=09=09=09=
+=09&lt;div class=3D&quot;section-title&quot;&gt;Booking Details&lt;/div&gt;=0A=09=09=09=09=09=09&lt;=
+div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Service Pl=
+an:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;Daily&lt;/div&gt;=0A=09=09=
+=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=
+=09=09=09&lt;div class=3D&quot;label&quot;&gt;Selected Date:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;=
+div class=3D&quot;value&quot;&gt;2025-10-29&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=
+=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;=
+Selected Days:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;div class=3D&quot;value&quot;&gt;&lt;/div&gt;=0A=
+=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=
+=09=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Timing:&lt;/div&gt;=0A=09=09=09=09=09=09=09&lt;d=
+iv class=3D&quot;value&quot;&gt;Morning&lt;/div&gt;=0A=09=09=09=09=09=09&lt;/div&gt;=0A=09=09=09=09=
+=09&lt;/div&gt;=0A=09=09=09=09=09=0A=09=09=09=09=09&lt;div class=3D&quot;field&quot;&gt;=0A=09=09=
+=09=09=09=09&lt;div class=3D&quot;label&quot;&gt;Submitted:&lt;/div&gt;=0A=09=09=09=09=09=09&lt;div =
+class=3D&quot;value&quot;&gt;2025-10-19 14:55:20&lt;/div&gt;=0A=09=09=09=09=09&lt;/div&gt;=0A=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09=09&lt;div class=3D&quot;footer&quot;&gt;=0A=09=09=09=09=09&lt;p&gt;This =
+email was sent from the Spring Flowers property booking form.&lt;/p&gt;=0A=09=09=
+=09=09&lt;/div&gt;=0A=09=09=09&lt;/div&gt;=0A=09=09&lt;/body&gt;=0A=09=09&lt;/html&gt;
+
+--B_ALT_68f4fbd84cc167.76400754--</pre>
+DEBUG - 2025-10-19 14:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-10-19 14:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

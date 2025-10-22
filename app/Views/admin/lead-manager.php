@@ -226,9 +226,9 @@
               <p><strong>Timing</strong><br><?= esc($k['timing']) ?></p>
               
             <?php if($k['plan'] == ''){
-              echo "Lead Type : House Cleaning";
-            }else{
               echo "Lead Type : House Keeping";
+            }else{
+              echo "Lead Type : House Cleaning";
             }?>
           
               

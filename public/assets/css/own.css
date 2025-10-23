@@ -943,10 +943,10 @@ border-radius: 5px;
 
 }
 .office_cleanign_main_box h1{
-  text-align: center;
-  font-size: 45px;
-  margin-bottom: 30px;
-    font-family: IvyOraDisplay-Light;
+  text-align: center !important;
+  font-size: 45px !important;
+  margin-bottom: 30px !important;
+    font-family: IvyOraDisplay-Light !important;
 
 }
 .office_cleanign_main_box p{

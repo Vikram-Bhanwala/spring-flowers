@@ -268,53 +268,41 @@ Mop</h3>
 
         <!-- Product 1 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>assets/img/new/hc1.png" alt="5 Housekeeping Tips for Joyful Living Book">
+            <img src="https://nimblecares.co.uk/cdn/shop/files/INDIVIDUAL_4_c974bb3f-10b3-4673-aa20-892ced4b0129.jpg?v=1755691629&width=1080" alt="5 Housekeeping Tips for Joyful Living Book">
             <div class="product-info">
-                <h3>5 Housekeeping Tips for Joyful Living Book</h3>
-                <p>£4.99</p>
-                <a href="https://www.amazon.co.uk/Five-Housekeeping-Principles-Domestic-Goddess/dp/1805417436/ref=cm_cr_arp_d_product_top?ie=UTF8" target="_blank" class="btn">Buy Now</a>
+                <h3>Multi-Purpose Cleaner: Plant-Based. Antibacterial. Toxin-Free</h3>
+                <p>£3.50</p>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-multi-purpose-antibacterial-cleaner" target="_blank" class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 2 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>assets/img/new/hc2.png" alt="Washing Up Pad">
+            <img src="https://nimblecares.co.uk/cdn/shop/files/Hand_Sanitiser_1.png?v=1755691655&width=1080" alt="Washing Up Pad">
             <div class="product-info">
-                <h3>Washing Up Pad</h3>
-                <p>£3.00</p>
-                <a href="https://uk.e-cloth.com/products/wup-washing-up-pad" target="_blank"  class="btn">Buy Now</a>
+                <h3>Moisturising Hand Sanitiser: Plant-Based. Antibacterial. Skin-Kind</h3>
+                <p>£3.50</p>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-moisturising-hand-sanitiser" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 3 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>assets/img/new/hc3.png" alt="Window Cleaning 2-Pack">
+            <img src="https://nimblecares.co.uk/cdn/shop/files/INDIVIDUAL_2_ebd8cbf9-33de-4d21-b5c5-ff834793ee95.jpg?v=1729231796&width=1080" alt="Window Cleaning 2-Pack">
             <div class="product-info">
-                <h3>Window Cleaning 
-2-Pack</h3>
-                <p>£9.50</p>
-                <a href="https://uk.e-cloth.com/products/wip-window-cleaning-pack" target="_blank"  class="btn">Buy Now</a>
+                <h3>Potty and Toilet Cleaner: Plant-Based. Bleach-Free</h3>
+                <p>£3.50</p>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-potty-and-toilet-cleaner" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
         <!-- Product 4 -->
         <div class="product-card">
-            <img src="<?php echo base_url() ?>assets/img/new/hc4.png" alt="Replacement Head for Deep Clean Mop">
+            <img src="https://nimblecares.co.uk/cdn/shop/files/bottle_cup_cleaner_-_website.png?v=1747303199&width=1080" alt="Replacement Head for Deep Clean Mop">
             <div class="product-info">
-                <h3>Replacement Head for Deep Clean 
-Mop</h3>
-                <p>£6.99</p>
-                <a href="https://uk.e-cloth.com/products/dch-deep-clean-mop-head" target="_blank"   class="btn">Buy Now</a>
-            </div>
-        </div>
-        <!-- Product 5-->
-        <div class="product-card">
-            <img src="<?php echo base_url() ?>assets/img/new/hc5.png" alt="Replacement Head for Deep Clean Mop">
-            <div class="product-info">
-                <h3>General
-Purpose Cloth</h3>
-                <p>£4.00</p>
-                <a href="https://uk.e-cloth.com/products/gpi-general-purpose-cloth"  target="_blank"   class="btn">Buy Now</a>
+                <h3>Bottle & Cup Cleaner: Plant-Based. No Scrubbing. Bleach-Free</h3>
+                <p>£10.00</p>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-bottle-cup-cleaner" target="_blank"   class="btn">Buy Now</a>
             </div>
         </div>
 

@@ -260,6 +260,7 @@ Mop</h3>
 
 
 
+ 
   <section class="Housekeeping-Companions-frame">
 	 <div class="container">
 	<div class="housekeeping-companions">
@@ -272,7 +273,7 @@ Mop</h3>
             <div class="product-info">
                 <h3>Multi-Purpose Cleaner: Plant-Based. Antibacterial. Toxin-Free</h3>
                 <p>£3.50</p>
-                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-multi-purpose-antibacterial-cleaner" target="_blank" class="btn">Buy Now</a>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-multi-purpose-antibacterial-cleaner?source=aw&aw_affid=2623674&awc=87077_1761495008_eb61f2f550214799f05078d52d4e0f21" target="_blank" class="btn">Buy Now</a>
             </div>
         </div>
 
@@ -282,7 +283,7 @@ Mop</h3>
             <div class="product-info">
                 <h3>Moisturising Hand Sanitiser: Plant-Based. Antibacterial. Skin-Kind</h3>
                 <p>£3.50</p>
-                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-moisturising-hand-sanitiser" target="_blank"  class="btn">Buy Now</a>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-moisturising-hand-sanitiser?source=aw&aw_affid=2623674&awc=87077_1761495011_99f1f99447b9b849bd9b7d58c8e01681" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
@@ -292,7 +293,7 @@ Mop</h3>
             <div class="product-info">
                 <h3>Potty and Toilet Cleaner: Plant-Based. Bleach-Free</h3>
                 <p>£3.50</p>
-                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-potty-and-toilet-cleaner" target="_blank"  class="btn">Buy Now</a>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-potty-and-toilet-cleaner?source=aw&aw_affid=2623674&awc=87077_1761495013_8c1058feedcb5305344851d123391d9d" target="_blank"  class="btn">Buy Now</a>
             </div>
         </div>
 
@@ -302,7 +303,7 @@ Mop</h3>
             <div class="product-info">
                 <h3>Bottle & Cup Cleaner: Plant-Based. No Scrubbing. Bleach-Free</h3>
                 <p>£10.00</p>
-                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-bottle-cup-cleaner" target="_blank"   class="btn">Buy Now</a>
+                <a href="https://nimblecares.co.uk/collections/cleaning/products/plant-based-bottle-cup-cleaner?source=aw&aw_affid=2623674&awc=87077_1761495015_535703897f9c831f4a1546e4c7bea097" target="_blank"   class="btn">Buy Now</a>
             </div>
         </div>
 
@@ -310,7 +311,6 @@ Mop</h3>
 </div>
 </div>
   </section>
-
 
 <?php
 include('footer.php');

@@ -568,10 +568,84 @@
             </div>
         </div>
 
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1758560912/Shark/NV602UKT/Gallery%20V2/00_1400x1400px-NV602UKT_01_Optimised_2506168?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark Classic Upright Pet Vacuum NV602UKT</h3>
+                <p>£149.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-classic-upright-pet-vacuum-nv602ukt-zidNV602UKT?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_44ded7bde9fb6b8686d4ec22ed2c73f2" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1745929580/Shark/AZ3000UKT/V2/001%20-%20AZ3000UKT_01S?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark Stratos Pet Pro Anti Hair Wrap Plus Anti-Odour XL Upright Vacuum</h3>
+                <p>£249.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-stratos-pet-pro-anti-hair-wrap-plus-anti-odour-xl-upright-vacuum-az3000ukt-zidAZ3000UKT?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_30a6eda28a4428d476406b63f12dbdd3" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1657637641/Shark/WV270UK/WV270UK_01?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark Premium Handheld Vacuum WV270UK</h3>
+                <p>£179.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-premium-handheld-vacuum-wv270uk-zidWV270UK?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_ddca3046163be545107bd6d0a8431613" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1741873128/Shark/EX250UK/EX250UK_01?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark CarpetXpert HairPro Pet Carpet Cleaner EX250UK</h3>
+                <p>£179.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-carpetxpert-hairpro-pet-carpet-cleaner-ex250uk-zidEX250UK?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_bf3b4522a77ec6893a44496c04c7c243" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1747646126/Shark/S6005UK/Gallery%20V2/Gallery%20V3/00_1400x1400px-S6005UK_01_Optimised_AnnotatedImages_3600x3600px_250227._?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark Floor & Handheld Steam Cleaner S6005UK</h3>
+                <p>£10.00</p>
+                <a href="https://sharkclean.co.uk/product/shark-floor-handheld-steam-cleaner-s6005uk-zidS6005UK?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_994fcf857e15d53655b01b05f4f3bc52" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1708346343/Shark/HP300UK/HP300UK_01?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark NeverChange5 Air Purifier MAX HP300UK</h3>
+                <p>£329.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-neverchange5-air-purifier-max-hp300uk-zidHP300UK?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572794_210045eabb292b97c547660b2a29b027" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_1.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1657637641/Shark/WV270UK/WV270UK_01?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark Premium Handheld Vacuum WV270UK</h3>
+                <p>£179.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-premium-handheld-vacuum-wv270uk-zidWV270UK?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572795_bae8b70530bf73d0af8839fb948e572b" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://res.cloudinary.com/sharkninja/image/upload/b_rgb:FFFFFF,c_pad,dpr_2.0,f_auto,h_600,q_auto,w_600/c_pad,h_600,w_600/v1755780835/Shark/VM200UKGN/00_VM200UKGNPS_01?pgw=1" alt="Replacement Head for Deep Clean Mop">
+            <div class="product-info">
+                <h3>Shark VacMop 2-in-1 Cordless Vacuum Mop with Targeted Spray Complete Kit</h3>
+                <p>£109.99</p>
+                <a href="https://sharkclean.co.uk/product/shark-vacmop-2-in-1-cordless-vacuum-mop-with-targeted-spray-complete-kit-zidVM200UKGNPS?utm_source=awin&utm_medium=2623674&utm_campaign=CleanSpringFlowers&sv1=affiliate&sv_campaign_id=2623674&awc=8065_1761572797_b93cc12f0d64c114cdb82ceafdc5f24e" target="_blank"   class="btn">Buy Now</a>
+            </div>
+        </div>
+
     </div>
 </div>
 </div>
   </section>
+
 
   <section class="subscribe-box-main">
 	<h4>

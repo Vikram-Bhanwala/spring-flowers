@@ -53,7 +53,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 24/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 24/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -69,7 +70,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Companion/Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 25/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 25/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -85,7 +87,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Cook/Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 26/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 26/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -101,7 +104,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Groundsman/Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 25/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 25/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -117,7 +121,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Nanny/Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 26/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 26/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -133,7 +138,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Security/Housekeeper</h3>
-                        <p><span class="pound_siggn">£</span> 28/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 28/Hour</p> -->
                     </div>
                 </div>
                 </a>
@@ -149,7 +155,8 @@ include('header.php');
                     <!-- Text over overlay -->
                     <div class="slect_property_type_text">
                         <h3>Head/HouseKeeper</h3>
-                        <p><span class="pound_siggn">£</span> 30/Hour</p>
+                        <p>12.5% of your Annual Salary</p>
+                        <!-- <p><span class="pound_siggn">£</span> 30/Hour</p> -->
                     </div>
                 </div>
                 </a>

@@ -418,7 +418,9 @@ a{
     display: flex;
     flex-direction: column-reverse;
 }
-
+.shop_main_prod_sec {
+    padding: 30px 0px;
+}
 
 
 

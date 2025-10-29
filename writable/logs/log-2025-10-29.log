@@ -1,0 +1,122 @@
+CRITICAL - 2025-10-29 11:24:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: blogs]
+in APPPATH\Controllers\Home.php on line 44.
+ 1 APPPATH\Controllers\Home.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Controllers\\Home.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogListing()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:57:15 --> ErrorException: Undefined variable $blog
+[Method: GET, Route: blogs]
+in APPPATH\Views\blogs.php on line 193.
+ 1 APPPATH\Views\blogs.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $blog', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\blogs.php', 193)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\blogs.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blogs', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('blogs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogListing()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:57:20 --> ErrorException: Undefined variable $blog
+[Method: GET, Route: blogs]
+in APPPATH\Views\blogs.php on line 193.
+ 1 APPPATH\Views\blogs.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $blog', 'C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\blogs.php', 193)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\spring-flowers\\app\\Views\\blogs.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blogs', [], true)
+ 5 APPPATH\Controllers\Home.php(52): view('blogs', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogListing()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:57:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_detail.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_detail.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_detail', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:58:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_detail.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_detail.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_detail', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:58:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_detail.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_detail.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_detail', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:58:58 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_detail.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_detail.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_detail', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:59:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_details.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_details.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_details', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:59:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_details.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_details.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_details', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-29 11:59:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "blog_details.php"
+[Method: GET, Route: the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('blog_details.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('blog_details', [], true)
+ 3 APPPATH\Controllers\Home.php(78): view('blog_details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->BlogDetail('the-revolutionary-power-of-water-rethink-your-cleaning-routine-for-a-healthier-home')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

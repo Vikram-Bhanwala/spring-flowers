@@ -27,9 +27,58 @@ class Home extends BaseController
         return view('privacy-policy');
     }
     // for blog listing page 
-    public function BlogListing(){
-        return view('blogs');
+    public function BlogListing()
+{
+    $blogModel = new \App\Models\BlogModel();
+
+    // Get the latest blog (highest ID)
+    $latestBlog = $blogModel
+        ->where('status', 'published') // optional if you have status
+        ->orderBy('id', 'DESC')
+        ->first();
+
+    // Get the remaining blogs
+    $otherBlogs = $blogModel
+        ->where('status', 'published')
+        ->orderBy('id', 'DESC')
+        ->where('id !=', $latestBlog['id'])
+        ->findAll(); // you can change number of regular blogs
+
+    $data = [
+        'latestBlog' => $latestBlog,
+        'otherBlogs' => $otherBlogs,
+    ];
+
+    return view('blogs', $data);
+}
+
+// blog details 
+public function BlogDetail($slug)
+{
+    $blogModel = new \App\Models\BlogModel();
+
+    // Get blog by slug
+    $blog = $blogModel->where('slug', $slug)->first();
+
+    if (!$blog) {
+        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Blog not found');
     }
+
+    // Get 3 recommended blogs excluding current one
+    $recommended = $blogModel
+        ->where('id !=', $blog['id'])
+        ->orderBy('id', 'DESC')
+        ->findAll(3);
+
+    $data = [
+        'blog' => $blog,
+        'recommended' => $recommended,
+    ];
+
+    return view('blog-details', $data);
+}
+
+
     
     // for our story
     public function OurStoryView(){

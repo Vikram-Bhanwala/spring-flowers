@@ -155,6 +155,9 @@ include('header.php');
   opacity: 1;
   transform: translateY(0);
 }
+.blog_regular_row .col-lg-3{
+  margin-bottom:10px
+}
 </style>
 
 <!-- blogs bannwer sec -->
@@ -183,47 +186,46 @@ include('header.php');
                     <p>Stay informed with our curated content on home cleaning, housekeeping, and lifestyle care. From expert advice to seasonal cleaning checklists, we share everything you need to keep your home spotless, organized, and welcoming.</p>
                 </div>
             </div>
+
+            <?php if (!empty($latestBlog)): ?>
             <div class="col-lg-8 col-md-8 col-sm-12">
                 <div class="blog_main_big_blog_box">
-                    <a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace"><img src="<?php echo base_url() ?>assets/img/new/bb4.jpg" alt=""></a>
-                    <h3><a href="<?php echo base_url()?>zooming-in-cleaning-habit-unlocked-self-worth-inner-peace">Zooming In: How a Cleaning Habit Unlocked Self-Worth and Inner Peace</a></h3>
+                    <a href="<?= base_url($latestBlog['slug']); ?>">
+                        <img src="<?= $latestBlog['image'] ?>" alt="<?= esc($latestBlog['image_alt']); ?>">
+                    </a>
+                    <h3>
+                        <a href="<?= base_url($latestBlog['slug']); ?>"><?= esc($latestBlog['title']); ?></a>
+                    </h3>
                     <div class="date_box_big">
-                           <p> 07 Oct 2025</p>
+                        <p><?= date('d M Y', strtotime($latestBlog['date'])); ?></p>
                     </div>
                 </div>
             </div>
+            <?php endif; ?>
         </div>
+
         <div class="row blog_regular_row">
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blogs_regular_box">
-                     <a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning"><img src="<?php echo base_url()?>assets/img/new/blog1.jpg" alt=""></a>
-                    <h6><a href="<?php echo base_url()?>springflower-difference-building-trust-home-cleaning">The Springflower Difference: Building Trust in Home Cleaning Services</a></h6>
-                    <div class="date_box_regular">
-                           <p> 26 Sep 2025</p>
+            <?php if (!empty($otherBlogs)): ?>
+                <?php foreach ($otherBlogs as $blog): ?>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div class="blogs_regular_box">
+                            <a href="<?= base_url($blog['slug']); ?>">
+                                <img src="<?= $blog['image'] ?>" alt="<?= esc($blog['image_alt']); ?>">
+                            </a>
+                            <h6>
+                                <a href="<?= base_url($blog['slug']); ?>"><?= esc($blog['title']); ?></a>
+                            </h6>
+                            <div class="date_box_regular">
+                                <p><?= date('d M Y', strtotime($blog['date'])); ?></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blogs_regular_box">
-                     <a href="<?php echo base_url()?>10-essential-guidelines-for-becoming-a-superior-housekeeper"><img src="<?php echo base_url()?>assets/img/new/bb2.png" alt=""></a>
-                    <h6><a href="<?php echo base_url()?>10-essential-guidelines-for-becoming-a-superior-housekeeper">10 Essential Guidelines for Becoming a Superior Housekeeper</a></h6>
-                    <div class="date_box_regular">
-                           <p> 25 Sep 2025</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-12">
-                <div class="blogs_regular_box">
-                     <a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation"><img src="<?php echo base_url() ?>assets/img/new/bb3.png" alt=""></a>
-                    <h6><a href="<?php echo base_url()?>zooming-out-technique-elevate-home-presentation">The "Zooming Out" Technique: Elevate Your Home Presentation from Exceptional to Phenomenal</a></h6>
-                    <div class="date_box_regular">
-                           <p> 24 Sep 2025</p>
-                    </div>
-                </div>
-            </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </div>
     </div>
 </section>
+
 
 
 
